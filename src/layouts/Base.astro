@@ -49,10 +49,10 @@ const year = new Date().getFullYear();
   <meta name="twitter:description" content={desc} />
   <meta name="twitter:image" content={og} />
 
-  <meta name="theme-color" content="#f6f1ea" media="(prefers-color-scheme: light)" />
-  <meta name="theme-color" content="#141a16" media="(prefers-color-scheme: dark)" />
-  <link rel="icon" href={asset('assets/favicon.svg')} type="image/svg+xml" />
-  <link rel="apple-touch-icon" href={asset('assets/icon-512.png')} />
+  <meta name="theme-color" content="#f5f0e8" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#0e0d0c" media="(prefers-color-scheme: dark)" />
+  <link rel="icon" href={asset('assets/favicon.png')} type="image/png" />
+  <link rel="apple-touch-icon" href={asset('assets/apple-touch-icon.png')} />
   <link rel="manifest" href={asset('site.webmanifest')} />
   <link rel="sitemap" href={asset('sitemap-index.xml')} />
 
@@ -90,7 +90,7 @@ const year = new Date().getFullYear();
 
   <header class="header" id="header">
     <div class="wrap">
-      <a href={url('index', lang)} class="logo"><Icon name="lotus" /><span>{site.name}</span></a>
+      <a href={url('index', lang)} class="logo"><img src={asset('assets/logo-bh.png')} alt="" width="36" height="38" /><span>{site.name}</span></a>
       <nav class="nav" aria-label={T.menu}>
         {nav.map(([p, label]) => (
           <a href={url(p, lang)} class={p === page ? 'active' : undefined} aria-current={p === page ? 'page' : undefined}>{label}</a>
@@ -124,7 +124,7 @@ const year = new Date().getFullYear();
     <div class="wrap">
       <div class="footer-grid">
         <div>
-          <a href={url('index', lang)} class="logo"><Icon name="lotus" /><span>{site.name}</span></a>
+          <a href={url('index', lang)} class="logo"><img src={asset('assets/logo-bh.png')} alt="" width="36" height="38" /><span>{site.name}</span></a>
           <p>{T.footer_about}</p>
           <MsgrRow keys={['wa', 'tg', 'vb', 'ig']} lang={lang} />
         </div>

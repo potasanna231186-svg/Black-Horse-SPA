@@ -12,7 +12,7 @@ backend:
 locale: ru
 site_url: https://potasanna231186-svg.github.io/Black-Horse-SPA
 display_url: https://potasanna231186-svg.github.io/Black-Horse-SPA
-logo_url: ../assets/favicon.svg
+logo_url: ../assets/icon-512.png
 
 media_folder: public/images
 public_folder: /images
@@ -75,6 +75,34 @@ collections:
           - { name: video, label: Видео атмосферы (mp4, до 10 МБ), widget: file, required: false }
           - { name: videoPoster, label: Обложка видео, widget: image, required: false }
 
+      - name: hero
+        label: Сцены первого экрана
+        file: src/data/hero.json
+        fields:
+          - { name: _note, label: Примечание, widget: hidden }
+          - name: slides
+            label: Сцены (листаются прокруткой)
+            widget: list
+            summary: "{{fields.eyebrow.ru}}"
+            fields:
+              - { name: eyebrow, label: Надзаголовок, <<: *ru_en }
+              - { name: title, label: Заголовок (можно <em>выделить</em>), <<: *ru_en }
+              - { name: text, label: Текст, <<: *ru_en_text }
+              - name: cta
+                label: Главная кнопка
+                widget: object
+                fields:
+                  - { name: label, label: Текст кнопки, <<: *ru_en }
+                  - { name: link, label: "Ссылка (wa = WhatsApp, services#massage, faq…)", widget: string }
+              - name: cta2
+                label: Вторая ссылка
+                widget: object
+                fields:
+                  - { name: label, label: Текст, <<: *ru_en }
+                  - { name: link, label: Ссылка, widget: string }
+              - { name: image, label: Фото сцены (лучше горизонтальное, от 1920px), widget: image, required: false }
+              - *art
+              - { name: stones, label: Камни на заглушке, widget: boolean, default: false }
       - name: promo
         label: Акция (полоса вверху)
         file: src/data/promo.json

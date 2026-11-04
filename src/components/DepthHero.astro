@@ -1,0 +1,73 @@
+---
+// Первый экран из нескольких сцен: листается колесом мыши / свайпом / стрелками.
+// После последней сцены прокрутка отпускается дальше на сайт. Логика — public/assets/depth.js
+import Photo from './Photo.astro';
+import hero from '../data/hero.json';
+import { site, url, asset, tr, t, msgrLink, type Lang } from '../lib/site';
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const T = t(lang);
+const slides = hero.slides;
+const href = (link: string) => (link === 'wa' ? msgrLink('wa', lang) : url(link, lang));
+const ext = (link: string) => (link === 'wa' ? { target: '_blank', rel: 'noopener' } : {});
+const L = lang === 'ru'
+  ? { hint: 'Листайте, чтобы погрузиться', open: 'Открыть сайт', pause: 'Пауза', play: 'Продолжить', prev: 'Предыдущая сцена', next: 'Следующая сцена', scene: 'Сцена', tagline: 'SPA & Beauty' }
+  : { hint: 'Scroll to immerse', open: 'Enter the site', pause: 'Pause', play: 'Play', prev: 'Previous scene', next: 'Next scene', scene: 'Scene', tagline: 'SPA & Beauty' };
+---
+<div class="intro" id="intro" aria-hidden="true">
+  <div class="intro-halo"></div>
+  <img class="intro-mark" src={asset('assets/logo-bh.png')} alt="" width="134" height="140" />
+  <span class="intro-name">{site.name}</span>
+</div>
+
+<section class="depth" id="depth" aria-roledescription="carousel" aria-label={site.name}
+  data-hint={L.hint} data-open={L.open} data-pause={L.pause} data-play={L.play}>
+  <div class="depth-stage" aria-hidden="true">
+    {slides.map((s, i) => (
+      <div class={`depth-slide${i === 0 ? ' is-active' : ''}`} data-i={i}>
+        <Photo image={s.image} art={s.art} stones={s.stones} label={T.your_photo} alt={tr(s.eyebrow, lang)} cls="depth-media" lazy={i > 0} />
+      </div>
+    ))}
+    <div class="depth-shade"></div>
+  </div>
+
+  <div class="depth-ui">
+    <div class="depth-brand">
+      <img class="depth-emblem" src={asset('assets/logo-bh.png')} alt={site.name} width="134" height="140" />
+      <span>{L.tagline}</span>
+    </div>
+
+    <div class="depth-copy">
+      {slides.map((s, i) => (
+        <div class={`depth-text${i === 0 ? ' is-active' : ''}`} data-i={i} role="group" aria-roledescription="slide"
+          aria-label={`${L.scene} ${i + 1} / ${slides.length}`} aria-hidden={i === 0 ? 'false' : 'true'}>
+          <div class="depth-eyebrow">{site.name}<i>·</i>{tr(s.eyebrow, lang)}</div>
+          {i === 0 ? <h1 set:html={tr(s.title, lang)} /> : <h2 set:html={tr(s.title, lang)} />}
+          <p>{tr(s.text, lang)}</p>
+          <div class="depth-actions">
+            <a class="btn btn-gold" href={href(s.cta.link)} tabindex={i === 0 ? undefined : '-1'} {...ext(s.cta.link)}>{tr(s.cta.label, lang)} <span aria-hidden="true">↗</span></a>
+            <a class="depth-link" href={href(s.cta2.link)} tabindex={i === 0 ? undefined : '-1'} {...ext(s.cta2.link)}>{tr(s.cta2.label, lang)} <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <div class="depth-nav">
+      <button class="depth-arrow" data-step="-1" aria-label={L.prev}>←</button>
+      <div class="depth-dots">
+        {slides.map((_, i) => (
+          <button class={`depth-dot${i === 0 ? ' is-active' : ''}`} data-go={i} aria-label={`${L.scene} ${i + 1}`} aria-current={i === 0 ? 'true' : undefined}>
+            <span>{String(i + 1).padStart(2, '0')}</span><i><b></b></i>
+          </button>
+        ))}
+      </div>
+      <button class="depth-arrow" data-step="1" aria-label={L.next}>→</button>
+    </div>
+  </div>
+
+  <div class="depth-foot">
+    <button class="depth-hint"><span>{L.hint}</span> <i aria-hidden="true">↓</i></button>
+    <button class="depth-pause" aria-pressed="false"><span>{L.pause}</span> <i aria-hidden="true">❙❙</i></button>
+  </div>
+</section>
+<script is:inline src={asset('assets/depth.js')} defer></script>

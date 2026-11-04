@@ -3,10 +3,10 @@
   "short_name": "Black Horse",
   "start_url": "./",
   "display": "standalone",
-  "background_color": "#f6f1ea",
-  "theme_color": "#23352b",
+  "background_color": "#0e0d0c",
+  "theme_color": "#0e0d0c",
   "icons": [
-    { "src": "assets/favicon.svg", "sizes": "any", "type": "image/svg+xml" },
+    { "src": "assets/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" },
     { "src": "assets/icon-512.png", "sizes": "512x512", "type": "image/png" }
   ]
 }

@@ -7,6 +7,7 @@ import CtaBand from '../../components/CtaBand.astro';
 import FaqList from '../../components/FaqList.astro';
 import Packages from '../../components/Packages.astro';
 import Reviews from '../../components/Reviews.astro';
+import DepthHero from '../../components/DepthHero.astro';
 import { site, data, url, asset, tr, t, money, msgrLink, langPaths, langOf } from '../../lib/site';
 export const getStaticPaths = langPaths;
 const lang = langOf(Astro.params.lang);
@@ -14,29 +15,7 @@ const T = t(lang);
 const popular = data.services.categories.flatMap((c) => c.items.filter((it) => it.popular).map((it) => ({ c, it })));
 ---
 <Base lang={lang} page="index" title={`${site.name} — ${T.home_title}`}>
-  <section class="hero">
-    <div class="wrap hero-grid">
-      <div>
-        <div class="eyebrow reveal">{T.hero_eyebrow}</div>
-        <h1 class="reveal d1" set:html={T.hero_title} />
-        <p class="lead reveal d2">{T.hero_lead}</p>
-        <div class="hero-actions reveal d3">
-          <a class="btn btn-primary" href={msgrLink('wa', lang)} target="_blank" rel="noopener"><Icon name="wa" />{T.book_wa}</a>
-          <a class="btn btn-ghost" href={url('services', lang)}>{T.nav_services}</a>
-        </div>
-        <div class="hero-meta reveal d3">
-          {T.hero_stats.map(([num, label]: string[]) => <div><b>{num}</b><span>{label}</span></div>)}
-        </div>
-      </div>
-      <div class="hero-visual reveal d2">
-        <Photo image={site.heroImage} label={T.your_photo} alt={site.name} stones cls="hero-photo" lazy={false} />
-        <div class="hero-badge">
-          <div class="dot"><Icon name="clock" /></div>
-          <div><small>{T.open_today}</small><b>{tr(site.hours, lang)}</b></div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <DepthHero lang={lang} />
 
   <div class="marquee" aria-hidden="true">
     <div class="marquee-track">
