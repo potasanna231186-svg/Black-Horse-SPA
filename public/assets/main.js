@@ -42,9 +42,11 @@
     header.classList.remove('no-phone', 'is-compact');
     const nav = $('.nav', header), logo = $('.logo', header), cta = $('.header-cta', header);
     if (!nav || getComputedStyle(nav).display === 'none') return;
+    /* пересечение блоков с запасом 20px — работает и слева направо, и справа налево */
+    const hit = (a, b) => a.right + 20 > b.left && b.right + 20 > a.left;
     const tight = () => {
       const l = logo.getBoundingClientRect(), n = nav.getBoundingClientRect(), c = cta.getBoundingClientRect();
-      return nav.scrollWidth > nav.clientWidth + 1 || n.left < l.right + 20 || c.left < n.right + 20;
+      return nav.scrollWidth > nav.clientWidth + 1 || hit(l, n) || hit(n, c);
     };
     if (tight()) { header.classList.add('no-phone'); if (tight()) header.classList.add('is-compact'); }
     if (burger && getComputedStyle(burger).display === 'none') setMenu(false);
