@@ -31,9 +31,9 @@
       "image": "",
       "art": "v5",
       "stones": true,
-      "video": "",
-      "videoMobile": "",
-      "poster": ""
+      "video": "/videos/hero.mp4",
+      "videoMobile": "/videos/hero-mobile.mp4",
+      "poster": "/images/hero-poster.jpg"
     },
     {
       "eyebrow": {
