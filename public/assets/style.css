@@ -86,7 +86,9 @@ h1+.lead,h2+.lead{margin-top:20px}
 
 /* ----- Шапка ----- */
 .header{position:sticky;top:0;z-index:50;transition:background .4s,box-shadow .4s}
-.header .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;height:82px;transition:height .4s}
+.header .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;height:82px;transition:height .4s;width:min(1360px,100% - 40px)}
+.logo,.header-cta{flex:none}
+.nav{min-width:0}
 .header.scrolled{background:var(--header-bg);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 1px 0 var(--line)}
 .header.scrolled .wrap{height:68px}
 .logo{display:flex;align-items:center;gap:10px;font-family:var(--serif);font-size:28px;font-weight:600;letter-spacing:.02em;white-space:nowrap}
@@ -115,13 +117,26 @@ h1+.lead,h2+.lead{margin-top:20px}
 .menu-open .burger span{background:transparent}
 .menu-open .burger span::before{transform:translate(-50%,0) rotate(45deg);background:var(--on-dark)}
 .menu-open .burger span::after{transform:translate(-50%,0) rotate(-45deg);background:var(--on-dark)}
-.mobile-menu{position:fixed;inset:0;z-index:45;background:var(--forest);color:var(--on-dark);display:flex;flex-direction:column;justify-content:center;padding:40px;gap:6px;opacity:0;visibility:hidden;transition:.45s}
-.mobile-menu a{font-family:var(--serif);font-size:40px}
-.mobile-menu .mm-contacts{margin-top:30px}
+.mobile-menu{position:fixed;inset:0;z-index:45;background:var(--deep);color:var(--on-dark);overflow-y:auto;overscroll-behavior:contain;opacity:0;visibility:hidden;transition:opacity .45s,visibility .45s}
+.mm-inner{min-height:100%;width:min(1360px,100% - 40px);margin:0 auto;padding:120px 0 40px;display:grid;grid-template-columns:1.2fr 1fr;gap:60px;align-items:start}
+.mm-nav{display:flex;flex-direction:column;gap:4px}
+.mm-nav a{font-family:var(--serif);font-size:clamp(34px,5vw,56px);line-height:1.15;opacity:0;transform:translateY(24px);transition:opacity .5s,transform .6s cubic-bezier(.2,.75,.25,1),color .3s;transition-delay:calc(var(--i)*.05s + .1s)}
+.mm-nav a:hover,.mm-nav a.active{color:var(--accent-2)}
+.mm-side{display:grid;gap:34px;opacity:0;transform:translateY(24px);transition:opacity .6s .35s,transform .7s .35s cubic-bezier(.2,.75,.25,1)}
+.mm-title{font-family:var(--sans);font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent-2);margin-bottom:14px;font-weight:700}
+.mm-block ul{list-style:none;display:grid;gap:8px;font-size:17px}
+.mm-block ul a:hover{color:var(--accent-2)}
+.mm-block p{color:rgba(246,241,234,.7);font-size:15px}
+.mm-phone{display:block;font-size:24px;font-weight:600;margin-bottom:8px}
+.mm-contacts{margin-top:16px}
+.mm-book{justify-self:start}
+.menu-open .mm-nav a,.menu-open .mm-side{opacity:1;transform:none}
 .menu-open{overflow:hidden}
 .menu-open .mobile-menu{opacity:1;visibility:visible}
 .menu-open .header{background:transparent!important;box-shadow:none!important;color:var(--on-dark)}
-.menu-open .header .nav,.menu-open .header .phone,.menu-open .header .btn{visibility:hidden}
+.menu-open .header .nav,.menu-open .header .phone,.menu-open .header .btn,.menu-open .header .theme-toggle{visibility:hidden}
+.menu-open .header .lang-switch{border-color:rgba(246,241,234,.25)}
+.menu-open .header .lang-switch a:not(.active){color:rgba(246,241,234,.6)}
 
 /* ----- Герой ----- */
 .hero{padding:60px 0 100px;position:relative;overflow:hidden}
@@ -416,12 +431,13 @@ a.c-card:hover{border-color:var(--accent);transform:translateY(-4px)}
 .reveal.d1{transition-delay:.1s}.reveal.d2{transition-delay:.2s}.reveal.d3{transition-delay:.3s}
 
 /* ----- Адаптив ----- */
-@media (max-width:1180px){
-  .header-cta .phone{display:none}
-  .nav{gap:20px}
-}
+/* Шапка подстраивается сама (main.js): сначала прячется телефон, затем меню уходит в бургер */
+.header.no-phone .header-cta .phone{display:none}
+.header.is-compact .nav{display:none}
+.header.is-compact .burger{display:block}
+@media (max-width:1180px){.nav{gap:20px}}
 @media (max-width:1024px){
-  .nav,.header-cta .btn-primary{display:none}
+  .nav{display:none}
   .burger{display:block}
   .hero-grid,.split,.contact-grid,.price-group.active,.faq-wrap{grid-template-columns:1fr}
   .hero-grid{min-height:0}
@@ -436,6 +452,8 @@ a.c-card:hover{border-color:var(--accent);transform:translateY(-4px)}
 }
 @media (max-width:640px){
   .promo-dot{display:none}
+  .header-cta .btn-primary,.header-cta .phone{display:none}
+  .mm-inner{grid-template-columns:1fr;gap:40px;padding-top:100px}
   section{padding:80px 0}
   .section-tight,.section-flush{padding-top:0}
   .header .wrap{height:70px}

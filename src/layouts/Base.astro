@@ -111,9 +111,28 @@ const year = new Date().getFullYear();
       </div>
     </div>
   </header>
-  <div class="mobile-menu" id="mobile-menu">
-    {nav.map(([p, label]) => <a href={url(p, lang)}>{label}</a>)}
-    <div class="mm-contacts"><MsgrRow keys={['wa', 'tg', 'vb', 'ig', 'ph']} lang={lang} /></div>
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <div class="mm-inner">
+      <nav class="mm-nav" aria-label={T.menu}>
+        {nav.map(([p, label], i) => (
+          <a href={url(p, lang)} class={p === page ? 'active' : undefined} style={`--i:${i}`}>{label}</a>
+        ))}
+      </nav>
+      <div class="mm-side">
+        <div class="mm-block">
+          <h2 class="mm-title">{T.footer_services}</h2>
+          <ul>{data.services.categories.map((c) => <li><a href={url(`services#${c.id}`, lang)}>{tr(c.title, lang)}</a></li>)}</ul>
+        </div>
+        <div class="mm-block">
+          <h2 class="mm-title">{T.footer_contacts}</h2>
+          <a class="mm-phone" href={`tel:${site.phoneRaw}`}>{site.phone}</a>
+          <p>{tr(site.address, lang)}</p>
+          <p>{tr(site.hours, lang)}</p>
+          <div class="mm-contacts"><MsgrRow keys={['wa', 'tg', 'vb', 'ig']} lang={lang} /></div>
+        </div>
+        <a class="btn btn-gold mm-book" href={msgrLink('wa', lang)} target="_blank" rel="noopener">{T.book_wa}</a>
+      </div>
+    </div>
   </div>
 
   <main id="content" tabindex="-1">

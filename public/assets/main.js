@@ -27,10 +27,31 @@
 
   /* Мобильное меню */
   const burger = $('.burger');
+  const mm = $('#mobile-menu');
   const setMenu = open => {
     document.body.classList.toggle('menu-open', open);
     burger && burger.setAttribute('aria-expanded', String(open));
+    mm && mm.setAttribute('aria-hidden', String(!open));
   };
+
+  /* Шапка подстраивается под ширину: если всё не помещается,
+     сначала прячем телефон, потом меню уходит в бургер */
+  const fitHeader = () => {
+    if (!header) return;
+    header.classList.remove('no-phone', 'is-compact');
+    const nav = $('.nav', header), logo = $('.logo', header), cta = $('.header-cta', header);
+    if (!nav || getComputedStyle(nav).display === 'none') return;
+    const tight = () => {
+      const l = logo.getBoundingClientRect(), n = nav.getBoundingClientRect(), c = cta.getBoundingClientRect();
+      return nav.scrollWidth > nav.clientWidth + 1 || n.left < l.right + 20 || c.left < n.right + 20;
+    };
+    if (tight()) { header.classList.add('no-phone'); if (tight()) header.classList.add('is-compact'); }
+    if (burger && getComputedStyle(burger).display === 'none') setMenu(false);
+  };
+  let fitRaf = 0;
+  addEventListener('resize', () => { cancelAnimationFrame(fitRaf); fitRaf = requestAnimationFrame(fitHeader); });
+  fitHeader();
+  document.fonts && document.fonts.ready.then(fitHeader);
   burger && burger.addEventListener('click', () => setMenu(!document.body.classList.contains('menu-open')));
   $$('.mobile-menu a').forEach(a => a.addEventListener('click', () => setMenu(false)));
 
