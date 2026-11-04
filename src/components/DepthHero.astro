@@ -46,8 +46,8 @@ const L = { tour: T.hero_tour, close: T.close, hint: T.hero_hint, open: T.hero_o
           <div class="depth-eyebrow">{site.name}<i>·</i>{tr(s.eyebrow, lang)}</div>
           {s.titleImage
             ? (i === 0
-                ? <h1 class="depth-title-img"><img src={asset(s.titleImage)} alt={tr(s.title, lang).replace('&amp;', '&')} width="1292" height="185" /></h1>
-                : <h2 class="depth-title-img"><img src={asset(s.titleImage)} alt={tr(s.title, lang).replace('&amp;', '&')} width="1292" height="185" /></h2>)
+                ? <h1 class="depth-title-img"><img src={asset(s.titleImage)} alt={tr(s.title, lang).replace('&amp;', '&')} width="2586" height="372" /></h1>
+                : <h2 class="depth-title-img"><img src={asset(s.titleImage)} alt={tr(s.title, lang).replace('&amp;', '&')} width="2586" height="372" /></h2>)
             : (i === 0 ? <h1 set:html={tr(s.title, lang)} /> : <h2 set:html={tr(s.title, lang)} />)}
           <p>{tr(s.text, lang)}</p>
           <div class="depth-actions">
