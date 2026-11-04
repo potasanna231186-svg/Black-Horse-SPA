@@ -11,8 +11,8 @@ const slides = hero.slides;
 const href = (link: string) => (link === 'wa' ? msgrLink('wa', lang) : url(link, lang));
 const ext = (link: string) => (link === 'wa' ? { target: '_blank', rel: 'noopener' } : {});
 const L = lang === 'ru'
-  ? { tour: 'Видеотур по салону', close: 'Закрыть', hint: 'Листайте, чтобы погрузиться', open: 'Открыть сайт', pause: 'Пауза', play: 'Продолжить', prev: 'Предыдущая сцена', next: 'Следующая сцена', scene: 'Сцена', tagline: 'SPA & Beauty' }
-  : { tour: 'Video tour', close: 'Close', hint: 'Scroll to immerse', open: 'Enter the site', pause: 'Pause', play: 'Play', prev: 'Previous scene', next: 'Next scene', scene: 'Scene', tagline: 'SPA & Beauty' };
+  ? { hint: 'Листайте, чтобы погрузиться', open: 'Открыть сайт', pause: 'Пауза', play: 'Продолжить', prev: 'Предыдущая сцена', next: 'Следующая сцена', scene: 'Сцена', tagline: 'SPA & Beauty' }
+  : { hint: 'Scroll to immerse', open: 'Enter the site', pause: 'Pause', play: 'Play', prev: 'Previous scene', next: 'Next scene', scene: 'Scene', tagline: 'SPA & Beauty' };
 ---
 <div class="intro" id="intro" aria-hidden="true">
   <div class="intro-halo"></div>
@@ -25,10 +25,7 @@ const L = lang === 'ru'
   <div class="depth-stage" aria-hidden="true">
     {slides.map((s, i) => (
       <div class={`depth-slide${i === 0 ? ' is-active' : ''}`} data-i={i}>
-        {s.video
-          ? <div class="photo depth-media"><video class="depth-video" muted loop playsinline preload={i === 0 ? 'auto' : 'none'}
-              poster={s.poster ? asset(s.poster) : undefined} data-src={asset(s.video)} data-src-m={s.videoMobile ? asset(s.videoMobile) : undefined}></video></div>
-          : <Photo image={s.image} art={s.art} stones={s.stones} label={T.your_photo} alt={tr(s.eyebrow, lang)} cls="depth-media" lazy={i > 0} />}
+        <Photo image={s.image} art={s.art} stones={s.stones} label={T.your_photo} alt={tr(s.eyebrow, lang)} cls="depth-media" lazy={i > 0} />
       </div>
     ))}
     <div class="depth-shade"></div>
@@ -70,14 +67,7 @@ const L = lang === 'ru'
 
   <div class="depth-foot">
     <button class="depth-hint"><span>{L.hint}</span> <i aria-hidden="true">↓</i></button>
-    {site.tourVideo && <button class="depth-tour" data-tour><i aria-hidden="true">▶</i><span>{L.tour}</span></button>}
     <button class="depth-pause" aria-pressed="false"><span>{L.pause}</span> <i aria-hidden="true">❙❙</i></button>
   </div>
 </section>
-{site.tourVideo && (
-  <dialog class="tour" id="tour" aria-label={L.tour}>
-    <button class="tour-close" aria-label={L.close}>×</button>
-    <video controls playsinline preload="none" poster={site.tourPoster ? asset(site.tourPoster) : undefined} data-src={asset(site.tourVideo)}></video>
-  </dialog>
-)}
 <script is:inline src={asset('assets/depth.js')} defer></script>

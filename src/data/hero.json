@@ -1,175 +1,45 @@
 {
-  "_note": "Сцены первого экрана. Листаются колесом мыши / свайпом. video — фоновое видео (mp4/webm, без звука, 10–20 с, до 8 МБ), videoMobile — вертикальная версия для телефона, poster — кадр-заставка. Без видео показывается фото (image) или художественная заглушка.",
+  "_note": "Сцены первого экрана. Листаются колесом мыши / свайпом. image — путь к фото (/images/...), пока пусто — художественная заглушка.",
   "slides": [
     {
-      "eyebrow": {
-        "ru": "SPA-ритуалы",
-        "en": "Spa rituals"
-      },
-      "title": {
-        "ru": "Время <em>замедлиться</em>.",
-        "en": "Time to <em>slow down</em>."
-      },
-      "text": {
-        "ru": "Авторские ритуалы, хаммам и уход в атмосфере тишины, тепла и натуральных ароматов.",
-        "en": "Signature rituals, hammam and care in an atmosphere of silence, warmth and natural scents."
-      },
-      "cta": {
-        "label": {
-          "ru": "Записаться",
-          "en": "Book now"
-        },
-        "link": "wa"
-      },
-      "cta2": {
-        "label": {
-          "ru": "Все программы",
-          "en": "All treatments"
-        },
-        "link": "services"
-      },
-      "image": "",
-      "art": "v5",
-      "stones": true,
-      "video": "",
-      "videoMobile": "",
-      "poster": ""
+      "eyebrow": { "ru": "SPA-ритуалы", "en": "Spa rituals" },
+      "title": { "ru": "Время <em>замедлиться</em>.", "en": "Time to <em>slow down</em>." },
+      "text": { "ru": "Авторские ритуалы, хаммам и уход в атмосфере тишины, тепла и натуральных ароматов.", "en": "Signature rituals, hammam and care in an atmosphere of silence, warmth and natural scents." },
+      "cta": { "label": { "ru": "Записаться", "en": "Book now" }, "link": "wa" },
+      "cta2": { "label": { "ru": "Все программы", "en": "All treatments" }, "link": "services" },
+      "image": "", "art": "v5", "stones": true
     },
     {
-      "eyebrow": {
-        "ru": "Массаж",
-        "en": "Massage"
-      },
-      "title": {
-        "ru": "Тепло, которое <em>снимает усталость</em>.",
-        "en": "Warmth that <em>melts fatigue</em>."
-      },
-      "text": {
-        "ru": "Релакс, горячие камни и глубокая проработка — мастер подберёт технику под ваше состояние.",
-        "en": "Relax, hot stones or deep tissue — your therapist will choose the right technique for you."
-      },
-      "cta": {
-        "label": {
-          "ru": "Смотреть массажи",
-          "en": "See massages"
-        },
-        "link": "services#massage"
-      },
-      "cta2": {
-        "label": {
-          "ru": "Записаться",
-          "en": "Book now"
-        },
-        "link": "wa"
-      },
-      "image": "",
-      "art": "v2",
-      "stones": false,
-      "video": "",
-      "videoMobile": "",
-      "poster": ""
+      "eyebrow": { "ru": "Массаж", "en": "Massage" },
+      "title": { "ru": "Тепло, которое <em>снимает усталость</em>.", "en": "Warmth that <em>melts fatigue</em>." },
+      "text": { "ru": "Релакс, горячие камни и глубокая проработка — мастер подберёт технику под ваше состояние.", "en": "Relax, hot stones or deep tissue — your therapist will choose the right technique for you." },
+      "cta": { "label": { "ru": "Смотреть массажи", "en": "See massages" }, "link": "services#massage" },
+      "cta2": { "label": { "ru": "Записаться", "en": "Book now" }, "link": "wa" },
+      "image": "", "art": "v2", "stones": false
     },
     {
-      "eyebrow": {
-        "ru": "Хаммам",
-        "en": "Hammam"
-      },
-      "title": {
-        "ru": "Восточный ритуал <em>очищения</em>.",
-        "en": "An oriental ritual of <em>renewal</em>."
-      },
-      "text": {
-        "ru": "Прогрев, пилинг кесе, облако пены и травяной чай — полтора часа, после которых легко дышится.",
-        "en": "Warmth, kese scrub, a cloud of foam and herbal tea — ninety minutes that leave you light."
-      },
-      "cta": {
-        "label": {
-          "ru": "SPA-ритуалы",
-          "en": "Spa rituals"
-        },
-        "link": "services#rituals"
-      },
-      "cta2": {
-        "label": {
-          "ru": "Записаться",
-          "en": "Book now"
-        },
-        "link": "wa"
-      },
-      "image": "",
-      "art": "v3",
-      "stones": false,
-      "video": "",
-      "videoMobile": "",
-      "poster": ""
+      "eyebrow": { "ru": "Хаммам", "en": "Hammam" },
+      "title": { "ru": "Восточный ритуал <em>очищения</em>.", "en": "An oriental ritual of <em>renewal</em>." },
+      "text": { "ru": "Прогрев, пилинг кесе, облако пены и травяной чай — полтора часа, после которых легко дышится.", "en": "Warmth, kese scrub, a cloud of foam and herbal tea — ninety minutes that leave you light." },
+      "cta": { "label": { "ru": "SPA-ритуалы", "en": "Spa rituals" }, "link": "services#rituals" },
+      "cta2": { "label": { "ru": "Записаться", "en": "Book now" }, "link": "wa" },
+      "image": "", "art": "v3", "stones": false
     },
     {
-      "eyebrow": {
-        "ru": "Для двоих",
-        "en": "For two"
-      },
-      "title": {
-        "ru": "Час тишины <em>на двоих</em>.",
-        "en": "An hour of calm <em>for two</em>."
-      },
-      "text": {
-        "ru": "Приватный SPA-кабинет: массаж рядом, хаммам и чай вдвоём — без спешки.",
-        "en": "A private couples suite: side-by-side massage, hammam and tea together — no rush."
-      },
-      "cta": {
-        "label": {
-          "ru": "SPA-день для двоих",
-          "en": "Spa day for two"
-        },
-        "link": "services#packages"
-      },
-      "cta2": {
-        "label": {
-          "ru": "Записаться",
-          "en": "Book now"
-        },
-        "link": "wa"
-      },
-      "image": "",
-      "art": "v6",
-      "stones": false,
-      "video": "",
-      "videoMobile": "",
-      "poster": ""
+      "eyebrow": { "ru": "Для двоих", "en": "For two" },
+      "title": { "ru": "Час тишины <em>на двоих</em>.", "en": "An hour of calm <em>for two</em>." },
+      "text": { "ru": "Приватный SPA-кабинет: массаж рядом, хаммам и чай вдвоём — без спешки.", "en": "A private couples suite: side-by-side massage, hammam and tea together — no rush." },
+      "cta": { "label": { "ru": "SPA-день для двоих", "en": "Spa day for two" }, "link": "services#packages" },
+      "cta2": { "label": { "ru": "Записаться", "en": "Book now" }, "link": "wa" },
+      "image": "", "art": "v6", "stones": false
     },
     {
-      "eyebrow": {
-        "ru": "Подарок",
-        "en": "Gift"
-      },
-      "title": {
-        "ru": "Подарок, <em>который запомнится</em>.",
-        "en": "A gift <em>they'll remember</em>."
-      },
-      "text": {
-        "ru": "Сертификат на любую сумму или процедуру — оформим в мессенджере за 5 минут.",
-        "en": "A gift card for any amount or treatment — issued via messenger in 5 minutes."
-      },
-      "cta": {
-        "label": {
-          "ru": "Выбрать сертификат",
-          "en": "Choose a gift card"
-        },
-        "link": "services#packages"
-      },
-      "cta2": {
-        "label": {
-          "ru": "Вопросы",
-          "en": "FAQ"
-        },
-        "link": "faq"
-      },
-      "image": "",
-      "art": "v4",
-      "stones": false,
-      "video": "",
-      "videoMobile": "",
-      "poster": ""
+      "eyebrow": { "ru": "Подарок", "en": "Gift" },
+      "title": { "ru": "Подарок, <em>который запомнится</em>.", "en": "A gift <em>they'll remember</em>." },
+      "text": { "ru": "Сертификат на любую сумму или процедуру — оформим в мессенджере за 5 минут.", "en": "A gift card for any amount or treatment — issued via messenger in 5 minutes." },
+      "cta": { "label": { "ru": "Выбрать сертификат", "en": "Choose a gift card" }, "link": "services#packages" },
+      "cta2": { "label": { "ru": "Вопросы", "en": "FAQ" }, "link": "faq" },
+      "image": "", "art": "v4", "stones": false
     }
   ]
 }
