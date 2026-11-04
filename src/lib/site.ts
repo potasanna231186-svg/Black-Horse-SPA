@@ -114,3 +114,7 @@ export function schemaFor(page: Page, lang: Lang): object[] {
   });
   return out;
 }
+
+/** Метка версии сборки — добавляется к стилям и скриптам, чтобы браузер не держал старые файлы в кэше */
+export const VERSION = Date.now().toString(36);
+export const assetV = (p: string) => `${asset(p)}?v=${VERSION}`;

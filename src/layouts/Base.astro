@@ -1,7 +1,7 @@
 ---
 import Icon from '../components/Icon.astro';
 import MsgrRow from '../components/MsgrRow.astro';
-import { site, data, LANGS, url, absUrl, asset, tr, t, msgrLink, schemaFor, type Lang, type Page } from '../lib/site';
+import { site, data, LANGS, url, absUrl, asset, assetV, tr, t, msgrLink, schemaFor, type Lang, type Page } from '../lib/site';
 
 interface Props { lang: Lang; page: Page; title: string; description?: string }
 const { lang, page, title, description } = Astro.props;
@@ -59,7 +59,7 @@ const year = new Date().getFullYear();
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href={asset('assets/style.css')} />
+  <link rel="stylesheet" href={assetV('assets/style.css')} />
 
   <!-- Тема применяется до отрисовки, чтобы не было вспышки -->
   <script is:inline>
@@ -185,6 +185,6 @@ const year = new Date().getFullYear();
   </div>
 
   <script is:inline define:vars={{ cfg }}>window.AURA = cfg;</script>
-  <script is:inline src={asset('assets/main.js')} defer></script>
+  <script is:inline src={assetV('assets/main.js')} defer></script>
 </body>
 </html>

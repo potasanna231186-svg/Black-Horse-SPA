@@ -3,7 +3,7 @@
 // После последней сцены прокрутка отпускается дальше на сайт. Логика — public/assets/depth.js
 import Photo from './Photo.astro';
 import hero from '../data/hero.json';
-import { site, url, asset, tr, t, msgrLink, type Lang } from '../lib/site';
+import { site, url, asset, assetV, tr, t, msgrLink, type Lang } from '../lib/site';
 interface Props { lang: Lang }
 const { lang } = Astro.props;
 const T = t(lang);
@@ -80,4 +80,4 @@ const L = lang === 'ru'
     <video controls playsinline preload="none" poster={site.tourPoster ? asset(site.tourPoster) : undefined} data-src={asset(site.tourVideo)}></video>
   </dialog>
 )}
-<script is:inline src={asset('assets/depth.js')} defer></script>
+<script is:inline src={assetV('assets/depth.js')} defer></script>
