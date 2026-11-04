@@ -1,0 +1,12 @@
+---
+import { url, t, type Lang } from '../lib/site';
+interface Props { title: string; lead?: string; crumb: string; lang: Lang }
+const { title, lead, crumb, lang } = Astro.props;
+---
+<section class="page-hero">
+  <div class="wrap">
+    <nav class="breadcrumbs reveal" aria-label="breadcrumbs"><a href={url('index', lang)}>{t(lang).nav_home}</a> / <span>{crumb}</span></nav>
+    <h1 class="reveal d1" set:html={title} />
+    {lead && <p class="lead reveal d2">{lead}</p>}
+  </div>
+</section>

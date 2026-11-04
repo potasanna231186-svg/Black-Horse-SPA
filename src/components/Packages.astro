@@ -1,0 +1,31 @@
+---
+import { data, t, tr, money, wa, type Lang } from '../lib/site';
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const T = t(lang);
+---
+<section class="section-tight" id="packages">
+  <div class="wrap">
+    <div class="center head-gap">
+      <div class="eyebrow reveal">{T.packages_eyebrow}</div>
+      <h2 class="reveal d1" set:html={T.packages_title} />
+      <p class="lead reveal d2">{T.packages_lead}</p>
+    </div>
+    <div class="packages">
+      {data.packages.items.map((p, i) => (
+        <article class={`package reveal d${i}${p.featured ? ' featured' : ''}`}>
+          {p.featured && <span class="badge">{T.package_best}</span>}
+          <h3>{tr(p.name, lang)}</h3>
+          <p class="package-desc">{tr(p.desc, lang)}</p>
+          <div class="package-price">
+            {p.fromPrice && <small>{T.from}</small>}
+            <b>{money(p.price, lang)}</b>
+            {p.oldPrice ? <s>{money(p.oldPrice, lang)}</s> : null}
+          </div>
+          <ul class="checks">{p.features.map((f) => <li>{tr(f, lang)}</li>)}</ul>
+          <a class={`btn ${p.featured ? 'btn-light' : 'btn-primary'}`} href={wa(T.wa_service.replace('{service}', tr(p.name, lang)))} target="_blank" rel="noopener">{T.package_order}</a>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

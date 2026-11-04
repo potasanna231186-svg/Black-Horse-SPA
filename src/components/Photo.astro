@@ -1,0 +1,15 @@
+---
+// Фото: если указан путь — показываем изображение, иначе художественную заглушку
+import { asset } from '../lib/site';
+interface Props { image?: string; art?: string; label: string; alt: string; stones?: boolean; cls?: string; lazy?: boolean }
+const { image, art = '', label, alt, stones = false, cls = '', lazy = true } = Astro.props;
+---
+<div class={`photo ${cls}`}>
+  {image
+    ? <img src={asset(image)} alt={alt} loading={lazy ? 'lazy' : 'eager'} decoding="async" />
+    : <div class={`art ${art}`} role="img" aria-label={alt}>
+        <span class="ph-label">{label}</span>
+        {stones && <div class="stones"><i></i><i></i><i></i></div>}
+      </div>}
+  <slot />
+</div>

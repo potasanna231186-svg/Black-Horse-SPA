@@ -1,0 +1,196 @@
+# Админ-панель сайта (Sveltia CMS, совместима с Decap CMS)
+# 1) Замените potasanna231186-svg/Black-Horse-SPA на ваш репозиторий GitHub.
+# 2) Откройте https://potasanna231186-svg.github.io/Black-Horse-SPA/admin/ и войдите через GitHub
+#    (кнопка «Sign In with Token» — вставьте личный токен GitHub с доступом к репозиторию).
+# Каждое сохранение = коммит в репозиторий → GitHub Actions пересобирает сайт за ~1 минуту.
+
+backend:
+  name: github
+  repo: potasanna231186-svg/Black-Horse-SPA
+  branch: main
+
+locale: ru
+site_url: https://potasanna231186-svg.github.io/Black-Horse-SPA
+display_url: https://potasanna231186-svg.github.io/Black-Horse-SPA
+logo_url: ../assets/favicon.svg
+
+media_folder: public/images
+public_folder: /images
+
+# Повторяющиеся поля «текст на двух языках»
+_ru_en: &ru_en
+  widget: object
+  collapsed: false
+  fields:
+    - { name: ru, label: Русский, widget: string }
+    - { name: en, label: English, widget: string }
+_ru_en_text: &ru_en_text
+  widget: object
+  collapsed: false
+  fields:
+    - { name: ru, label: Русский, widget: text }
+    - { name: en, label: English, widget: text }
+_art: &art
+  name: art
+  label: Цвет заглушки (если нет фото)
+  widget: select
+  options: ["", v2, v3, v4, v5, v6]
+  required: false
+
+collections:
+  - name: settings
+    label: Сайт
+    format: json
+    editor: { preview: false }
+    files:
+      - name: site
+        label: Контакты и настройки
+        file: src/data/site.json
+        fields:
+          - { name: name, label: Название салона, widget: string }
+          - { name: url, label: Адрес сайта, widget: string, hint: "Например https://potasanna231186-svg.github.io/Black-Horse-SPA" }
+          - { name: description, label: Описание для поисковиков, <<: *ru_en_text }
+          - { name: phone, label: Телефон (как показывать), widget: string }
+          - { name: phoneRaw, label: Телефон для звонка (+20…), widget: string }
+          - { name: whatsapp, label: WhatsApp (только цифры), widget: string }
+          - { name: telegram, label: Telegram (без @), widget: string }
+          - { name: viber, label: Viber, widget: string }
+          - { name: instagram, label: Instagram (без @), widget: string }
+          - { name: email, label: Email, widget: string }
+          - { name: address, label: Адрес, <<: *ru_en }
+          - { name: streetAddress, label: Улица и дом (для Google), widget: string }
+          - { name: city, label: Город (для Google), widget: string }
+          - { name: country, label: Код страны (EG, RU, AE…), widget: string }
+          - { name: hours, label: Часы работы (текст), <<: *ru_en }
+          - { name: opens, label: Открытие (ЧЧ:ММ), widget: string }
+          - { name: closes, label: Закрытие (ЧЧ:ММ), widget: string }
+          - { name: mapQuery, label: Адрес для карты Google, widget: string }
+          - { name: googleReviewsUrl, label: Ссылка на отзывы в Google Maps, widget: string, required: false }
+          - { name: currency, label: Валюта (USD, EGP, RUB…), widget: string }
+          - { name: currencySymbol, label: Символ валюты, widget: string }
+          - { name: priceRange, label: Уровень цен ($–$$$$), widget: string }
+          - { name: heroImage, label: Фото на главном экране, widget: image, required: false }
+          - { name: aboutImage, label: Фото «О салоне» 1, widget: image, required: false }
+          - { name: aboutImage2, label: Фото «О салоне» 2, widget: image, required: false }
+          - { name: video, label: Видео атмосферы (mp4, до 10 МБ), widget: file, required: false }
+          - { name: videoPoster, label: Обложка видео, widget: image, required: false }
+
+      - name: promo
+        label: Акция (полоса вверху)
+        file: src/data/promo.json
+        fields:
+          - { name: enabled, label: Показывать, widget: boolean }
+          - { name: text, label: Текст акции, <<: *ru_en }
+          - { name: link, label: Ссылка (например services#rituals), widget: string, required: false }
+          - { name: until, label: Действует до, widget: datetime, format: "YYYY-MM-DDTHH:mm:ss" }
+
+      - name: services
+        label: Услуги и цены
+        file: src/data/services.json
+        fields:
+          - name: categories
+            label: Категории
+            widget: list
+            summary: "{{fields.title.ru}}"
+            fields:
+              - { name: id, label: Код категории (латиницей), widget: string }
+              - { name: title, label: Название, <<: *ru_en }
+              - { name: image, label: Фото, widget: image, required: false }
+              - *art
+              - name: items
+                label: Услуги
+                widget: list
+                summary: "{{fields.name.ru}} — {{fields.price}}"
+                fields:
+                  - { name: name, label: Название, <<: *ru_en }
+                  - { name: desc, label: Описание, <<: *ru_en_text }
+                  - { name: duration, label: Длительность (мин), widget: number }
+                  - { name: price, label: Цена, widget: number }
+                  - { name: popular, label: Показывать на главной, widget: boolean, default: false }
+
+      - name: packages
+        label: Пакеты и сертификаты
+        file: src/data/packages.json
+        fields:
+          - name: items
+            label: Пакеты
+            widget: list
+            summary: "{{fields.name.ru}}"
+            fields:
+              - { name: name, label: Название, <<: *ru_en }
+              - { name: desc, label: Описание, <<: *ru_en_text }
+              - { name: price, label: Цена, widget: number }
+              - { name: oldPrice, label: Старая цена (0 — не показывать), widget: number, default: 0 }
+              - { name: fromPrice, label: Цена «от», widget: boolean, default: false }
+              - { name: featured, label: Выделить как хит, widget: boolean, default: false }
+              - name: features
+                label: Преимущества
+                widget: list
+                fields:
+                  - { name: ru, label: Русский, widget: string }
+                  - { name: en, label: English, widget: string }
+
+      - name: faq
+        label: Вопросы и ответы
+        file: src/data/faq.json
+        fields:
+          - name: items
+            label: Вопросы
+            widget: list
+            summary: "{{fields.q.ru}}"
+            fields:
+              - { name: q, label: Вопрос, <<: *ru_en }
+              - { name: a, label: Ответ, <<: *ru_en_text }
+
+      - name: team
+        label: Мастера
+        file: src/data/team.json
+        fields:
+          - name: items
+            label: Мастера
+            widget: list
+            summary: "{{fields.name.ru}}"
+            fields:
+              - { name: name, label: Имя, <<: *ru_en }
+              - { name: role, label: Должность, <<: *ru_en }
+              - { name: exp, label: Опыт и специализация, <<: *ru_en }
+              - { name: instagram, label: Instagram мастера (без @), widget: string, required: false }
+              - { name: image, label: Фото, widget: image, required: false }
+              - *art
+
+      - name: gallery
+        label: Галерея
+        file: src/data/gallery.json
+        fields:
+          - name: categories
+            label: Категории фильтра
+            widget: list
+            summary: "{{fields.label.ru}}"
+            fields:
+              - { name: id, label: Код (латиницей), widget: string }
+              - { name: label, label: Название, <<: *ru_en }
+          - name: items
+            label: Фото
+            widget: list
+            summary: "{{fields.title.ru}}"
+            fields:
+              - { name: title, label: Подпись, <<: *ru_en }
+              - { name: category, label: Код категории, widget: string }
+              - { name: image, label: Фото, widget: image, required: false }
+              - *art
+              - { name: stones, label: Камни на заглушке, widget: boolean, default: false }
+
+      - name: reviews
+        label: Отзывы (только настоящие)
+        file: src/data/reviews.json
+        fields:
+          - { name: _note, label: Примечание, widget: hidden }
+          - name: items
+            label: Отзывы
+            widget: list
+            summary: "{{fields.author}}"
+            fields:
+              - { name: author, label: Имя клиента, widget: string }
+              - { name: text, label: Текст отзыва, <<: *ru_en_text }
+              - { name: rating, label: Оценка (1–5), widget: number, default: 5, min: 1, max: 5 }
+              - { name: source, label: Источник (Google, Instagram…), widget: string, required: false }

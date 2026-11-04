@@ -1,0 +1,146 @@
+---
+import Base from '../../layouts/Base.astro';
+import Icon from '../../components/Icon.astro';
+import Photo from '../../components/Photo.astro';
+import MsgrRow from '../../components/MsgrRow.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import FaqList from '../../components/FaqList.astro';
+import Packages from '../../components/Packages.astro';
+import Reviews from '../../components/Reviews.astro';
+import { site, data, url, asset, tr, t, money, msgrLink, langPaths, langOf } from '../../lib/site';
+export const getStaticPaths = langPaths;
+const lang = langOf(Astro.params.lang);
+const T = t(lang);
+const popular = data.services.categories.flatMap((c) => c.items.filter((it) => it.popular).map((it) => ({ c, it })));
+---
+<Base lang={lang} page="index" title={`${site.name} — ${T.home_title}`}>
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow reveal">{T.hero_eyebrow}</div>
+        <h1 class="reveal d1" set:html={T.hero_title} />
+        <p class="lead reveal d2">{T.hero_lead}</p>
+        <div class="hero-actions reveal d3">
+          <a class="btn btn-primary" href={msgrLink('wa', lang)} target="_blank" rel="noopener"><Icon name="wa" />{T.book_wa}</a>
+          <a class="btn btn-ghost" href={url('services', lang)}>{T.nav_services}</a>
+        </div>
+        <div class="hero-meta reveal d3">
+          {T.hero_stats.map(([num, label]: string[]) => <div><b>{num}</b><span>{label}</span></div>)}
+        </div>
+      </div>
+      <div class="hero-visual reveal d2">
+        <Photo image={site.heroImage} label={T.your_photo} alt={site.name} stones cls="hero-photo" lazy={false} />
+        <div class="hero-badge">
+          <div class="dot"><Icon name="clock" /></div>
+          <div><small>{T.open_today}</small><b>{tr(site.hours, lang)}</b></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      {[0, 1].map(() => T.marquee.map((w: string) => <span>{w}</span>))}
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <div><div class="eyebrow reveal">{T.why_eyebrow}</div><h2 class="reveal d1" set:html={T.why_title} /></div>
+        <p class="lead reveal d2">{T.why_lead}</p>
+      </div>
+      <div class="features">
+        {T.features.map(([ic, title, text]: string[], i: number) => (
+          <div class={`feature reveal d${i}`}><div class="ic"><Icon name={ic} /></div><h3>{title}</h3><p>{text}</p></div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="wrap">
+      <div class="section-head">
+        <div><div class="eyebrow reveal">{T.popular_eyebrow}</div><h2 class="reveal d1">{T.popular_title}</h2></div>
+        <a class="btn btn-ghost reveal d2" href={url('services', lang)}>{T.all_services}</a>
+      </div>
+      <div class="cards">
+        {popular.map(({ c, it }, i) => (
+          <a class={`card reveal d${i}`} href={url(`services#${c.id}`, lang)}>
+            <Photo image={c.image} art={c.art} label={T.your_photo} alt={tr(it.name, lang)} />
+            <div class="card-body"><h3>{tr(it.name, lang)}</h3><p>{tr(it.desc, lang)}</p>
+              <div class="card-foot"><span>{it.duration} {T.min}</span><b>{money(it.price, lang)}</b></div></div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="video-section">
+    <div class="wrap">
+      <div class="center head-gap">
+        <div class="eyebrow reveal">{T.video_eyebrow}</div>
+        <h2 class="reveal d1" set:html={T.video_title} />
+        <p class="lead reveal d2">{T.video_lead}</p>
+      </div>
+      <div class="video-frame reveal">
+        {site.video
+          ? <video src={asset(site.video)} poster={site.videoPoster ? asset(site.videoPoster) : undefined} autoplay muted loop playsinline preload="metadata"></video>
+          : <div class="ambient" role="img" aria-label={T.video_eyebrow}>
+              <i class="orb o1"></i><i class="orb o2"></i><i class="orb o3"></i>
+              <div class="steam"><i></i><i></i><i></i></div>
+              <div class="stones"><i></i><i></i><i></i></div>
+              <span class="ph-label">{lang === 'ru' ? 'Ваше видео' : 'Your video'}</span>
+            </div>}
+      </div>
+    </div>
+  </section>
+
+  <section class="dark">
+    <div class="wrap split">
+      <div class="split-stack reveal">
+        <Photo image={site.aboutImage} art="v5" label={T.your_photo} alt={site.name} stones />
+        <Photo image={site.aboutImage2} art="v6" label={T.your_photo} alt={site.name} cls="small" />
+      </div>
+      <div>
+        <div class="eyebrow reveal">{T.about_eyebrow}</div>
+        <h2 class="reveal d1" set:html={T.about_title} />
+        <p class="lead reveal d2">{T.about_lead}</p>
+        <ul class="checks reveal d3">{T.about_checks.map((c: string) => <li>{c}</li>)}</ul>
+        <a class="btn btn-light reveal d3" href={url('about', lang)}>{T.more_about}</a>
+      </div>
+    </div>
+  </section>
+
+  <Packages lang={lang} />
+
+  <section class="section-tight">
+    <div class="wrap">
+      <div class="center head-gap">
+        <div class="eyebrow reveal">{T.steps_eyebrow}</div>
+        <h2 class="reveal d1" set:html={T.steps_title} />
+      </div>
+      <ol class="steps">
+        {T.steps.map(([title, text]: string[], i: number) => <li class={`step reveal d${i}`}><h3>{title}</h3><p>{text}</p></li>)}
+      </ol>
+    </div>
+  </section>
+
+  <Reviews lang={lang} />
+
+  <section class="section-tight">
+    <div class="wrap faq-wrap">
+      <div>
+        <div class="eyebrow reveal">{T.faq_eyebrow}</div>
+        <h2 class="reveal d1" set:html={T.faq_title} />
+        <p class="lead reveal d2">{T.faq_lead}</p>
+        <a class="btn btn-ghost reveal d3" href={url('faq', lang)}>{T.faq_all}</a>
+      </div>
+      <FaqList items={data.faq.items.slice(0, 4)} lang={lang} name="faq-home" />
+    </div>
+  </section>
+
+  <CtaBand title={T.cta_title} lead={T.cta_lead} eyebrow={T.cta_eyebrow}>
+    <MsgrRow keys={['wa', 'tg', 'vb', 'ig', 'ph']} lang={lang} />
+  </CtaBand>
+</Base>

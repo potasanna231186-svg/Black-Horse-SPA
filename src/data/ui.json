@@ -1,0 +1,420 @@
+{
+  "ru": {
+    "lang_name": "Русский",
+    "skip": "Перейти к содержимому",
+    "nav_home": "Главная",
+    "nav_services": "Услуги и цены",
+    "nav_about": "О нас",
+    "nav_gallery": "Галерея",
+    "nav_faq": "Вопросы",
+    "nav_contacts": "Контакты",
+    "book": "Записаться",
+    "book_wa": "Записаться в WhatsApp",
+    "all_services": "Все услуги →",
+    "more_about": "Подробнее о нас",
+    "min": "мин",
+    "from": "от",
+    "theme": "Сменить тему",
+    "menu": "Меню",
+    "write_us": "Написать нам",
+    "call": "Позвонить",
+    "close": "Закрыть",
+    "your_photo": "Ваше фото",
+    "promo_left": "Осталось",
+    "promo_d": "д",
+    "promo_h": "ч",
+    "promo_m": "мин",
+    "promo_more": "Подробнее",
+    "sticky_label": "Ответим за 15 минут",
+    "wa_greeting": "Здравствуйте! Хочу записаться в {name}.",
+    "wa_service": "Здравствуйте! Хочу записаться на «{service}».",
+    "hero_eyebrow": "Spa & Wellness",
+    "hero_title": "Время <em>замедлиться</em> и&nbsp;вернуться к&nbsp;себе",
+    "hero_lead": "Авторские массажи, SPA-ритуалы и уходовые программы в атмосфере тишины, тепла и натуральных ароматов.",
+    "hero_stats": [
+      [
+        "8+",
+        "лет заботы"
+      ],
+      [
+        "30+",
+        "программ"
+      ],
+      [
+        "12",
+        "мастеров"
+      ]
+    ],
+    "open_today": "Мы открыты",
+    "marquee": [
+      "Массаж",
+      "SPA-ритуалы",
+      "Хаммам",
+      "Уход за лицом",
+      "Обёртывания",
+      "Ароматерапия"
+    ],
+    "why_eyebrow": "Почему мы",
+    "why_title": "Забота в каждой <em>детали</em>",
+    "why_lead": "Мы создали место, где можно отключиться от суеты, восстановить силы и почувствовать лёгкость.",
+    "features": [
+      [
+        "leaf",
+        "Натуральная косметика",
+        "Масла холодного отжима, травяные сборы и профессиональные линии без агрессивных компонентов."
+      ],
+      [
+        "user",
+        "Опытные мастера",
+        "Сертифицированные специалисты с опытом от 5 лет, которые подбирают программу под вас."
+      ],
+      [
+        "door",
+        "Приватные кабинеты",
+        "Уютные комнаты с мягким светом, тёплыми кушетками и SPA-кабинет для пар."
+      ],
+      [
+        "gift",
+        "Подарочные сертификаты",
+        "Лучший подарок для близких — время для себя. Оформим за 5 минут в мессенджере."
+      ]
+    ],
+    "popular_eyebrow": "Популярное",
+    "popular_title": "Любимые программы",
+    "video_eyebrow": "Атмосфера",
+    "video_title": "Почувствуйте <em>тишину</em>",
+    "video_lead": "Мягкий свет, тёплый камень, аромат трав — загляните к нам ещё до визита.",
+    "about_eyebrow": "О салоне",
+    "about_title": "Место, куда хочется <em>возвращаться</em>",
+    "about_lead": "Каждый визит начинается с чашки травяного чая и короткой беседы — чтобы мастер понял, что нужно именно вам сегодня.",
+    "about_checks": [
+      "Индивидуальный подбор программы и масел",
+      "Душ, халаты, тапочки и полотенца — всё включено",
+      "Чайная зона для отдыха после процедур"
+    ],
+    "packages_eyebrow": "Пакеты и сертификаты",
+    "packages_title": "Больше отдыха — <em>выгоднее</em>",
+    "packages_lead": "Абонементы для регулярной заботы о себе и подарки, которые запоминаются.",
+    "package_order": "Оформить",
+    "package_best": "Хит",
+    "steps_eyebrow": "Как проходит визит",
+    "steps_title": "Четыре шага к <em>отдыху</em>",
+    "steps": [
+      [
+        "Запись",
+        "Напишите в WhatsApp или Telegram — подберём удобное время."
+      ],
+      [
+        "Встреча",
+        "Чай, консультация и выбор аромата для процедуры."
+      ],
+      [
+        "Процедура",
+        "Полное расслабление в приватном кабинете."
+      ],
+      [
+        "Отдых",
+        "Время в чайной зоне, чтобы мягко вернуться в ритм дня."
+      ]
+    ],
+    "reviews_eyebrow": "Отзывы",
+    "reviews_title": "Что говорят <em>гости</em>",
+    "reviews_empty": "Читайте отзывы наших гостей и оставляйте свои на Google Картах.",
+    "reviews_btn": "Отзывы на Google",
+    "faq_eyebrow": "Частые вопросы",
+    "faq_title": "Отвечаем <em>заранее</em>",
+    "faq_all": "Все вопросы →",
+    "faq_lead": "Не нашли ответ? Напишите нам в любой мессенджер — ответим в течение 15 минут.",
+    "cta_eyebrow": "Онлайн-запись",
+    "cta_title": "Подарите себе <em>час тишины</em>",
+    "cta_lead": "Выберите удобный мессенджер — ответим в течение 15 минут и подберём время.",
+    "services_title": "Услуги <em>и цены</em>",
+    "services_lead": "Выберите категорию и нажмите «Записаться» — сообщение с названием процедуры откроется в WhatsApp.",
+    "services_cta_title": "Не знаете, что <em>выбрать</em>?",
+    "services_cta_lead": "Напишите нам — мастер поможет подобрать программу под ваше состояние и пожелания.",
+    "about_page_title": "Наша <em>философия</em>",
+    "about_page_lead": "Мы верим, что настоящий отдых — это не роскошь, а необходимость. Поэтому создали место, где время течёт медленнее.",
+    "story_eyebrow": "Наша история",
+    "story_title": "От маленького кабинета до <em>SPA-пространства</em>",
+    "story_lead": "Всё началось с одного массажного кабинета и желания делать людям хорошо. Сегодня у нас пять приватных комнат, хаммам, SPA-кабинет для пар и чайная зона.",
+    "story_checks": [
+      "Только сертифицированная профессиональная косметика",
+      "Одноразовые расходные материалы и стерильность",
+      "Программы, адаптированные под ваше самочувствие"
+    ],
+    "about_stats": [
+      [
+        "8+",
+        "лет работы"
+      ],
+      [
+        "30+",
+        "SPA-программ"
+      ],
+      [
+        "12",
+        "мастеров"
+      ],
+      [
+        "5",
+        "приватных кабинетов"
+      ]
+    ],
+    "team_eyebrow": "Команда",
+    "team_title": "Наши <em>мастера</em>",
+    "team_lead": "Каждый мастер — специалист в своём направлении. Спросите при записи, к кому лучше пойти.",
+    "about_cta_title": "Приходите <em>знакомиться</em>",
+    "about_cta_lead": "Запишитесь на первую процедуру — мы покажем пространство и подберём программу.",
+    "gallery_title": "Атмосфера <em>Black Horse</em>",
+    "gallery_lead": "Загляните внутрь: кабинеты, хаммам, чайная зона и детали, из которых складывается отдых.",
+    "gallery_all": "Все",
+    "gallery_cta_title": "Больше фото — в <em>Instagram</em>",
+    "gallery_cta_lead": "Подписывайтесь, чтобы первыми узнавать об акциях и новых программах.",
+    "gallery_cta_btn": "Открыть Instagram",
+    "faq_page_title": "Частые <em>вопросы</em>",
+    "contacts_title": "Контакты <em>и запись</em>",
+    "contacts_lead": "Пишите в любой удобный мессенджер — ответим в течение 15 минут в рабочее время.",
+    "c_phone": "Телефон",
+    "c_address": "Адрес",
+    "map_fallback": "Карта загрузится на опубликованном сайте.",
+    "form_eyebrow": "Онлайн-запись",
+    "form_title": "Записаться на процедуру",
+    "f_name": "Имя",
+    "f_name_ph": "Как к вам обращаться",
+    "f_phone": "Телефон",
+    "f_service": "Услуга",
+    "f_date": "Желаемая дата",
+    "f_comment": "Комментарий",
+    "f_comment_ph": "Удобное время, пожелания",
+    "f_consult": "Нужна консультация",
+    "f_gift": "Подарочный сертификат",
+    "f_submit": "Сформировать заявку",
+    "f_note": "Заявка откроется в WhatsApp или Telegram — останется только нажать «Отправить». Отправляя заявку, вы соглашаетесь с",
+    "f_privacy": "политикой конфиденциальности",
+    "f_done": "Заявка готова!",
+    "f_done_lead": "Выберите мессенджер, чтобы отправить её администратору:",
+    "f_copy": "Скопировать текст",
+    "f_copied": "Скопировано",
+    "f_msg": "Здравствуйте! Хочу записаться в {name}.\nИмя: {n}\nТелефон: {p}\nУслуга: {s}\nДата: {d}\nКомментарий: {c}",
+    "privacy_title": "Политика <em>конфиденциальности</em>",
+    "nf_title": "Страница <em>не найдена</em>",
+    "nf_lead": "Возможно, она переехала. Вернитесь на главную или напишите нам — поможем.",
+    "nf_btn": "На главную",
+    "footer_about": "Пространство тишины, тепла и заботы о себе. Массажи, SPA-ритуалы и уходовые программы.",
+    "footer_nav": "Навигация",
+    "footer_services": "Услуги",
+    "footer_contacts": "Контакты",
+    "footer_rights": "Все права защищены.",
+    "footer_book": "Записаться онлайн →",
+    "home_title": "массаж и SPA-ритуалы"
+  },
+  "en": {
+    "lang_name": "English",
+    "skip": "Skip to content",
+    "nav_home": "Home",
+    "nav_services": "Services & prices",
+    "nav_about": "About",
+    "nav_gallery": "Gallery",
+    "nav_faq": "FAQ",
+    "nav_contacts": "Contacts",
+    "book": "Book now",
+    "book_wa": "Book on WhatsApp",
+    "all_services": "All services →",
+    "more_about": "More about us",
+    "min": "min",
+    "from": "from",
+    "theme": "Toggle theme",
+    "menu": "Menu",
+    "write_us": "Message us",
+    "call": "Call",
+    "close": "Close",
+    "your_photo": "Your photo",
+    "promo_left": "Ends in",
+    "promo_d": "d",
+    "promo_h": "h",
+    "promo_m": "m",
+    "promo_more": "Details",
+    "sticky_label": "We reply within 15 min",
+    "wa_greeting": "Hello! I'd like to book at {name}.",
+    "wa_service": "Hello! I'd like to book “{service}”.",
+    "hero_eyebrow": "Spa & Wellness",
+    "hero_title": "Time to <em>slow down</em> and&nbsp;come back to&nbsp;yourself",
+    "hero_lead": "Signature massages, spa rituals and care programmes in an atmosphere of silence, warmth and natural scents.",
+    "hero_stats": [
+      [
+        "8+",
+        "years of care"
+      ],
+      [
+        "30+",
+        "programmes"
+      ],
+      [
+        "12",
+        "therapists"
+      ]
+    ],
+    "open_today": "We're open",
+    "marquee": [
+      "Massage",
+      "Spa rituals",
+      "Hammam",
+      "Facials",
+      "Body wraps",
+      "Aromatherapy"
+    ],
+    "why_eyebrow": "Why us",
+    "why_title": "Care in every <em>detail</em>",
+    "why_lead": "We created a place to switch off from the rush, restore your energy and feel light again.",
+    "features": [
+      [
+        "leaf",
+        "Natural cosmetics",
+        "Cold-pressed oils, herbal blends and professional lines without harsh ingredients."
+      ],
+      [
+        "user",
+        "Experienced therapists",
+        "Certified specialists with 5+ years of experience who tailor every treatment to you."
+      ],
+      [
+        "door",
+        "Private rooms",
+        "Cosy rooms with soft light, heated tables and a dedicated couples suite."
+      ],
+      [
+        "gift",
+        "Gift cards",
+        "The best gift for loved ones is time for themselves. Issued in 5 minutes via messenger."
+      ]
+    ],
+    "popular_eyebrow": "Popular",
+    "popular_title": "Guest favourites",
+    "video_eyebrow": "Atmosphere",
+    "video_title": "Feel the <em>silence</em>",
+    "video_lead": "Soft light, warm stone, the scent of herbs — take a look inside before your visit.",
+    "about_eyebrow": "About the spa",
+    "about_title": "A place you'll want to <em>return to</em>",
+    "about_lead": "Every visit starts with herbal tea and a short chat, so your therapist knows exactly what you need today.",
+    "about_checks": [
+      "Treatments and oils chosen for you",
+      "Shower, robe, slippers and towels included",
+      "Tea lounge to unwind after treatments"
+    ],
+    "packages_eyebrow": "Packages & gift cards",
+    "packages_title": "More relaxation, <em>better value</em>",
+    "packages_lead": "Passes for regular self-care and gifts people remember.",
+    "package_order": "Get it",
+    "package_best": "Best seller",
+    "steps_eyebrow": "Your visit",
+    "steps_title": "Four steps to <em>relaxation</em>",
+    "steps": [
+      [
+        "Book",
+        "Message us on WhatsApp or Telegram and we'll find a time."
+      ],
+      [
+        "Welcome",
+        "Tea, a short consultation and choosing your aroma."
+      ],
+      [
+        "Treatment",
+        "Total relaxation in a private room."
+      ],
+      [
+        "Unwind",
+        "Time in the tea lounge to gently return to your day."
+      ]
+    ],
+    "reviews_eyebrow": "Reviews",
+    "reviews_title": "What our <em>guests</em> say",
+    "reviews_empty": "Read our guests' reviews and share your own on Google Maps.",
+    "reviews_btn": "Reviews on Google",
+    "faq_eyebrow": "FAQ",
+    "faq_title": "Answers <em>in advance</em>",
+    "faq_all": "All questions →",
+    "faq_lead": "Didn't find your answer? Message us on any messenger — we reply within 15 minutes.",
+    "cta_eyebrow": "Online booking",
+    "cta_title": "Give yourself <em>an hour of calm</em>",
+    "cta_lead": "Choose your messenger — we'll reply within 15 minutes and find a time.",
+    "services_title": "Services <em>& prices</em>",
+    "services_lead": "Pick a category and tap “Book” — a WhatsApp message with the treatment name will open.",
+    "services_cta_title": "Not sure what to <em>choose</em>?",
+    "services_cta_lead": "Message us — a therapist will help you find the right treatment.",
+    "about_page_title": "Our <em>philosophy</em>",
+    "about_page_lead": "We believe real rest is not a luxury but a necessity. So we created a place where time moves more slowly.",
+    "story_eyebrow": "Our story",
+    "story_title": "From a small room to a <em>spa space</em>",
+    "story_lead": "It all started with one massage room and a wish to make people feel good. Today we have five private rooms, a hammam, a couples suite and a tea lounge.",
+    "story_checks": [
+      "Certified professional cosmetics only",
+      "Single-use materials and strict hygiene",
+      "Programmes adapted to how you feel"
+    ],
+    "about_stats": [
+      [
+        "8+",
+        "years"
+      ],
+      [
+        "30+",
+        "spa programmes"
+      ],
+      [
+        "12",
+        "therapists"
+      ],
+      [
+        "5",
+        "private rooms"
+      ]
+    ],
+    "team_eyebrow": "Team",
+    "team_title": "Our <em>therapists</em>",
+    "team_lead": "Each therapist specialises in their own field. Ask us who's best for you when booking.",
+    "about_cta_title": "Come and <em>meet us</em>",
+    "about_cta_lead": "Book your first treatment — we'll show you around and find the right programme.",
+    "gallery_title": "The <em>Black Horse</em> atmosphere",
+    "gallery_lead": "Take a look inside: treatment rooms, hammam, tea lounge and the details that make it restful.",
+    "gallery_all": "All",
+    "gallery_cta_title": "More photos on <em>Instagram</em>",
+    "gallery_cta_lead": "Follow us to be the first to hear about offers and new treatments.",
+    "gallery_cta_btn": "Open Instagram",
+    "faq_page_title": "Frequently asked <em>questions</em>",
+    "contacts_title": "Contacts <em>& booking</em>",
+    "contacts_lead": "Message us on any messenger — we reply within 15 minutes during opening hours.",
+    "c_phone": "Phone",
+    "c_address": "Address",
+    "map_fallback": "The map loads on the published site.",
+    "form_eyebrow": "Online booking",
+    "form_title": "Book a treatment",
+    "f_name": "Name",
+    "f_name_ph": "Your name",
+    "f_phone": "Phone",
+    "f_service": "Treatment",
+    "f_date": "Preferred date",
+    "f_comment": "Comment",
+    "f_comment_ph": "Preferred time, wishes",
+    "f_consult": "I need advice",
+    "f_gift": "Gift card",
+    "f_submit": "Create request",
+    "f_note": "Your request opens in WhatsApp or Telegram — just tap “Send”. By sending it you agree to our",
+    "f_privacy": "privacy policy",
+    "f_done": "Your request is ready!",
+    "f_done_lead": "Choose a messenger to send it to our team:",
+    "f_copy": "Copy text",
+    "f_copied": "Copied",
+    "f_msg": "Hello! I'd like to book at {name}.\nName: {n}\nPhone: {p}\nTreatment: {s}\nDate: {d}\nComment: {c}",
+    "privacy_title": "Privacy <em>policy</em>",
+    "nf_title": "Page <em>not found</em>",
+    "nf_lead": "It may have moved. Go back home or message us — we'll help.",
+    "nf_btn": "Back home",
+    "footer_about": "A space of silence, warmth and self-care. Massages, spa rituals and care programmes.",
+    "footer_nav": "Navigation",
+    "footer_services": "Services",
+    "footer_contacts": "Contacts",
+    "footer_rights": "All rights reserved.",
+    "footer_book": "Book online →",
+    "home_title": "massage & spa rituals"
+  }
+}

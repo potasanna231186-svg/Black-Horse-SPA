@@ -1,0 +1,20 @@
+---
+import Base from '../layouts/Base.astro';
+import { site, url, t } from '../lib/site';
+const lang = 'ru';
+const T = t(lang);
+---
+<Base lang={lang} page="404" title={`404 — ${site.name}`}>
+  <section class="nf">
+    <div class="wrap center">
+      <div class="nf-num" aria-hidden="true">404</div>
+      <h1 set:html={T.nf_title} />
+      <p class="lead">{T.nf_lead}</p>
+      <div class="nf-actions">
+        <a class="btn btn-primary" href={url('index', lang)}>{T.nf_btn}</a>
+        <a class="btn btn-ghost" href={url('services', lang)}>{T.nav_services}</a>
+      </div>
+      <p class="nf-en"><a href={url('index', 'en')}>Page not found — go to the English home page →</a></p>
+    </div>
+  </section>
+</Base>

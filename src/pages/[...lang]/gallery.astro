@@ -1,0 +1,41 @@
+---
+import Base from '../../layouts/Base.astro';
+import Icon from '../../components/Icon.astro';
+import Photo from '../../components/Photo.astro';
+import PageHero from '../../components/PageHero.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import { site, data, tr, t, langPaths, langOf } from '../../lib/site';
+export const getStaticPaths = langPaths;
+const lang = langOf(Astro.params.lang);
+const T = t(lang);
+---
+<Base lang={lang} page="gallery" title={`${T.nav_gallery} — ${site.name}`}>
+  <PageHero title={T.gallery_title} lead={T.gallery_lead} crumb={T.nav_gallery} lang={lang} />
+  <section class="section-flush">
+    <div class="wrap">
+      <div class="tabs filters reveal" role="group" aria-label={T.nav_gallery}>
+        <button class="tab active" data-filter="all" aria-pressed="true">{T.gallery_all}</button>
+        {data.gallery.categories.map((c) => <button class="tab" data-filter={c.id} aria-pressed="false">{tr(c.label, lang)}</button>)}
+      </div>
+      <div class="gallery">
+        {data.gallery.items.map((g, i) => (
+          <button class={`g-item reveal d${i % 3}`} data-cat={g.category} aria-label={tr(g.title, lang)}>
+            <Photo image={g.image} art={g.art} label={T.your_photo} alt={tr(g.title, lang)} stones={g.stones}>
+              <span class="cap">{tr(g.title, lang)}</span>
+            </Photo>
+          </button>
+        ))}
+      </div>
+    </div>
+  </section>
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label={T.nav_gallery}>
+    <button class="lb-close" aria-label={T.close}>×</button>
+    <button class="lb-nav lb-prev" aria-label="←">‹</button>
+    <div class="lb-stage"></div>
+    <button class="lb-nav lb-next" aria-label="→">›</button>
+    <p class="lb-cap"></p>
+  </div>
+  <CtaBand title={T.gallery_cta_title} lead={T.gallery_cta_lead}>
+    <a class="btn btn-light" href={`https://instagram.com/${site.instagram}`} target="_blank" rel="noopener"><Icon name="ig" />{T.gallery_cta_btn}</a>
+  </CtaBand>
+</Base>

@@ -1,0 +1,45 @@
+---
+import Base from '../../layouts/Base.astro';
+import PageHero from '../../components/PageHero.astro';
+import { site, tr, t, langPaths, langOf } from '../../lib/site';
+export const getStaticPaths = langPaths;
+const lang = langOf(Astro.params.lang);
+const T = t(lang);
+const crumb = T.f_privacy.charAt(0).toUpperCase() + T.f_privacy.slice(1);
+---
+<Base lang={lang} page="privacy" title={`${crumb} — ${site.name}`}>
+  <PageHero title={T.privacy_title} crumb={crumb} lang={lang} />
+  <section class="section-flush">
+    <div class="wrap narrow prose">
+      {lang === 'ru' ? (<Fragment>
+    <p><i>Шаблон политики. Проверьте и дополните его под законодательство вашей страны.</i></p>
+    <h2>1. Кто мы</h2>
+    <p>Сайт принадлежит салону {site.name} ({tr(site.address, lang)}). По вопросам обработки данных пишите на {site.email}.</p>
+    <h2>2. Какие данные мы получаем</h2>
+    <p>Сайт не хранит персональные данные на сервере. Когда вы заполняете форму записи, текст заявки (имя, телефон, услуга, дата, комментарий) формируется прямо в вашем браузере и отправляется нам только после того, как вы сами нажмёте «Отправить» в WhatsApp или Telegram.</p>
+    <h2>3. Зачем мы используем данные</h2>
+    <p>Только чтобы связаться с вами, подтвердить запись и ответить на вопросы. Мы не передаём ваши данные третьим лицам для рекламы.</p>
+    <h2>4. Сторонние сервисы</h2>
+    <p>Сайт использует Google Fonts и Google Maps, а также переходы в WhatsApp, Telegram, Viber и Instagram. Эти сервисы обрабатывают данные по своим политикам конфиденциальности.</p>
+    <h2>5. Хранение в браузере</h2>
+    <p>Мы сохраняем в вашем браузере только выбранную тему оформления (светлая/тёмная) и то, что вы закрыли полосу с акцией. Файлы cookie для рекламы и аналитики не используются.</p>
+    <h2>6. Ваши права</h2>
+    <p>Вы можете в любой момент попросить удалить переписку и данные о записи, написав нам в мессенджер или на {site.email}.</p>
+  </Fragment>) : (<Fragment>
+    <p><i>Policy template. Please review and adapt it to the laws of your country.</i></p>
+    <h2>1. Who we are</h2>
+    <p>This website belongs to {site.name} ({tr(site.address, lang)}). For data questions, email {site.email}.</p>
+    <h2>2. What data we receive</h2>
+    <p>The website does not store personal data on a server. When you fill in the booking form, the request text (name, phone, treatment, date, comment) is created in your browser and reaches us only after you tap “Send” in WhatsApp or Telegram yourself.</p>
+    <h2>3. Why we use it</h2>
+    <p>Only to contact you, confirm your booking and answer questions. We never share your data with third parties for advertising.</p>
+    <h2>4. Third-party services</h2>
+    <p>The site uses Google Fonts and Google Maps and links to WhatsApp, Telegram, Viber and Instagram. These services process data under their own privacy policies.</p>
+    <h2>5. Browser storage</h2>
+    <p>We only store your chosen colour theme (light/dark) and whether you closed the offer banner. No advertising or analytics cookies are used.</p>
+    <h2>6. Your rights</h2>
+    <p>You can ask us to delete your messages and booking data at any time via messenger or {site.email}.</p>
+  </Fragment>)}
+    </div>
+  </section>
+</Base>

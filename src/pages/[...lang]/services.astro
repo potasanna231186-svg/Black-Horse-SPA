@@ -1,0 +1,42 @@
+---
+import Base from '../../layouts/Base.astro';
+import Photo from '../../components/Photo.astro';
+import PageHero from '../../components/PageHero.astro';
+import Packages from '../../components/Packages.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import MsgrRow from '../../components/MsgrRow.astro';
+import { site, data, tr, t, money, wa, langPaths, langOf } from '../../lib/site';
+export const getStaticPaths = langPaths;
+const lang = langOf(Astro.params.lang);
+const T = t(lang);
+---
+<Base lang={lang} page="services" title={`${T.nav_services} — ${site.name}`}>
+  <PageHero title={T.services_title} lead={T.services_lead} crumb={T.nav_services} lang={lang} />
+  <section class="section-flush">
+    <div class="wrap">
+      <div class="tabs reveal" role="tablist">
+        {data.services.categories.map((c) => (
+          <button class="tab" role="tab" id={`tab-${c.id}`} data-tab={c.id} aria-controls={c.id}>{tr(c.title, lang)}</button>
+        ))}
+      </div>
+      {data.services.categories.map((c) => (
+        <div class="price-group" id={c.id} role="tabpanel" aria-labelledby={`tab-${c.id}`}>
+          <Photo image={c.image} art={c.art} label={T.your_photo} alt={tr(c.title, lang)} />
+          <div class="price-list">
+            {c.items.map((it) => (
+              <div class="price-item">
+                <h3>{tr(it.name, lang)}</h3><span class="price">{money(it.price, lang)}</span>
+                <p>{tr(it.desc, lang)}</p><span class="dur">{it.duration} {T.min}</span>
+                <a class="book" href={wa(T.wa_service.replace('{service}', tr(it.name, lang)))} target="_blank" rel="noopener">{T.book} →</a>
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+  <Packages lang={lang} />
+  <CtaBand title={T.services_cta_title} lead={T.services_cta_lead}>
+    <MsgrRow keys={['wa', 'tg', 'vb', 'ph']} lang={lang} />
+  </CtaBand>
+</Base>

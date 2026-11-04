@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /Black-Horse-SPA/admin/
+
+Sitemap: https://potasanna231186-svg.github.io/Black-Horse-SPA/sitemap-index.xml

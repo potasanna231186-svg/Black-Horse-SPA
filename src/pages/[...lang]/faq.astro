@@ -1,0 +1,20 @@
+---
+import Base from '../../layouts/Base.astro';
+import PageHero from '../../components/PageHero.astro';
+import FaqList from '../../components/FaqList.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import MsgrRow from '../../components/MsgrRow.astro';
+import { site, data, t, langPaths, langOf } from '../../lib/site';
+export const getStaticPaths = langPaths;
+const lang = langOf(Astro.params.lang);
+const T = t(lang);
+---
+<Base lang={lang} page="faq" title={`${T.nav_faq} — ${site.name}`}>
+  <PageHero title={T.faq_page_title} lead={T.faq_lead} crumb={T.nav_faq} lang={lang} />
+  <section class="section-flush">
+    <div class="wrap narrow"><FaqList items={data.faq.items} lang={lang} /></div>
+  </section>
+  <CtaBand title={T.cta_title} lead={T.cta_lead} eyebrow={T.cta_eyebrow}>
+    <MsgrRow keys={['wa', 'tg', 'vb', 'ig', 'ph']} lang={lang} />
+  </CtaBand>
+</Base>

@@ -1,0 +1,38 @@
+{
+  "name": "Black Horse SPA",
+  "url": "https://potasanna231186-svg.github.io/Black-Horse-SPA",
+  "description": {
+    "ru": "Black Horse SPA — массаж, SPA-ритуалы, хаммам, уход за лицом и телом. Онлайн-запись через WhatsApp и Telegram.",
+    "en": "Black Horse SPA — massage, spa rituals, hammam, facial and body care. Book online via WhatsApp or Telegram."
+  },
+  "phone": "+20 100 000 00 00",
+  "phoneRaw": "+201000000000",
+  "whatsapp": "201000000000",
+  "telegram": "blackhorse_spa",
+  "viber": "+201000000000",
+  "instagram": "blackhorse.spa",
+  "email": "hello@blackhorse-spa.com",
+  "address": {
+    "ru": "ул. Примерная, 1, Ваш город",
+    "en": "1 Example St, Your City"
+  },
+  "streetAddress": "1 Example St",
+  "city": "Your City",
+  "country": "EG",
+  "hours": {
+    "ru": "Ежедневно 10:00 – 22:00",
+    "en": "Daily 10:00 – 22:00"
+  },
+  "opens": "10:00",
+  "closes": "22:00",
+  "mapQuery": "spa",
+  "googleReviewsUrl": "https://www.google.com/maps/search/?api=1&query=Black+Horse+SPA",
+  "currency": "USD",
+  "currencySymbol": "$",
+  "priceRange": "$$",
+  "video": "",
+  "videoPoster": "",
+  "heroImage": "",
+  "aboutImage": "",
+  "aboutImage2": ""
+}

@@ -1,0 +1,60 @@
+---
+import Base from '../../layouts/Base.astro';
+import Icon from '../../components/Icon.astro';
+import Photo from '../../components/Photo.astro';
+import PageHero from '../../components/PageHero.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import MsgrRow from '../../components/MsgrRow.astro';
+import { site, data, tr, t, langPaths, langOf } from '../../lib/site';
+export const getStaticPaths = langPaths;
+const lang = langOf(Astro.params.lang);
+const T = t(lang);
+---
+<Base lang={lang} page="about" title={`${T.nav_about} — ${site.name}`}>
+  <PageHero title={T.about_page_title} lead={T.about_page_lead} crumb={T.nav_about} lang={lang} />
+  <section class="section-flush">
+    <div class="wrap split">
+      <div class="split-stack reveal">
+        <Photo image={site.aboutImage2} art="v4" label={T.your_photo} alt={site.name} />
+        <Photo image={site.aboutImage} art="v3" label={T.your_photo} alt={site.name} cls="small" />
+      </div>
+      <div>
+        <div class="eyebrow reveal">{T.story_eyebrow}</div>
+        <h2 class="reveal d1" set:html={T.story_title} />
+        <p class="lead reveal d2">{T.story_lead}</p>
+        <ul class="checks reveal d3">{T.story_checks.map((c: string) => <li>{c}</li>)}</ul>
+      </div>
+    </div>
+  </section>
+  <section class="dark">
+    <div class="wrap">
+      <div class="stats">
+        {T.about_stats.map(([num, label]: string[], i: number) => <div class={`reveal d${i}`}><b>{num}</b><p>{label}</p></div>)}
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <div><div class="eyebrow reveal">{T.team_eyebrow}</div><h2 class="reveal d1" set:html={T.team_title} /></div>
+        <p class="lead reveal d2">{T.team_lead}</p>
+      </div>
+      <div class="team">
+        {data.team.items.map((p, i) => (
+          <article class={`member reveal d${i}`}>
+            <Photo image={p.image} art={p.art} label={T.your_photo} alt={tr(p.name, lang)} />
+            <div class="member-head">
+              <h3>{tr(p.name, lang)}</h3>
+              {p.instagram && <a class="msgr ig sm" href={`https://instagram.com/${p.instagram}`} target="_blank" rel="noopener" aria-label={`Instagram ${tr(p.name, lang)}`}><Icon name="ig" /></a>}
+            </div>
+            <b class="member-role">{tr(p.role, lang)}</b>
+            <span>{tr(p.exp, lang)}</span>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+  <CtaBand title={T.about_cta_title} lead={T.about_cta_lead}>
+    <MsgrRow keys={['wa', 'tg', 'vb', 'ig', 'ph']} lang={lang} />
+  </CtaBand>
+</Base>

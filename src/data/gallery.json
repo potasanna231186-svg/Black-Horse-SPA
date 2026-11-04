@@ -1,0 +1,19 @@
+{
+  "categories": [
+    { "id": "interior", "label": { "ru": "Интерьер", "en": "Interior" } },
+    { "id": "massage", "label": { "ru": "Массаж", "en": "Massage" } },
+    { "id": "hammam", "label": { "ru": "Хаммам", "en": "Hammam" } },
+    { "id": "care", "label": { "ru": "Уход", "en": "Care" } }
+  ],
+  "items": [
+    { "title": { "ru": "Массажный кабинет", "en": "Massage room" }, "category": "massage", "image": "", "art": "v1", "stones": true },
+    { "title": { "ru": "Хаммам", "en": "Hammam" }, "category": "hammam", "image": "", "art": "v3", "stones": false },
+    { "title": { "ru": "Уход за лицом", "en": "Facial care" }, "category": "care", "image": "", "art": "v4", "stones": false },
+    { "title": { "ru": "Горячие камни", "en": "Hot stones" }, "category": "massage", "image": "", "art": "v5", "stones": true },
+    { "title": { "ru": "SPA для двоих", "en": "Couples suite" }, "category": "interior", "image": "", "art": "v2", "stones": false },
+    { "title": { "ru": "Чайная зона", "en": "Tea lounge" }, "category": "interior", "image": "", "art": "v6", "stones": false },
+    { "title": { "ru": "Натуральная косметика", "en": "Natural cosmetics" }, "category": "care", "image": "", "art": "v4", "stones": false },
+    { "title": { "ru": "Ресепшн", "en": "Reception" }, "category": "interior", "image": "", "art": "v3", "stones": false },
+    { "title": { "ru": "Пенный массаж", "en": "Foam massage" }, "category": "hammam", "image": "", "art": "v2", "stones": false }
+  ]
+}

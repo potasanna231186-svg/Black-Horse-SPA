@@ -1,0 +1,14 @@
+---
+import Icon from './Icon.astro';
+import { msgrLink, msgrName, type Lang, type MsgKey } from '../lib/site';
+interface Props { keys: MsgKey[]; lang: Lang }
+const { keys, lang } = Astro.props;
+---
+<div class="msgr-row">
+  {keys.map((k) => (
+    <a class={`msgr ${k}`} href={msgrLink(k, lang)} aria-label={msgrName(k, lang)}
+       {...(k !== 'ph' && k !== 'ml' ? { target: '_blank', rel: 'noopener' } : {})}>
+      <Icon name={k} />
+    </a>
+  ))}
+</div>

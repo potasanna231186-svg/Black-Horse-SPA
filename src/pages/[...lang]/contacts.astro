@@ -1,0 +1,67 @@
+---
+import Base from '../../layouts/Base.astro';
+import Icon from '../../components/Icon.astro';
+import PageHero from '../../components/PageHero.astro';
+import { site, data, url, tr, t, msgrLink, langPaths, langOf } from '../../lib/site';
+export const getStaticPaths = langPaths;
+const lang = langOf(Astro.params.lang);
+const T = t(lang);
+const mapSrc = `https://www.google.com/maps?q=${encodeURIComponent(site.mapQuery)}&output=embed`;
+const blank = { target: '_blank', rel: 'noopener' };
+---
+<Base lang={lang} page="contacts" title={`${T.nav_contacts} — ${site.name}`}>
+  <PageHero title={T.contacts_title} lead={T.contacts_lead} crumb={T.nav_contacts} lang={lang} />
+  <section class="section-flush">
+    <div class="wrap contact-grid">
+      <div class="contact-col">
+        <div class="contact-cards">
+          <a class="c-card reveal" href={msgrLink('wa', lang)} {...blank}><span class="ic wa"><Icon name="wa" /></span><small>WhatsApp</small><b>{site.phone}</b></a>
+          <a class="c-card reveal d1" href={msgrLink('tg', lang)} {...blank}><span class="ic tg"><Icon name="tg" /></span><small>Telegram</small><b>@{site.telegram}</b></a>
+          <a class="c-card reveal" href={msgrLink('vb', lang)}><span class="ic vb"><Icon name="vb" /></span><small>Viber</small><b>{site.viber}</b></a>
+          <a class="c-card reveal d1" href={msgrLink('ig', lang)} {...blank}><span class="ic ig"><Icon name="ig" /></span><small>Instagram</small><b>@{site.instagram}</b></a>
+          <a class="c-card reveal" href={msgrLink('ph', lang)}><span class="ic ph"><Icon name="ph" /></span><small>{T.c_phone}</small><b>{site.phone}</b></a>
+          <a class="c-card reveal d1" href={msgrLink('ml', lang)}><span class="ic ml"><Icon name="ml" /></span><small>Email</small><b>{site.email}</b></a>
+          <div class="c-card wide reveal"><span class="ic ml"><Icon name="pin" /></span><small>{T.c_address}</small><b>{tr(site.address, lang)}</b><small>{tr(site.hours, lang)}</small></div>
+        </div>
+        <div class="map reveal">
+          <div class="map-fallback">{T.map_fallback}</div>
+          <iframe id="map" loading="lazy" title={T.c_address} referrerpolicy="no-referrer-when-downgrade" data-src={mapSrc}></iframe>
+        </div>
+      </div>
+
+      <form class="form reveal d1" id="booking" novalidate>
+        <div>
+          <div class="eyebrow">{T.form_eyebrow}</div>
+          <h2 class="form-title">{T.form_title}</h2>
+        </div>
+        <div class="field-row">
+          <div class="field"><label for="f-name">{T.f_name}</label><input id="f-name" name="name" required autocomplete="name" placeholder={T.f_name_ph} /></div>
+          <div class="field"><label for="f-phone">{T.f_phone}</label><input id="f-phone" name="phone" type="tel" required autocomplete="tel" placeholder="+__ ___ ___ __ __" /></div>
+        </div>
+        <div class="field-row">
+          <div class="field"><label for="f-service">{T.f_service}</label>
+            <select id="f-service" name="service">
+              {data.services.categories.map((c) => (
+                <optgroup label={tr(c.title, lang)}>{c.items.map((it) => <option>{tr(it.name, lang)}</option>)}</optgroup>
+              ))}
+              <optgroup label={T.packages_eyebrow}>{data.packages.items.map((p) => <option>{tr(p.name, lang)}</option>)}</optgroup>
+              <option>{T.f_consult}</option>
+            </select></div>
+          <div class="field"><label for="f-date">{T.f_date}</label><input id="f-date" name="date" type="date" /></div>
+        </div>
+        <div class="field"><label for="f-comment">{T.f_comment}</label><textarea id="f-comment" name="comment" rows="3" placeholder={T.f_comment_ph}></textarea></div>
+        <button class="btn btn-primary btn-block" type="submit">{T.f_submit}</button>
+        <p class="form-note">{T.f_note} <a href={url('privacy', lang)}>{T.f_privacy}</a>.</p>
+        <div class="form-done" id="form-done" role="status" aria-live="polite" hidden>
+          <b>{T.f_done}</b>
+          <p>{T.f_done_lead}</p>
+          <div class="msgr-row">
+            <a class="btn btn-sm wa-send" {...blank}><Icon name="wa" />WhatsApp</a>
+            <a class="btn btn-sm tg-send" {...blank}><Icon name="tg" />Telegram</a>
+            <button type="button" class="btn btn-ghost btn-sm copy-send">{T.f_copy}</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+</Base>

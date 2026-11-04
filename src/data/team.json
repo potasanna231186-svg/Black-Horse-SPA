@@ -1,0 +1,8 @@
+{
+  "items": [
+    { "name": { "ru": "Анна", "en": "Anna" }, "role": { "ru": "Мастер массажа", "en": "Massage therapist" }, "exp": { "ru": "9 лет опыта · релакс и камни", "en": "9 years · relax & hot stones" }, "instagram": "", "image": "", "art": "v2" },
+    { "name": { "ru": "Мария", "en": "Maria" }, "role": { "ru": "Косметолог-эстетист", "en": "Aesthetician" }, "exp": { "ru": "7 лет · уход за лицом", "en": "7 years · facial care" }, "instagram": "", "image": "", "art": "v3" },
+    { "name": { "ru": "Ахмед", "en": "Ahmed" }, "role": { "ru": "Мастер хаммама", "en": "Hammam master" }, "exp": { "ru": "10 лет · восточные ритуалы", "en": "10 years · oriental rituals" }, "instagram": "", "image": "", "art": "v6" },
+    { "name": { "ru": "Елена", "en": "Elena" }, "role": { "ru": "SPA-терапевт", "en": "Spa therapist" }, "exp": { "ru": "6 лет · обёртывания и детокс", "en": "6 years · wraps & detox" }, "instagram": "", "image": "", "art": "v4" }
+  ]
+}

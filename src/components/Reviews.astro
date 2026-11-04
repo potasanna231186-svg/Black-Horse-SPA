@@ -1,0 +1,37 @@
+---
+// Показываются только настоящие отзывы из data/reviews.json; пока их нет — кнопка «Отзывы на Google»
+import Icon from './Icon.astro';
+import { data, site, t, tr, type Lang } from '../lib/site';
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const T = t(lang);
+const reviews = (data.reviews.items ?? []) as { author: string; text: any; rating?: number; source?: string }[];
+const show = reviews.length > 0 || !!site.googleReviewsUrl;
+---
+{show && (
+<section class="section-tight">
+  <div class="wrap">
+    <div class="center head-gap">
+      <div class="eyebrow reveal">{T.reviews_eyebrow}</div>
+      <h2 class="reveal d1" set:html={T.reviews_title} />
+    </div>
+    {reviews.length > 0 && (
+      <div class="reviews">
+        {reviews.map((r, i) => (
+          <figure class={`review reveal d${i % 3}`}>
+            <div class="stars" aria-label={`${r.rating ?? 5}/5`}>{Array.from({ length: r.rating ?? 5 }).map(() => <Icon name="star" />)}</div>
+            <blockquote>{tr(r.text, lang)}</blockquote>
+            <figcaption><b>{r.author}</b>{r.source && ` · ${r.source}`}</figcaption>
+          </figure>
+        ))}
+      </div>
+    )}
+    {site.googleReviewsUrl && (
+      <div class="center reveal reviews-cta">
+        {reviews.length === 0 && <p class="lead">{T.reviews_empty}</p>}
+        <a class="btn btn-ghost" href={site.googleReviewsUrl} target="_blank" rel="noopener"><Icon name="star" />{T.reviews_btn}</a>
+      </div>
+    )}
+  </div>
+</section>
+)}

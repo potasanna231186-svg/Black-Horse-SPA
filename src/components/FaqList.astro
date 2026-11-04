@@ -1,0 +1,14 @@
+---
+// Раскрывающиеся вопросы без JS: <details name> открывает только один ответ в группе
+import { tr, type Lang } from '../lib/site';
+interface Props { items: { q: any; a: any }[]; lang: Lang; name?: string }
+const { items, lang, name = 'faq' } = Astro.props;
+---
+<div class="faq-list">
+  {items.map((f, i) => (
+    <details class="faq-item reveal" name={name} open={i === 0}>
+      <summary><span>{tr(f.q, lang)}</span><i aria-hidden="true"></i></summary>
+      <div class="faq-a"><p>{tr(f.a, lang)}</p></div>
+    </details>
+  ))}
+</div>

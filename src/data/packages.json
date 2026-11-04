@@ -1,0 +1,88 @@
+{
+  "items": [
+    {
+      "name": {
+        "ru": "Абонемент «Баланс»",
+        "en": "Balance pass"
+      },
+      "desc": {
+        "ru": "5 релакс-массажей по 60 минут. Действует 3 месяца.",
+        "en": "5 relax massages, 60 min each. Valid for 3 months."
+      },
+      "price": 190,
+      "oldPrice": 225,
+      "featured": false,
+      "features": [
+        {
+          "ru": "Экономия 15%",
+          "en": "Save 15%"
+        },
+        {
+          "ru": "Можно делить с близкими",
+          "en": "Shareable with family"
+        },
+        {
+          "ru": "Травяной чай после каждого визита",
+          "en": "Herbal tea after every visit"
+        }
+      ],
+      "fromPrice": false
+    },
+    {
+      "name": {
+        "ru": "SPA-день для двоих",
+        "en": "Spa day for two"
+      },
+      "desc": {
+        "ru": "Хаммам, массаж для пар, уход за лицом и обед.",
+        "en": "Hammam, couples massage, facial and lunch."
+      },
+      "price": 250,
+      "oldPrice": 290,
+      "featured": true,
+      "features": [
+        {
+          "ru": "4 часа отдыха",
+          "en": "4 hours of relaxation"
+        },
+        {
+          "ru": "Приватный SPA-кабинет",
+          "en": "Private spa suite"
+        },
+        {
+          "ru": "Фрукты и напитки",
+          "en": "Fruit and drinks"
+        }
+      ],
+      "fromPrice": false
+    },
+    {
+      "name": {
+        "ru": "Подарочный сертификат",
+        "en": "Gift card"
+      },
+      "desc": {
+        "ru": "На любую сумму или процедуру. Оформим за 5 минут в мессенджере.",
+        "en": "Any amount or treatment. Issued in 5 minutes via messenger."
+      },
+      "price": 50,
+      "oldPrice": 0,
+      "featured": false,
+      "features": [
+        {
+          "ru": "Красивая открытка или PDF",
+          "en": "Printed card or PDF"
+        },
+        {
+          "ru": "Действует 6 месяцев",
+          "en": "Valid for 6 months"
+        },
+        {
+          "ru": "Именной по желанию",
+          "en": "Can be personalised"
+        }
+      ],
+      "fromPrice": true
+    }
+  ]
+}
