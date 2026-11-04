@@ -38,6 +38,25 @@
   let idx = 0, lockUntil = 0, acc = 0, accTimer = 0;
   const LOCK = 1050;
 
+  /* Фоновое видео: грузим версию под экран, играет только активная сцена */
+  const mobile = matchMedia('(max-width: 640px)').matches;
+  const videos = slides.map(s => s.querySelector('video'));
+  const load = v => { if (v && !v.src) v.src = (mobile && v.dataset.srcM) || v.dataset.src; };
+  const syncVideo = () => {
+    videos.forEach((v, i) => {
+      if (!v) return;
+      if (i === idx && !reduce && !hero.classList.contains('is-paused')) { load(v); v.play().catch(() => {}); }
+      else v.pause();
+    });
+    load(videos[idx + 1]); // заранее подгружаем следующую сцену
+  };
+  syncVideo();
+  /* Видео не крутится, когда первый экран ушёл из вида */
+  if ('IntersectionObserver' in window) new IntersectionObserver(([e]) => {
+    const v = videos[idx]; if (!v) return;
+    e.isIntersecting ? syncVideo() : v.pause();
+  }).observe(hero);
+
   /* Высота сцены = экран минус шапка */
   const fit = () => {
     const top = Math.max(0, hero.getBoundingClientRect().top + scrollY);
@@ -68,6 +87,7 @@
     hero.classList.toggle('is-last', idx === last);
     hint.querySelector('span').textContent = idx === last ? hero.dataset.open : hero.dataset.hint;
     lockUntil = performance.now() + LOCK;
+    syncVideo();
   }
   const step = d => go(idx + d);
 
@@ -124,7 +144,23 @@
     pause.setAttribute('aria-pressed', String(p));
     pause.querySelector('span').textContent = p ? hero.dataset.play : hero.dataset.pause;
     pause.querySelector('i').textContent = p ? '▶' : '❙❙';
+    syncVideo();
   });
+
+  /* Видеотур во всплывающем окне */
+  const tour = document.getElementById('tour');
+  const tourBtn = hero.querySelector('[data-tour]');
+  if (tour && tourBtn) {
+    const tv = tour.querySelector('video');
+    tourBtn.addEventListener('click', () => {
+      if (!tv.src) tv.src = tv.dataset.src;
+      tour.showModal(); tv.play().catch(() => {});
+    });
+    const closeTour = () => { tv.pause(); tour.close(); };
+    tour.querySelector('.tour-close').addEventListener('click', closeTour);
+    tour.addEventListener('click', e => { if (e.target === tour) closeTour(); });
+    tour.addEventListener('close', () => tv.pause());
+  }
 
   /* Объём: эмблема и фото слегка следуют за курсором */
   if (fine && !reduce) {
