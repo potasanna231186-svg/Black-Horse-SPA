@@ -95,6 +95,7 @@ collections:
             fields:
               - { name: eyebrow, label: Надзаголовок, <<: *ru_en }
               - { name: title, label: Заголовок (можно <em>выделить</em>), <<: *ru_en }
+              - { name: titleImage, label: "Заголовок картинкой (PNG с прозрачным фоном — заменяет текст заголовка)", widget: image, required: false }
               - { name: text, label: Текст, <<: *ru_en_text }
               - name: cta
                 label: Главная кнопка

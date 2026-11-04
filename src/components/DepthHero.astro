@@ -44,7 +44,11 @@ const L = { tour: T.hero_tour, close: T.close, hint: T.hero_hint, open: T.hero_o
         <div class={`depth-text${i === 0 ? ' is-active' : ''}`} data-i={i} role="group" aria-roledescription="slide"
           aria-label={`${L.scene} ${i + 1} / ${slides.length}`} aria-hidden={i === 0 ? 'false' : 'true'}>
           <div class="depth-eyebrow">{site.name}<i>·</i>{tr(s.eyebrow, lang)}</div>
-          {i === 0 ? <h1 set:html={tr(s.title, lang)} /> : <h2 set:html={tr(s.title, lang)} />}
+          {s.titleImage
+            ? (i === 0
+                ? <h1 class="depth-title-img"><img src={asset(s.titleImage)} alt={tr(s.title, lang).replace('&amp;', '&')} width="1292" height="185" /></h1>
+                : <h2 class="depth-title-img"><img src={asset(s.titleImage)} alt={tr(s.title, lang).replace('&amp;', '&')} width="1292" height="185" /></h2>)
+            : (i === 0 ? <h1 set:html={tr(s.title, lang)} /> : <h2 set:html={tr(s.title, lang)} />)}
           <p>{tr(s.text, lang)}</p>
           <div class="depth-actions">
             <a class="btn btn-gold" href={href(s.cta.link)} tabindex={i === 0 ? undefined : '-1'} {...ext(s.cta.link)}>{tr(s.cta.label, lang)} <span aria-hidden="true">↗</span></a>
