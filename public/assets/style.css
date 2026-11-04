@@ -118,7 +118,7 @@ h1+.lead,h2+.lead{margin-top:20px}
 .menu-open .burger span::before{transform:translate(-50%,0) rotate(45deg);background:var(--on-dark)}
 .menu-open .burger span::after{transform:translate(-50%,0) rotate(-45deg);background:var(--on-dark)}
 .mobile-menu{position:fixed;inset:0;z-index:45;background:var(--deep);color:var(--on-dark);overflow-y:auto;overscroll-behavior:contain;opacity:0;visibility:hidden;transition:opacity .45s,visibility .45s}
-.mm-inner{min-height:100%;width:min(1360px,100% - 40px);margin:0 auto;padding:120px 0 40px;display:grid;grid-template-columns:1.2fr 1fr;gap:60px;align-items:start}
+.mm-inner{min-height:100%;width:min(1360px,100% - 40px);margin:0 auto;padding:calc(var(--hb,90px) + 36px) 0 40px;display:grid;grid-template-columns:1.2fr 1fr;gap:60px;align-items:start}
 .mm-nav{display:flex;flex-direction:column;gap:4px}
 .mm-nav a{font-family:var(--serif);font-size:clamp(34px,5vw,56px);line-height:1.15;opacity:0;transform:translateY(24px);transition:opacity .5s,transform .6s cubic-bezier(.2,.75,.25,1),color .3s;transition-delay:calc(var(--i)*.05s + .1s)}
 .mm-nav a:hover,.mm-nav a.active{color:var(--accent-2)}
@@ -131,6 +131,7 @@ h1+.lead,h2+.lead{margin-top:20px}
 .mm-contacts{margin-top:16px}
 .mm-book{justify-self:start}
 .menu-open .mm-nav a,.menu-open .mm-side{opacity:1;transform:none}
+.menu-open .fab,.menu-open .sticky-cta{opacity:0;visibility:hidden;pointer-events:none}
 .menu-open{overflow:hidden}
 .menu-open .mobile-menu{opacity:1;visibility:visible}
 .menu-open .header{background:transparent!important;box-shadow:none!important;color:var(--on-dark)}
@@ -453,7 +454,7 @@ a.c-card:hover{border-color:var(--accent);transform:translateY(-4px)}
 @media (max-width:640px){
   .promo-dot{display:none}
   .header-cta .btn-primary,.header-cta .phone{display:none}
-  .mm-inner{grid-template-columns:1fr;gap:40px;padding-top:100px}
+  .mm-inner{grid-template-columns:1fr;gap:40px;padding-top:calc(var(--hb,90px) + 24px)}
   section{padding:80px 0}
   .section-tight,.section-flush{padding-top:0}
   .header .wrap{height:70px}

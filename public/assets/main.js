@@ -29,6 +29,7 @@
   const burger = $('.burger');
   const mm = $('#mobile-menu');
   const setMenu = open => {
+    if (open && mm && header) mm.style.setProperty('--hb', `${Math.round(header.getBoundingClientRect().bottom)}px`);
     document.body.classList.toggle('menu-open', open);
     burger && burger.setAttribute('aria-expanded', String(open));
     mm && mm.setAttribute('aria-hidden', String(!open));
