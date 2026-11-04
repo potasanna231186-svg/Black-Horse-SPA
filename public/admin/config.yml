@@ -73,6 +73,8 @@ collections:
           - { name: aboutImage, label: Фото «О салоне» 1, widget: image, required: false }
           - { name: aboutImage2, label: Фото «О салоне» 2, widget: image, required: false }
           - { name: video, label: Видео атмосферы (mp4, до 10 МБ), widget: file, required: false }
+          - { name: tourVideo, label: Видеотур по салону (кнопка на первом экране), widget: file, required: false }
+          - { name: tourPoster, label: Обложка видеотура, widget: image, required: false }
           - { name: videoPoster, label: Обложка видео, widget: image, required: false }
 
       - name: hero
@@ -101,6 +103,9 @@ collections:
                   - { name: label, label: Текст, <<: *ru_en }
                   - { name: link, label: Ссылка, widget: string }
               - { name: image, label: Фото сцены (лучше горизонтальное, от 1920px), widget: image, required: false }
+              - { name: video, label: "Фоновое видео (mp4/webm, без звука, 10–20 с, до 8 МБ)", widget: file, required: false }
+              - { name: videoMobile, label: Вертикальное видео для телефона, widget: file, required: false }
+              - { name: poster, label: Кадр-заставка видео, widget: image, required: false }
               - *art
               - { name: stones, label: Камни на заглушке, widget: boolean, default: false }
       - name: promo
