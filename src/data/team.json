@@ -1,8 +1,108 @@
 {
   "items": [
-    { "name": { "ru": "Анна", "en": "Anna" }, "role": { "ru": "Мастер массажа", "en": "Massage therapist" }, "exp": { "ru": "9 лет опыта · релакс и камни", "en": "9 years · relax & hot stones" }, "instagram": "", "image": "", "art": "v2" },
-    { "name": { "ru": "Мария", "en": "Maria" }, "role": { "ru": "Косметолог-эстетист", "en": "Aesthetician" }, "exp": { "ru": "7 лет · уход за лицом", "en": "7 years · facial care" }, "instagram": "", "image": "", "art": "v3" },
-    { "name": { "ru": "Ахмед", "en": "Ahmed" }, "role": { "ru": "Мастер хаммама", "en": "Hammam master" }, "exp": { "ru": "10 лет · восточные ритуалы", "en": "10 years · oriental rituals" }, "instagram": "", "image": "", "art": "v6" },
-    { "name": { "ru": "Елена", "en": "Elena" }, "role": { "ru": "SPA-терапевт", "en": "Spa therapist" }, "exp": { "ru": "6 лет · обёртывания и детокс", "en": "6 years · wraps & detox" }, "instagram": "", "image": "", "art": "v4" }
+    {
+      "name": {
+        "ru": "Анна",
+        "en": "Anna",
+        "it": "Anna",
+        "fr": "Anna",
+        "ar": "آنا"
+      },
+      "role": {
+        "ru": "Мастер массажа",
+        "en": "Massage therapist",
+        "it": "Massaggiatrice",
+        "fr": "Masseuse",
+        "ar": "معالجة تدليك"
+      },
+      "exp": {
+        "ru": "9 лет опыта · релакс и камни",
+        "en": "9 years · relax & hot stones",
+        "it": "9 anni · relax e pietre calde",
+        "fr": "9 ans · relaxation et pierres chaudes",
+        "ar": "9 سنوات · استرخاء وأحجار ساخنة"
+      },
+      "instagram": "",
+      "image": "",
+      "art": "v2"
+    },
+    {
+      "name": {
+        "ru": "Мария",
+        "en": "Maria",
+        "it": "Maria",
+        "fr": "Maria",
+        "ar": "ماريا"
+      },
+      "role": {
+        "ru": "Косметолог-эстетист",
+        "en": "Aesthetician",
+        "it": "Estetista",
+        "fr": "Esthéticienne",
+        "ar": "أخصائية تجميل"
+      },
+      "exp": {
+        "ru": "7 лет · уход за лицом",
+        "en": "7 years · facial care",
+        "it": "7 anni · cura del viso",
+        "fr": "7 ans · soins du visage",
+        "ar": "7 سنوات · العناية بالوجه"
+      },
+      "instagram": "",
+      "image": "",
+      "art": "v3"
+    },
+    {
+      "name": {
+        "ru": "Ахмед",
+        "en": "Ahmed",
+        "it": "Ahmed",
+        "fr": "Ahmed",
+        "ar": "أحمد"
+      },
+      "role": {
+        "ru": "Мастер хаммама",
+        "en": "Hammam master",
+        "it": "Maestro dell'hammam",
+        "fr": "Maître du hammam",
+        "ar": "خبير الحمّام"
+      },
+      "exp": {
+        "ru": "10 лет · восточные ритуалы",
+        "en": "10 years · oriental rituals",
+        "it": "10 anni · rituali orientali",
+        "fr": "10 ans · rituels orientaux",
+        "ar": "10 سنوات · طقوس شرقية"
+      },
+      "instagram": "",
+      "image": "",
+      "art": "v6"
+    },
+    {
+      "name": {
+        "ru": "Елена",
+        "en": "Elena",
+        "it": "Elena",
+        "fr": "Elena",
+        "ar": "إيلينا"
+      },
+      "role": {
+        "ru": "SPA-терапевт",
+        "en": "Spa therapist",
+        "it": "Terapista spa",
+        "fr": "Praticienne spa",
+        "ar": "معالجة سبا"
+      },
+      "exp": {
+        "ru": "6 лет · обёртывания и детокс",
+        "en": "6 years · wraps & detox",
+        "it": "6 anni · impacchi e detox",
+        "fr": "6 ans · enveloppements et détox",
+        "ar": "6 سنوات · اللفّ والتخلّص من السموم"
+      },
+      "instagram": "",
+      "image": "",
+      "art": "v4"
+    }
   ]
 }

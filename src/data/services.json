@@ -2,49 +2,343 @@
   "categories": [
     {
       "id": "massage",
-      "title": { "ru": "Массаж", "en": "Massage" },
+      "title": {
+        "ru": "Массаж",
+        "en": "Massage",
+        "it": "Massaggio",
+        "fr": "Massage",
+        "ar": "التدليك"
+      },
       "image": "",
       "art": "v2",
       "items": [
-        { "name": { "ru": "Релакс-массаж", "en": "Relax massage" }, "desc": { "ru": "Мягкий массаж всего тела с тёплым маслом для глубокого расслабления.", "en": "Gentle full-body massage with warm oil for deep relaxation." }, "duration": 60, "price": 45, "popular": true },
-        { "name": { "ru": "Глубокотканный массаж", "en": "Deep tissue massage" }, "desc": { "ru": "Проработка мышечных зажимов спины, шеи и плеч.", "en": "Releases tension in the back, neck and shoulders." }, "duration": 60, "price": 55, "popular": false },
-        { "name": { "ru": "Массаж горячими камнями", "en": "Hot stone massage" }, "desc": { "ru": "Вулканические камни прогревают мышцы и снимают усталость.", "en": "Volcanic stones warm the muscles and melt away fatigue." }, "duration": 75, "price": 65, "popular": false },
-        { "name": { "ru": "Тайский массаж", "en": "Thai massage" }, "desc": { "ru": "Растяжки и акупрессура на мате, без масла, в свободной одежде.", "en": "Stretching and acupressure on a mat, no oil, in loose clothing." }, "duration": 90, "price": 60, "popular": false },
-        { "name": { "ru": "Массаж для двоих", "en": "Couples massage" }, "desc": { "ru": "Одновременный релакс-массаж в SPA-кабинете для пар.", "en": "Side-by-side relax massage in our couples suite." }, "duration": 60, "price": 90, "popular": false }
+        {
+          "name": {
+            "ru": "Релакс-массаж",
+            "en": "Relax massage",
+            "it": "Massaggio rilassante",
+            "fr": "Massage relaxant",
+            "ar": "تدليك استرخائي"
+          },
+          "desc": {
+            "ru": "Мягкий массаж всего тела с тёплым маслом для глубокого расслабления.",
+            "en": "Gentle full-body massage with warm oil for deep relaxation.",
+            "it": "Massaggio delicato su tutto il corpo con olio caldo per un relax profondo.",
+            "fr": "Massage doux du corps entier à l'huile chaude pour une détente profonde.",
+            "ar": "تدليك لطيف للجسم كله بالزيت الدافئ لاسترخاء عميق."
+          },
+          "duration": 60,
+          "price": 45,
+          "popular": true
+        },
+        {
+          "name": {
+            "ru": "Глубокотканный массаж",
+            "en": "Deep tissue massage",
+            "it": "Massaggio decontratturante",
+            "fr": "Massage des tissus profonds",
+            "ar": "تدليك الأنسجة العميقة"
+          },
+          "desc": {
+            "ru": "Проработка мышечных зажимов спины, шеи и плеч.",
+            "en": "Releases tension in the back, neck and shoulders.",
+            "it": "Scioglie le tensioni di schiena, collo e spalle.",
+            "fr": "Libère les tensions du dos, de la nuque et des épaules.",
+            "ar": "يحرّر التوتر في الظهر والرقبة والكتفين."
+          },
+          "duration": 60,
+          "price": 55,
+          "popular": false
+        },
+        {
+          "name": {
+            "ru": "Массаж горячими камнями",
+            "en": "Hot stone massage",
+            "it": "Massaggio con pietre calde",
+            "fr": "Massage aux pierres chaudes",
+            "ar": "تدليك بالأحجار الساخنة"
+          },
+          "desc": {
+            "ru": "Вулканические камни прогревают мышцы и снимают усталость.",
+            "en": "Volcanic stones warm the muscles and melt away fatigue.",
+            "it": "Le pietre vulcaniche scaldano i muscoli e sciolgono la stanchezza.",
+            "fr": "Les pierres volcaniques réchauffent les muscles et dissipent la fatigue.",
+            "ar": "تدفّئ الأحجار البركانية العضلات وتذيب التعب."
+          },
+          "duration": 75,
+          "price": 65,
+          "popular": false
+        },
+        {
+          "name": {
+            "ru": "Тайский массаж",
+            "en": "Thai massage",
+            "it": "Massaggio thailandese",
+            "fr": "Massage thaï",
+            "ar": "تدليك تايلاندي"
+          },
+          "desc": {
+            "ru": "Растяжки и акупрессура на мате, без масла, в свободной одежде.",
+            "en": "Stretching and acupressure on a mat, no oil, in loose clothing.",
+            "it": "Stretching e digitopressione su materassino, senza olio, in abiti comodi.",
+            "fr": "Étirements et acupression sur tapis, sans huile, en tenue ample.",
+            "ar": "تمدّد وضغط بالأصابع على حصيرة، دون زيت، بملابس فضفاضة."
+          },
+          "duration": 90,
+          "price": 60,
+          "popular": false
+        },
+        {
+          "name": {
+            "ru": "Массаж для двоих",
+            "en": "Couples massage",
+            "it": "Massaggio di coppia",
+            "fr": "Massage en duo",
+            "ar": "تدليك للأزواج"
+          },
+          "desc": {
+            "ru": "Одновременный релакс-массаж в SPA-кабинете для пар.",
+            "en": "Side-by-side relax massage in our couples suite.",
+            "it": "Massaggio rilassante fianco a fianco nella nostra suite di coppia.",
+            "fr": "Massage relaxant côte à côte dans notre suite duo.",
+            "ar": "تدليك استرخائي جنبًا إلى جنب في جناح الأزواج."
+          },
+          "duration": 60,
+          "price": 90,
+          "popular": false
+        }
       ]
     },
     {
       "id": "rituals",
-      "title": { "ru": "SPA-ритуалы", "en": "Spa rituals" },
+      "title": {
+        "ru": "SPA-ритуалы",
+        "en": "Spa rituals",
+        "it": "Rituali spa",
+        "fr": "Rituels spa",
+        "ar": "طقوس السبا"
+      },
       "image": "",
       "art": "v3",
       "items": [
-        { "name": { "ru": "Хаммам", "en": "Hammam" }, "desc": { "ru": "Прогрев, пилинг кесе, пенный массаж и травяной чай.", "en": "Warm-up, kese scrub, foam massage and herbal tea." }, "duration": 90, "price": 60, "popular": true },
-        { "name": { "ru": "Ритуал «Восток»", "en": "Orient ritual" }, "desc": { "ru": "Хаммам, обёртывание с глиной и массаж с аргановым маслом.", "en": "Hammam, clay wrap and argan oil massage." }, "duration": 150, "price": 95, "popular": false },
-        { "name": { "ru": "Ритуал «Детокс»", "en": "Detox ritual" }, "desc": { "ru": "Скраб, водорослевое обёртывание и лимфодренажный массаж.", "en": "Scrub, seaweed wrap and lymphatic drainage massage." }, "duration": 120, "price": 85, "popular": false },
-        { "name": { "ru": "SPA-день", "en": "Spa day" }, "desc": { "ru": "Полный день заботы: ритуал тела, уход за лицом, обед и отдых.", "en": "A full day of care: body ritual, facial, lunch and rest." }, "duration": 240, "price": 140, "popular": false }
+        {
+          "name": {
+            "ru": "Хаммам",
+            "en": "Hammam",
+            "it": "Hammam",
+            "fr": "Hammam",
+            "ar": "الحمّام المغربي"
+          },
+          "desc": {
+            "ru": "Прогрев, пилинг кесе, пенный массаж и травяной чай.",
+            "en": "Warm-up, kese scrub, foam massage and herbal tea.",
+            "it": "Riscaldamento, scrub con kese, massaggio con schiuma e tè alle erbe.",
+            "fr": "Réchauffement, gommage au kessa, massage à la mousse et tisane.",
+            "ar": "تدفئة، وتقشير بالكيس، وتدليك بالرغوة، وشاي أعشاب."
+          },
+          "duration": 90,
+          "price": 60,
+          "popular": true
+        },
+        {
+          "name": {
+            "ru": "Ритуал «Восток»",
+            "en": "Orient ritual",
+            "it": "Rituale «Oriente»",
+            "fr": "Rituel « Orient »",
+            "ar": "طقس «الشرق»"
+          },
+          "desc": {
+            "ru": "Хаммам, обёртывание с глиной и массаж с аргановым маслом.",
+            "en": "Hammam, clay wrap and argan oil massage.",
+            "it": "Hammam, impacco all'argilla e massaggio all'olio di argan.",
+            "fr": "Hammam, enveloppement à l'argile et massage à l'huile d'argan.",
+            "ar": "حمّام، ولفّ بالطين، وتدليك بزيت الأرغان."
+          },
+          "duration": 150,
+          "price": 95,
+          "popular": false
+        },
+        {
+          "name": {
+            "ru": "Ритуал «Детокс»",
+            "en": "Detox ritual",
+            "it": "Rituale detox",
+            "fr": "Rituel détox",
+            "ar": "طقس التخلّص من السموم"
+          },
+          "desc": {
+            "ru": "Скраб, водорослевое обёртывание и лимфодренажный массаж.",
+            "en": "Scrub, seaweed wrap and lymphatic drainage massage.",
+            "it": "Scrub, impacco alle alghe e massaggio linfodrenante.",
+            "fr": "Gommage, enveloppement aux algues et drainage lymphatique.",
+            "ar": "تقشير، ولفّ بالطحالب، وتدليك للتصريف اللمفاوي."
+          },
+          "duration": 120,
+          "price": 85,
+          "popular": false
+        },
+        {
+          "name": {
+            "ru": "SPA-день",
+            "en": "Spa day",
+            "it": "Giornata spa",
+            "fr": "Journée spa",
+            "ar": "يوم السبا"
+          },
+          "desc": {
+            "ru": "Полный день заботы: ритуал тела, уход за лицом, обед и отдых.",
+            "en": "A full day of care: body ritual, facial, lunch and rest.",
+            "it": "Un'intera giornata di cura: rituale corpo, trattamento viso, pranzo e relax.",
+            "fr": "Une journée complète de soins : rituel corps, soin du visage, déjeuner et repos.",
+            "ar": "يوم كامل من العناية: طقس للجسم، وعناية بالوجه، وغداء، وراحة."
+          },
+          "duration": 240,
+          "price": 140,
+          "popular": false
+        }
       ]
     },
     {
       "id": "face",
-      "title": { "ru": "Уход за лицом", "en": "Facial care" },
+      "title": {
+        "ru": "Уход за лицом",
+        "en": "Facial care",
+        "it": "Cura del viso",
+        "fr": "Soins du visage",
+        "ar": "العناية بالوجه"
+      },
       "image": "",
       "art": "v4",
       "items": [
-        { "name": { "ru": "Сияние кожи", "en": "Glow facial" }, "desc": { "ru": "Очищение, энзимный пилинг, маска и массаж лица.", "en": "Cleansing, enzyme peel, mask and facial massage." }, "duration": 75, "price": 50, "popular": true },
-        { "name": { "ru": "Глубокое увлажнение", "en": "Deep hydration" }, "desc": { "ru": "Гиалуроновая сыворотка, альгинатная маска, лифтинг-массаж.", "en": "Hyaluronic serum, alginate mask, lifting massage." }, "duration": 60, "price": 55, "popular": false },
-        { "name": { "ru": "Скульптурный массаж лица", "en": "Face sculpting massage" }, "desc": { "ru": "Ручная техника для чёткого овала и снятия отёков.", "en": "Manual technique to define contours and reduce puffiness." }, "duration": 45, "price": 40, "popular": false }
+        {
+          "name": {
+            "ru": "Сияние кожи",
+            "en": "Glow facial",
+            "it": "Trattamento viso illuminante",
+            "fr": "Soin éclat du visage",
+            "ar": "عناية النضارة للوجه"
+          },
+          "desc": {
+            "ru": "Очищение, энзимный пилинг, маска и массаж лица.",
+            "en": "Cleansing, enzyme peel, mask and facial massage.",
+            "it": "Detersione, peeling enzimatico, maschera e massaggio viso.",
+            "fr": "Nettoyage, peeling enzymatique, masque et massage du visage.",
+            "ar": "تنظيف، وتقشير إنزيمي، وقناع، وتدليك للوجه."
+          },
+          "duration": 75,
+          "price": 50,
+          "popular": true
+        },
+        {
+          "name": {
+            "ru": "Глубокое увлажнение",
+            "en": "Deep hydration",
+            "it": "Idratazione profonda",
+            "fr": "Hydratation profonde",
+            "ar": "ترطيب عميق"
+          },
+          "desc": {
+            "ru": "Гиалуроновая сыворотка, альгинатная маска, лифтинг-массаж.",
+            "en": "Hyaluronic serum, alginate mask, lifting massage.",
+            "it": "Siero ialuronico, maschera all'alginato, massaggio liftante.",
+            "fr": "Sérum à l'acide hyaluronique, masque à l'alginate, massage liftant.",
+            "ar": "سيروم الهيالورونيك، وقناع الألجينات، وتدليك شدّ."
+          },
+          "duration": 60,
+          "price": 55,
+          "popular": false
+        },
+        {
+          "name": {
+            "ru": "Скульптурный массаж лица",
+            "en": "Face sculpting massage",
+            "it": "Massaggio scultoreo del viso",
+            "fr": "Massage sculptant du visage",
+            "ar": "تدليك نحت الوجه"
+          },
+          "desc": {
+            "ru": "Ручная техника для чёткого овала и снятия отёков.",
+            "en": "Manual technique to define contours and reduce puffiness.",
+            "it": "Tecnica manuale per definire i contorni e ridurre il gonfiore.",
+            "fr": "Technique manuelle pour redessiner les contours et réduire les gonflements.",
+            "ar": "تقنية يدوية لتحديد ملامح الوجه وتخفيف الانتفاخ."
+          },
+          "duration": 45,
+          "price": 40,
+          "popular": false
+        }
       ]
     },
     {
       "id": "body",
-      "title": { "ru": "Уход за телом", "en": "Body care" },
+      "title": {
+        "ru": "Уход за телом",
+        "en": "Body care",
+        "it": "Cura del corpo",
+        "fr": "Soins du corps",
+        "ar": "العناية بالجسم"
+      },
       "image": "",
       "art": "v6",
       "items": [
-        { "name": { "ru": "Кофейный скраб", "en": "Coffee scrub" }, "desc": { "ru": "Обновление кожи и тонус, завершается нанесением масла.", "en": "Renews and tones the skin, finished with nourishing oil." }, "duration": 40, "price": 35, "popular": false },
-        { "name": { "ru": "Шоколадное обёртывание", "en": "Chocolate wrap" }, "desc": { "ru": "Питание и мягкость кожи, отличное настроение в подарок.", "en": "Nourishes and softens the skin — and lifts your mood." }, "duration": 60, "price": 45, "popular": false },
-        { "name": { "ru": "Антицеллюлитная программа", "en": "Anti-cellulite programme" }, "desc": { "ru": "Скраб, разогревающее обёртывание и моделирующий массаж.", "en": "Scrub, warming wrap and body-sculpting massage." }, "duration": 90, "price": 55, "popular": false }
+        {
+          "name": {
+            "ru": "Кофейный скраб",
+            "en": "Coffee scrub",
+            "it": "Scrub al caffè",
+            "fr": "Gommage au café",
+            "ar": "تقشير بالقهوة"
+          },
+          "desc": {
+            "ru": "Обновление кожи и тонус, завершается нанесением масла.",
+            "en": "Renews and tones the skin, finished with nourishing oil.",
+            "it": "Rinnova e tonifica la pelle, si conclude con un olio nutriente.",
+            "fr": "Renouvelle et tonifie la peau, finition à l'huile nourrissante.",
+            "ar": "يجدّد البشرة ويشدّها، ويُختتم بزيت مغذٍّ."
+          },
+          "duration": 40,
+          "price": 35,
+          "popular": false
+        },
+        {
+          "name": {
+            "ru": "Шоколадное обёртывание",
+            "en": "Chocolate wrap",
+            "it": "Impacco al cioccolato",
+            "fr": "Enveloppement au chocolat",
+            "ar": "لفّ بالشوكولاتة"
+          },
+          "desc": {
+            "ru": "Питание и мягкость кожи, отличное настроение в подарок.",
+            "en": "Nourishes and softens the skin — and lifts your mood.",
+            "it": "Nutre e ammorbidisce la pelle e migliora l'umore.",
+            "fr": "Nourrit et adoucit la peau, et met de bonne humeur.",
+            "ar": "يغذّي البشرة ويليّنها — ويرفع المعنويات."
+          },
+          "duration": 60,
+          "price": 45,
+          "popular": false
+        },
+        {
+          "name": {
+            "ru": "Антицеллюлитная программа",
+            "en": "Anti-cellulite programme",
+            "it": "Programma anticellulite",
+            "fr": "Programme anticellulite",
+            "ar": "برنامج مكافحة السيلوليت"
+          },
+          "desc": {
+            "ru": "Скраб, разогревающее обёртывание и моделирующий массаж.",
+            "en": "Scrub, warming wrap and body-sculpting massage.",
+            "it": "Scrub, impacco riscaldante e massaggio modellante.",
+            "fr": "Gommage, enveloppement chauffant et massage sculptant.",
+            "ar": "تقشير، ولفّ مُدفئ، وتدليك لنحت الجسم."
+          },
+          "duration": 90,
+          "price": 55,
+          "popular": false
+        }
       ]
     }
   ]

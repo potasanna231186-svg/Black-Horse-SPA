@@ -1,7 +1,7 @@
 ---
 import Icon from '../components/Icon.astro';
 import MsgrRow from '../components/MsgrRow.astro';
-import { site, data, LANGS, url, absUrl, asset, assetV, tr, t, msgrLink, schemaFor, type Lang, type Page } from '../lib/site';
+import { site, data, LANGS, LOCALES, LANG_LABEL, dirOf, url, absUrl, asset, assetV, tr, t, msgrLink, schemaFor, type Lang, type Page } from '../lib/site';
 
 interface Props { lang: Lang; page: Page; title: string; description?: string }
 const { lang, page, title, description } = Astro.props;
@@ -23,7 +23,7 @@ const cfg = {
 const year = new Date().getFullYear();
 ---
 <!DOCTYPE html>
-<html lang={lang}>
+<html lang={lang} dir={dirOf(lang)}>
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -42,8 +42,8 @@ const year = new Date().getFullYear();
   <meta property="og:image" content={og} />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
-  <meta property="og:locale" content={lang === 'ru' ? 'ru_RU' : 'en_US'} />
-  <meta property="og:locale:alternate" content={lang === 'ru' ? 'en_US' : 'ru_RU'} />
+  <meta property="og:locale" content={LOCALES[lang]} />
+  {LANGS.filter((l) => l !== lang).map((l) => <meta property="og:locale:alternate" content={LOCALES[l]} />)}
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content={title} />
   <meta name="twitter:description" content={desc} />
@@ -59,6 +59,7 @@ const year = new Date().getFullYear();
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  {lang === 'ar' && <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet" />}
   <link rel="stylesheet" href={assetV('assets/style.css')} />
 
   <!-- Тема применяется до отрисовки, чтобы не было вспышки -->
@@ -97,11 +98,16 @@ const year = new Date().getFullYear();
         ))}
       </nav>
       <div class="header-cta">
-        <div class="lang-switch">
-          {LANGS.map((l) => (
-            <a href={url(page === '404' ? 'index' : page, l)} hreflang={l} lang={l} class={l === lang ? 'active' : undefined}>{l.toUpperCase()}</a>
-          ))}
-        </div>
+        <details class="lang-menu">
+          <summary aria-label={T.language}><span class="lang-code">{lang.toUpperCase()}</span><i aria-hidden="true">▾</i></summary>
+          <ul>
+            {LANGS.map((l) => (
+              <li><a href={url(page === '404' ? 'index' : page, l)} hreflang={l} lang={l} class={l === lang ? 'active' : undefined} aria-current={l === lang ? 'true' : undefined}>
+                <b>{l.toUpperCase()}</b><span>{LANG_LABEL[l]}</span>
+              </a></li>
+            ))}
+          </ul>
+        </details>
         <button class="icon-btn theme-toggle" aria-label={T.theme} title={T.theme}>
           <span class="i-sun"><Icon name="sun" /></span><span class="i-moon"><Icon name="moon" /></span>
         </button>

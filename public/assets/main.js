@@ -74,10 +74,15 @@
     });
   }
 
+  /* Выбор языка: закрывается по клику мимо */
+  const langMenus = $$('.lang-menu');
+  document.addEventListener('click', e => langMenus.forEach(d => { if (d.open && !d.contains(e.target)) d.open = false; }));
+
   /* Escape закрывает всё открытое */
   addEventListener('keydown', e => {
     if (e.key !== 'Escape') return;
     setMenu(false);
+    langMenus.forEach(d => d.open = false);
     fab && fab.classList.remove('open');
     closeLightbox();
   });

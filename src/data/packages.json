@@ -3,11 +3,17 @@
     {
       "name": {
         "ru": "Абонемент «Баланс»",
-        "en": "Balance pass"
+        "en": "Balance pass",
+        "it": "Abbonamento «Balance»",
+        "fr": "Forfait « Équilibre »",
+        "ar": "باقة «التوازن»"
       },
       "desc": {
         "ru": "5 релакс-массажей по 60 минут. Действует 3 месяца.",
-        "en": "5 relax massages, 60 min each. Valid for 3 months."
+        "en": "5 relax massages, 60 min each. Valid for 3 months.",
+        "it": "5 massaggi rilassanti da 60 min. Valido 3 mesi.",
+        "fr": "5 massages relaxants de 60 min. Valable 3 mois.",
+        "ar": "5 جلسات تدليك استرخائي مدة كل منها 60 دقيقة. صالحة 3 أشهر."
       },
       "price": 190,
       "oldPrice": 225,
@@ -15,15 +21,24 @@
       "features": [
         {
           "ru": "Экономия 15%",
-          "en": "Save 15%"
+          "en": "Save 15%",
+          "it": "Risparmi il 15%",
+          "fr": "15 % d'économie",
+          "ar": "وفّر 15%"
         },
         {
           "ru": "Можно делить с близкими",
-          "en": "Shareable with family"
+          "en": "Shareable with family",
+          "it": "Condivisibile con la famiglia",
+          "fr": "Partageable en famille",
+          "ar": "يمكن مشاركتها مع العائلة"
         },
         {
           "ru": "Травяной чай после каждого визита",
-          "en": "Herbal tea after every visit"
+          "en": "Herbal tea after every visit",
+          "it": "Tè alle erbe dopo ogni visita",
+          "fr": "Tisane après chaque visite",
+          "ar": "شاي أعشاب بعد كل زيارة"
         }
       ],
       "fromPrice": false
@@ -31,11 +46,17 @@
     {
       "name": {
         "ru": "SPA-день для двоих",
-        "en": "Spa day for two"
+        "en": "Spa day for two",
+        "it": "Giornata spa per due",
+        "fr": "Journée spa à deux",
+        "ar": "يوم سبا لشخصين"
       },
       "desc": {
         "ru": "Хаммам, массаж для пар, уход за лицом и обед.",
-        "en": "Hammam, couples massage, facial and lunch."
+        "en": "Hammam, couples massage, facial and lunch.",
+        "it": "Hammam, massaggio di coppia, trattamento viso e pranzo.",
+        "fr": "Hammam, massage en duo, soin du visage et déjeuner.",
+        "ar": "حمّام، وتدليك للأزواج، وعناية بالوجه، وغداء."
       },
       "price": 250,
       "oldPrice": 290,
@@ -43,15 +64,24 @@
       "features": [
         {
           "ru": "4 часа отдыха",
-          "en": "4 hours of relaxation"
+          "en": "4 hours of relaxation",
+          "it": "4 ore di relax",
+          "fr": "4 heures de détente",
+          "ar": "4 ساعات من الاسترخاء"
         },
         {
           "ru": "Приватный SPA-кабинет",
-          "en": "Private spa suite"
+          "en": "Private spa suite",
+          "it": "Suite spa privata",
+          "fr": "Suite spa privée",
+          "ar": "جناح سبا خاص"
         },
         {
           "ru": "Фрукты и напитки",
-          "en": "Fruit and drinks"
+          "en": "Fruit and drinks",
+          "it": "Frutta e bevande",
+          "fr": "Fruits et boissons",
+          "ar": "فواكه ومشروبات"
         }
       ],
       "fromPrice": false
@@ -59,11 +89,17 @@
     {
       "name": {
         "ru": "Подарочный сертификат",
-        "en": "Gift card"
+        "en": "Gift card",
+        "it": "Gift card",
+        "fr": "Carte cadeau",
+        "ar": "بطاقة هدية"
       },
       "desc": {
         "ru": "На любую сумму или процедуру. Оформим за 5 минут в мессенджере.",
-        "en": "Any amount or treatment. Issued in 5 minutes via messenger."
+        "en": "Any amount or treatment. Issued in 5 minutes via messenger.",
+        "it": "Qualsiasi importo o trattamento. Emessa in 5 minuti via messenger.",
+        "fr": "Tout montant ou soin. Émise en 5 minutes par messagerie.",
+        "ar": "بأي مبلغ أو لأي علاج. تصدر خلال 5 دقائق عبر المراسلة."
       },
       "price": 50,
       "oldPrice": 0,
@@ -71,15 +107,24 @@
       "features": [
         {
           "ru": "Красивая открытка или PDF",
-          "en": "Printed card or PDF"
+          "en": "Printed card or PDF",
+          "it": "Card stampata o PDF",
+          "fr": "Carte imprimée ou PDF",
+          "ar": "بطاقة مطبوعة أو PDF"
         },
         {
           "ru": "Действует 6 месяцев",
-          "en": "Valid for 6 months"
+          "en": "Valid for 6 months",
+          "it": "Valida 6 mesi",
+          "fr": "Valable 6 mois",
+          "ar": "صالحة 6 أشهر"
         },
         {
           "ru": "Именной по желанию",
-          "en": "Can be personalised"
+          "en": "Can be personalised",
+          "it": "Personalizzabile",
+          "fr": "Personnalisable",
+          "ar": "يمكن تخصيصها بالاسم"
         }
       ],
       "fromPrice": true

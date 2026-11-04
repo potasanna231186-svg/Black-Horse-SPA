@@ -206,7 +206,44 @@
     "footer_contacts": "Контакты",
     "footer_rights": "Все права защищены.",
     "footer_book": "Записаться онлайн →",
-    "home_title": "массаж и SPA-ритуалы"
+    "home_title": "массаж и SPA-ритуалы",
+    "hero_hint": "Листайте, чтобы погрузиться",
+    "hero_open": "Открыть сайт",
+    "hero_pause": "Пауза",
+    "hero_play": "Продолжить",
+    "hero_prev": "Предыдущая сцена",
+    "hero_next": "Следующая сцена",
+    "hero_scene": "Сцена",
+    "hero_tour": "Видеотур по салону",
+    "your_video": "Ваше видео",
+    "language": "Язык",
+    "privacy_note": "Шаблон политики. Проверьте и дополните его под законодательство вашей страны.",
+    "privacy_sections": [
+      [
+        "1. Кто мы",
+        "Сайт принадлежит салону {name} ({address}). По вопросам обработки данных пишите на {email}."
+      ],
+      [
+        "2. Какие данные мы получаем",
+        "Сайт не хранит персональные данные на сервере. Когда вы заполняете форму записи, текст заявки (имя, телефон, услуга, дата, комментарий) формируется прямо в вашем браузере и отправляется нам только после того, как вы сами нажмёте «Отправить» в WhatsApp или Telegram."
+      ],
+      [
+        "3. Зачем мы используем данные",
+        "Только чтобы связаться с вами, подтвердить запись и ответить на вопросы. Мы не передаём ваши данные третьим лицам для рекламы."
+      ],
+      [
+        "4. Сторонние сервисы",
+        "Сайт использует Google Fonts и Google Maps, а также переходы в WhatsApp, Telegram, Viber и Instagram. Эти сервисы обрабатывают данные по своим политикам конфиденциальности."
+      ],
+      [
+        "5. Хранение в браузере",
+        "Мы сохраняем в вашем браузере только выбранную тему оформления и то, что вы закрыли полосу с акцией. Файлы cookie для рекламы и аналитики не используются."
+      ],
+      [
+        "6. Ваши права",
+        "Вы можете в любой момент попросить удалить переписку и данные о записи, написав нам в мессенджер или на {email}."
+      ]
+    ]
   },
   "en": {
     "lang_name": "English",
@@ -415,6 +452,781 @@
     "footer_contacts": "Contacts",
     "footer_rights": "All rights reserved.",
     "footer_book": "Book online →",
-    "home_title": "massage & spa rituals"
+    "home_title": "massage & spa rituals",
+    "hero_hint": "Scroll to immerse",
+    "hero_open": "Enter the site",
+    "hero_pause": "Pause",
+    "hero_play": "Play",
+    "hero_prev": "Previous scene",
+    "hero_next": "Next scene",
+    "hero_scene": "Scene",
+    "hero_tour": "Video tour",
+    "your_video": "Your video",
+    "language": "Language",
+    "privacy_note": "Policy template. Please review and adapt it to the laws of your country.",
+    "privacy_sections": [
+      [
+        "1. Who we are",
+        "This website belongs to {name} ({address}). For data questions, email {email}."
+      ],
+      [
+        "2. What data we receive",
+        "The website does not store personal data on a server. When you fill in the booking form, the request (name, phone, treatment, date, comment) is created in your browser and reaches us only after you tap “Send” in WhatsApp or Telegram yourself."
+      ],
+      [
+        "3. Why we use it",
+        "Only to contact you, confirm your booking and answer questions. We never share your data with third parties for advertising."
+      ],
+      [
+        "4. Third-party services",
+        "The site uses Google Fonts and Google Maps and links to WhatsApp, Telegram, Viber and Instagram. These services process data under their own privacy policies."
+      ],
+      [
+        "5. Browser storage",
+        "We only store your chosen colour theme and whether you closed the offer banner. No advertising or analytics cookies are used."
+      ],
+      [
+        "6. Your rights",
+        "You can ask us to delete your messages and booking data at any time via messenger or {email}."
+      ]
+    ]
+  },
+  "it": {
+    "lang_name": "Italiano",
+    "skip": "Vai al contenuto",
+    "nav_home": "Home",
+    "nav_services": "Servizi e prezzi",
+    "nav_about": "Chi siamo",
+    "nav_gallery": "Galleria",
+    "nav_faq": "FAQ",
+    "nav_contacts": "Contatti",
+    "book": "Prenota",
+    "book_wa": "Prenota su WhatsApp",
+    "all_services": "Tutti i servizi →",
+    "more_about": "Scopri di più",
+    "min": "min",
+    "from": "da",
+    "theme": "Cambia tema",
+    "menu": "Menu",
+    "write_us": "Scrivici",
+    "call": "Chiama",
+    "close": "Chiudi",
+    "your_photo": "La tua foto",
+    "promo_left": "Termina tra",
+    "promo_d": "g",
+    "promo_h": "h",
+    "promo_m": "min",
+    "promo_more": "Dettagli",
+    "sticky_label": "Rispondiamo in 15 min",
+    "wa_greeting": "Buongiorno! Vorrei prenotare da {name}.",
+    "wa_service": "Buongiorno! Vorrei prenotare «{service}».",
+    "hero_eyebrow": "Spa & Wellness",
+    "hero_title": "Tempo di <em>rallentare</em> e&nbsp;ritrovare&nbsp;te stessa",
+    "hero_lead": "Massaggi d'autore, rituali spa e trattamenti in un'atmosfera di silenzio, calore e profumi naturali.",
+    "hero_stats": [
+      [
+        "8+",
+        "anni di cura"
+      ],
+      [
+        "30+",
+        "programmi"
+      ],
+      [
+        "12",
+        "terapisti"
+      ]
+    ],
+    "open_today": "Siamo aperti",
+    "marquee": [
+      "Massaggio",
+      "Rituali spa",
+      "Hammam",
+      "Viso",
+      "Impacchi",
+      "Aromaterapia"
+    ],
+    "why_eyebrow": "Perché noi",
+    "why_title": "Cura in ogni <em>dettaglio</em>",
+    "why_lead": "Abbiamo creato un luogo dove staccare dalla fretta, ritrovare l'energia e sentirsi di nuovo leggeri.",
+    "features": [
+      [
+        "leaf",
+        "Cosmetici naturali",
+        "Oli spremuti a freddo, miscele di erbe e linee professionali senza ingredienti aggressivi."
+      ],
+      [
+        "user",
+        "Terapisti esperti",
+        "Specialisti certificati con oltre 5 anni di esperienza che adattano ogni trattamento a te."
+      ],
+      [
+        "door",
+        "Cabine private",
+        "Stanze accoglienti con luce soffusa, lettini riscaldati e una suite dedicata alle coppie."
+      ],
+      [
+        "gift",
+        "Gift card",
+        "Il regalo più bello per chi ami è del tempo per sé. Emessa in 5 minuti via messenger."
+      ]
+    ],
+    "popular_eyebrow": "I più amati",
+    "popular_title": "I preferiti degli ospiti",
+    "video_eyebrow": "Atmosfera",
+    "video_title": "Senti il <em>silenzio</em>",
+    "video_lead": "Luce soffusa, pietra calda, profumo di erbe: dai un'occhiata prima della tua visita.",
+    "about_eyebrow": "La spa",
+    "about_title": "Un luogo in cui <em>tornare</em>",
+    "about_lead": "Ogni visita inizia con un tè alle erbe e una breve chiacchierata, così il terapista sa esattamente di cosa hai bisogno oggi.",
+    "about_checks": [
+      "Trattamenti e oli scelti per te",
+      "Doccia, accappatoio, ciabatte e asciugamani inclusi",
+      "Sala tè per rilassarsi dopo i trattamenti"
+    ],
+    "packages_eyebrow": "Pacchetti e gift card",
+    "packages_title": "Più relax, <em>più convenienza</em>",
+    "packages_lead": "Abbonamenti per prenderti cura di te con regolarità e regali che si ricordano.",
+    "package_order": "Acquista",
+    "package_best": "Più scelto",
+    "steps_eyebrow": "La tua visita",
+    "steps_title": "Quattro passi verso il <em>relax</em>",
+    "steps": [
+      [
+        "Prenota",
+        "Scrivici su WhatsApp o Telegram e troviamo l'orario giusto."
+      ],
+      [
+        "Accoglienza",
+        "Tè, una breve consulenza e la scelta dell'aroma."
+      ],
+      [
+        "Trattamento",
+        "Relax totale in una cabina privata."
+      ],
+      [
+        "Riposo",
+        "Tempo nella sala tè per tornare dolcemente alla tua giornata."
+      ]
+    ],
+    "reviews_eyebrow": "Recensioni",
+    "reviews_title": "Cosa dicono i nostri <em>ospiti</em>",
+    "reviews_empty": "Leggi le recensioni dei nostri ospiti e lascia la tua su Google Maps.",
+    "reviews_btn": "Recensioni su Google",
+    "faq_eyebrow": "FAQ",
+    "faq_title": "Risposte <em>in anticipo</em>",
+    "faq_all": "Tutte le domande →",
+    "faq_lead": "Non hai trovato la risposta? Scrivici su qualsiasi messenger: rispondiamo entro 15 minuti.",
+    "cta_eyebrow": "Prenotazione online",
+    "cta_title": "Regalati <em>un'ora di calma</em>",
+    "cta_lead": "Scegli il tuo messenger: rispondiamo entro 15 minuti e troviamo l'orario.",
+    "services_title": "Servizi <em>e prezzi</em>",
+    "services_lead": "Scegli una categoria e tocca «Prenota»: si aprirà un messaggio WhatsApp con il nome del trattamento.",
+    "services_cta_title": "Non sai cosa <em>scegliere</em>?",
+    "services_cta_lead": "Scrivici: un terapista ti aiuterà a trovare il trattamento giusto.",
+    "about_page_title": "La nostra <em>filosofia</em>",
+    "about_page_lead": "Crediamo che il vero riposo non sia un lusso ma una necessità. Per questo abbiamo creato un luogo dove il tempo scorre più lento.",
+    "story_eyebrow": "La nostra storia",
+    "story_title": "Da una piccola stanza a uno <em>spazio spa</em>",
+    "story_lead": "Tutto è iniziato con una sola sala massaggi e il desiderio di far stare bene le persone. Oggi abbiamo cinque cabine private, un hammam, una suite di coppia e una sala tè.",
+    "story_checks": [
+      "Solo cosmetici professionali certificati",
+      "Materiali monouso e igiene rigorosa",
+      "Programmi adattati a come ti senti"
+    ],
+    "about_stats": [
+      [
+        "8+",
+        "anni"
+      ],
+      [
+        "30+",
+        "programmi spa"
+      ],
+      [
+        "12",
+        "terapisti"
+      ],
+      [
+        "5",
+        "cabine private"
+      ]
+    ],
+    "team_eyebrow": "Team",
+    "team_title": "I nostri <em>terapisti</em>",
+    "team_lead": "Ogni terapista è specializzato nel proprio campo. Chiedici chi è più adatto a te quando prenoti.",
+    "about_cta_title": "Vieni a <em>conoscerci</em>",
+    "about_cta_lead": "Prenota il tuo primo trattamento: ti mostreremo lo spazio e troveremo il programma giusto.",
+    "gallery_title": "L'atmosfera <em>Black Horse</em>",
+    "gallery_lead": "Dai un'occhiata all'interno: cabine, hammam, sala tè e i dettagli che rendono il riposo speciale.",
+    "gallery_all": "Tutte",
+    "gallery_cta_title": "Altre foto su <em>Instagram</em>",
+    "gallery_cta_lead": "Seguici per scoprire per primo offerte e nuovi trattamenti.",
+    "gallery_cta_btn": "Apri Instagram",
+    "faq_page_title": "Domande <em>frequenti</em>",
+    "contacts_title": "Contatti <em>e prenotazioni</em>",
+    "contacts_lead": "Scrivici su qualsiasi messenger: rispondiamo entro 15 minuti negli orari di apertura.",
+    "c_phone": "Telefono",
+    "c_address": "Indirizzo",
+    "map_fallback": "La mappa si carica sul sito pubblicato.",
+    "form_eyebrow": "Prenotazione online",
+    "form_title": "Prenota un trattamento",
+    "f_name": "Nome",
+    "f_name_ph": "Il tuo nome",
+    "f_phone": "Telefono",
+    "f_service": "Trattamento",
+    "f_date": "Data preferita",
+    "f_comment": "Commento",
+    "f_comment_ph": "Orario preferito, desideri",
+    "f_consult": "Ho bisogno di un consiglio",
+    "f_gift": "Gift card",
+    "f_submit": "Crea richiesta",
+    "f_note": "La richiesta si apre in WhatsApp o Telegram: basta toccare «Invia». Inviandola accetti la nostra",
+    "f_privacy": "informativa sulla privacy",
+    "f_done": "La tua richiesta è pronta!",
+    "f_done_lead": "Scegli un messenger per inviarla al nostro team:",
+    "f_copy": "Copia testo",
+    "f_copied": "Copiato",
+    "f_msg": "Buongiorno! Vorrei prenotare da {name}.\nNome: {n}\nTelefono: {p}\nTrattamento: {s}\nData: {d}\nCommento: {c}",
+    "privacy_title": "Informativa sulla <em>privacy</em>",
+    "nf_title": "Pagina <em>non trovata</em>",
+    "nf_lead": "Forse è stata spostata. Torna alla home o scrivici: ti aiutiamo.",
+    "nf_btn": "Torna alla home",
+    "footer_about": "Uno spazio di silenzio, calore e cura di sé. Massaggi, rituali spa e trattamenti.",
+    "footer_nav": "Navigazione",
+    "footer_services": "Servizi",
+    "footer_contacts": "Contatti",
+    "footer_rights": "Tutti i diritti riservati.",
+    "footer_book": "Prenota online →",
+    "home_title": "massaggi e rituali spa",
+    "hero_hint": "Scorri per immergerti",
+    "hero_open": "Entra nel sito",
+    "hero_pause": "Pausa",
+    "hero_play": "Riprendi",
+    "hero_prev": "Scena precedente",
+    "hero_next": "Scena successiva",
+    "hero_scene": "Scena",
+    "hero_tour": "Video tour",
+    "your_video": "Il tuo video",
+    "language": "Lingua",
+    "privacy_note": "Modello di informativa. Verificalo e adattalo alle leggi del tuo paese.",
+    "privacy_sections": [
+      [
+        "1. Chi siamo",
+        "Questo sito appartiene a {name} ({address}). Per domande sui dati scrivi a {email}."
+      ],
+      [
+        "2. Quali dati riceviamo",
+        "Il sito non conserva dati personali su un server. Quando compili il modulo di prenotazione, la richiesta (nome, telefono, trattamento, data, commento) viene creata nel tuo browser e ci arriva solo dopo che tocchi tu stesso «Invia» in WhatsApp o Telegram."
+      ],
+      [
+        "3. Perché li usiamo",
+        "Solo per contattarti, confermare la prenotazione e rispondere alle domande. Non condividiamo mai i tuoi dati con terzi per pubblicità."
+      ],
+      [
+        "4. Servizi di terze parti",
+        "Il sito utilizza Google Fonts e Google Maps e rimanda a WhatsApp, Telegram, Viber e Instagram. Questi servizi trattano i dati secondo le proprie informative."
+      ],
+      [
+        "5. Memoria del browser",
+        "Salviamo nel browser solo il tema scelto e se hai chiuso la barra delle offerte. Non usiamo cookie pubblicitari o di analisi."
+      ],
+      [
+        "6. I tuoi diritti",
+        "Puoi chiederci in qualsiasi momento di cancellare messaggi e dati della prenotazione via messenger o a {email}."
+      ]
+    ]
+  },
+  "fr": {
+    "lang_name": "Français",
+    "skip": "Aller au contenu",
+    "nav_home": "Accueil",
+    "nav_services": "Soins et tarifs",
+    "nav_about": "À propos",
+    "nav_gallery": "Galerie",
+    "nav_faq": "FAQ",
+    "nav_contacts": "Contact",
+    "book": "Réserver",
+    "book_wa": "Réserver sur WhatsApp",
+    "all_services": "Tous les soins →",
+    "more_about": "En savoir plus",
+    "min": "min",
+    "from": "dès",
+    "theme": "Changer de thème",
+    "menu": "Menu",
+    "write_us": "Écrivez-nous",
+    "call": "Appeler",
+    "close": "Fermer",
+    "your_photo": "Votre photo",
+    "promo_left": "Fin dans",
+    "promo_d": "j",
+    "promo_h": "h",
+    "promo_m": "min",
+    "promo_more": "Détails",
+    "sticky_label": "Réponse en 15 min",
+    "wa_greeting": "Bonjour ! Je souhaite réserver chez {name}.",
+    "wa_service": "Bonjour ! Je souhaite réserver « {service} ».",
+    "hero_eyebrow": "Spa & Bien-être",
+    "hero_title": "Le temps de <em>ralentir</em> et&nbsp;de revenir à&nbsp;soi",
+    "hero_lead": "Massages signature, rituels spa et soins dans une atmosphère de silence, de chaleur et de parfums naturels.",
+    "hero_stats": [
+      [
+        "8+",
+        "ans de soins"
+      ],
+      [
+        "30+",
+        "programmes"
+      ],
+      [
+        "12",
+        "praticiens"
+      ]
+    ],
+    "open_today": "Nous sommes ouverts",
+    "marquee": [
+      "Massage",
+      "Rituels spa",
+      "Hammam",
+      "Soins du visage",
+      "Enveloppements",
+      "Aromathérapie"
+    ],
+    "why_eyebrow": "Pourquoi nous",
+    "why_title": "Le soin dans chaque <em>détail</em>",
+    "why_lead": "Nous avons créé un lieu pour échapper à l'agitation, retrouver de l'énergie et se sentir à nouveau léger.",
+    "features": [
+      [
+        "leaf",
+        "Cosmétiques naturels",
+        "Huiles pressées à froid, mélanges de plantes et gammes professionnelles sans ingrédients agressifs."
+      ],
+      [
+        "user",
+        "Praticiens expérimentés",
+        "Des spécialistes certifiés, plus de 5 ans d'expérience, qui adaptent chaque soin à vous."
+      ],
+      [
+        "door",
+        "Cabines privées",
+        "Des pièces cosy à la lumière douce, tables chauffantes et une suite dédiée aux duos."
+      ],
+      [
+        "gift",
+        "Cartes cadeaux",
+        "Le plus beau cadeau pour vos proches : du temps pour soi. Émise en 5 minutes par messagerie."
+      ]
+    ],
+    "popular_eyebrow": "Populaires",
+    "popular_title": "Les préférés de nos hôtes",
+    "video_eyebrow": "Atmosphère",
+    "video_title": "Ressentez le <em>silence</em>",
+    "video_lead": "Lumière douce, pierre chaude, parfum de plantes : jetez un œil avant votre visite.",
+    "about_eyebrow": "Le spa",
+    "about_title": "Un lieu où l'on a envie de <em>revenir</em>",
+    "about_lead": "Chaque visite commence par une tisane et un court échange, pour que votre praticien sache exactement ce dont vous avez besoin aujourd'hui.",
+    "about_checks": [
+      "Soins et huiles choisis pour vous",
+      "Douche, peignoir, chaussons et serviettes inclus",
+      "Salon de thé pour se détendre après les soins"
+    ],
+    "packages_eyebrow": "Forfaits et cartes cadeaux",
+    "packages_title": "Plus de détente, <em>meilleur prix</em>",
+    "packages_lead": "Des forfaits pour prendre soin de soi régulièrement et des cadeaux inoubliables.",
+    "package_order": "Commander",
+    "package_best": "Best-seller",
+    "steps_eyebrow": "Votre visite",
+    "steps_title": "Quatre étapes vers la <em>détente</em>",
+    "steps": [
+      [
+        "Réservation",
+        "Écrivez-nous sur WhatsApp ou Telegram, nous trouvons un créneau."
+      ],
+      [
+        "Accueil",
+        "Thé, courte consultation et choix de votre parfum."
+      ],
+      [
+        "Soin",
+        "Détente totale en cabine privée."
+      ],
+      [
+        "Repos",
+        "Un moment au salon de thé pour revenir en douceur à votre journée."
+      ]
+    ],
+    "reviews_eyebrow": "Avis",
+    "reviews_title": "Ce que disent nos <em>hôtes</em>",
+    "reviews_empty": "Lisez les avis de nos hôtes et partagez le vôtre sur Google Maps.",
+    "reviews_btn": "Avis sur Google",
+    "faq_eyebrow": "FAQ",
+    "faq_title": "Les réponses <em>d'avance</em>",
+    "faq_all": "Toutes les questions →",
+    "faq_lead": "Vous n'avez pas trouvé la réponse ? Écrivez-nous sur n'importe quelle messagerie : réponse en 15 minutes.",
+    "cta_eyebrow": "Réservation en ligne",
+    "cta_title": "Offrez-vous <em>une heure de calme</em>",
+    "cta_lead": "Choisissez votre messagerie : nous répondons en 15 minutes et trouvons un créneau.",
+    "services_title": "Soins <em>et tarifs</em>",
+    "services_lead": "Choisissez une catégorie et appuyez sur « Réserver » : un message WhatsApp avec le nom du soin s'ouvrira.",
+    "services_cta_title": "Vous hésitez sur le <em>choix</em> ?",
+    "services_cta_lead": "Écrivez-nous : un praticien vous aidera à trouver le soin qui vous convient.",
+    "about_page_title": "Notre <em>philosophie</em>",
+    "about_page_lead": "Nous pensons que le vrai repos n'est pas un luxe mais une nécessité. Nous avons donc créé un lieu où le temps passe plus lentement.",
+    "story_eyebrow": "Notre histoire",
+    "story_title": "D'une petite cabine à un <em>espace spa</em>",
+    "story_lead": "Tout a commencé avec une seule salle de massage et l'envie de faire du bien. Aujourd'hui, nous avons cinq cabines privées, un hammam, une suite duo et un salon de thé.",
+    "story_checks": [
+      "Uniquement des cosmétiques professionnels certifiés",
+      "Matériel à usage unique et hygiène stricte",
+      "Des programmes adaptés à votre état"
+    ],
+    "about_stats": [
+      [
+        "8+",
+        "ans"
+      ],
+      [
+        "30+",
+        "programmes spa"
+      ],
+      [
+        "12",
+        "praticiens"
+      ],
+      [
+        "5",
+        "cabines privées"
+      ]
+    ],
+    "team_eyebrow": "Équipe",
+    "team_title": "Nos <em>praticiens</em>",
+    "team_lead": "Chaque praticien est spécialiste de son domaine. Demandez-nous qui vous conviendra le mieux lors de la réservation.",
+    "about_cta_title": "Venez nous <em>rencontrer</em>",
+    "about_cta_lead": "Réservez votre premier soin : nous vous ferons visiter et trouverons le programme idéal.",
+    "gallery_title": "L'atmosphère <em>Black Horse</em>",
+    "gallery_lead": "Jetez un œil à l'intérieur : cabines, hammam, salon de thé et les détails qui font la détente.",
+    "gallery_all": "Tout",
+    "gallery_cta_title": "Plus de photos sur <em>Instagram</em>",
+    "gallery_cta_lead": "Suivez-nous pour découvrir en premier nos offres et nouveaux soins.",
+    "gallery_cta_btn": "Ouvrir Instagram",
+    "faq_page_title": "Questions <em>fréquentes</em>",
+    "contacts_title": "Contact <em>et réservation</em>",
+    "contacts_lead": "Écrivez-nous sur n'importe quelle messagerie : réponse en 15 minutes pendant les heures d'ouverture.",
+    "c_phone": "Téléphone",
+    "c_address": "Adresse",
+    "map_fallback": "La carte se charge sur le site publié.",
+    "form_eyebrow": "Réservation en ligne",
+    "form_title": "Réserver un soin",
+    "f_name": "Nom",
+    "f_name_ph": "Votre nom",
+    "f_phone": "Téléphone",
+    "f_service": "Soin",
+    "f_date": "Date souhaitée",
+    "f_comment": "Commentaire",
+    "f_comment_ph": "Horaire souhaité, envies",
+    "f_consult": "J'ai besoin d'un conseil",
+    "f_gift": "Carte cadeau",
+    "f_submit": "Créer la demande",
+    "f_note": "La demande s'ouvre dans WhatsApp ou Telegram : il suffit d'appuyer sur « Envoyer ». En l'envoyant, vous acceptez notre",
+    "f_privacy": "politique de confidentialité",
+    "f_done": "Votre demande est prête !",
+    "f_done_lead": "Choisissez une messagerie pour l'envoyer à notre équipe :",
+    "f_copy": "Copier le texte",
+    "f_copied": "Copié",
+    "f_msg": "Bonjour ! Je souhaite réserver chez {name}.\nNom : {n}\nTéléphone : {p}\nSoin : {s}\nDate : {d}\nCommentaire : {c}",
+    "privacy_title": "Politique de <em>confidentialité</em>",
+    "nf_title": "Page <em>introuvable</em>",
+    "nf_lead": "Elle a peut-être été déplacée. Revenez à l'accueil ou écrivez-nous : nous vous aiderons.",
+    "nf_btn": "Retour à l'accueil",
+    "footer_about": "Un espace de silence, de chaleur et de soin de soi. Massages, rituels spa et soins.",
+    "footer_nav": "Navigation",
+    "footer_services": "Soins",
+    "footer_contacts": "Contact",
+    "footer_rights": "Tous droits réservés.",
+    "footer_book": "Réserver en ligne →",
+    "home_title": "massages et rituels spa",
+    "hero_hint": "Faites défiler pour plonger",
+    "hero_open": "Entrer sur le site",
+    "hero_pause": "Pause",
+    "hero_play": "Lecture",
+    "hero_prev": "Scène précédente",
+    "hero_next": "Scène suivante",
+    "hero_scene": "Scène",
+    "hero_tour": "Visite vidéo",
+    "your_video": "Votre vidéo",
+    "language": "Langue",
+    "privacy_note": "Modèle de politique. Vérifiez-le et adaptez-le à la législation de votre pays.",
+    "privacy_sections": [
+      [
+        "1. Qui sommes-nous",
+        "Ce site appartient à {name} ({address}). Pour toute question sur les données, écrivez à {email}."
+      ],
+      [
+        "2. Quelles données recevons-nous",
+        "Le site ne stocke aucune donnée personnelle sur un serveur. Lorsque vous remplissez le formulaire, la demande (nom, téléphone, soin, date, commentaire) est créée dans votre navigateur et ne nous parvient qu'après avoir appuyé vous-même sur « Envoyer » dans WhatsApp ou Telegram."
+      ],
+      [
+        "3. Pourquoi les utilisons-nous",
+        "Uniquement pour vous contacter, confirmer la réservation et répondre à vos questions. Nous ne partageons jamais vos données avec des tiers à des fins publicitaires."
+      ],
+      [
+        "4. Services tiers",
+        "Le site utilise Google Fonts et Google Maps et renvoie vers WhatsApp, Telegram, Viber et Instagram. Ces services traitent les données selon leurs propres politiques."
+      ],
+      [
+        "5. Stockage dans le navigateur",
+        "Nous enregistrons uniquement le thème choisi et le fait que vous ayez fermé le bandeau d'offre. Aucun cookie publicitaire ou d'analyse n'est utilisé."
+      ],
+      [
+        "6. Vos droits",
+        "Vous pouvez à tout moment demander la suppression de vos messages et données de réservation par messagerie ou à {email}."
+      ]
+    ]
+  },
+  "ar": {
+    "lang_name": "العربية",
+    "skip": "الانتقال إلى المحتوى",
+    "nav_home": "الرئيسية",
+    "nav_services": "الخدمات والأسعار",
+    "nav_about": "من نحن",
+    "nav_gallery": "المعرض",
+    "nav_faq": "الأسئلة الشائعة",
+    "nav_contacts": "اتصل بنا",
+    "book": "احجز الآن",
+    "book_wa": "احجز عبر واتساب",
+    "all_services": "جميع الخدمات ←",
+    "more_about": "اعرف المزيد عنا",
+    "min": "دقيقة",
+    "from": "ابتداءً من",
+    "theme": "تبديل المظهر",
+    "menu": "القائمة",
+    "write_us": "راسلنا",
+    "call": "اتصل",
+    "close": "إغلاق",
+    "your_photo": "صورتكم",
+    "promo_left": "ينتهي خلال",
+    "promo_d": "ي",
+    "promo_h": "س",
+    "promo_m": "د",
+    "promo_more": "التفاصيل",
+    "sticky_label": "نرد خلال 15 دقيقة",
+    "wa_greeting": "مرحبًا! أرغب في الحجز في {name}.",
+    "wa_service": "مرحبًا! أرغب في حجز «{service}».",
+    "hero_eyebrow": "سبا وعافية",
+    "hero_title": "حان وقت <em>التمهّل</em> والعودة إلى ذاتك",
+    "hero_lead": "تدليك مميّز وطقوس سبا وبرامج عناية في أجواء من الهدوء والدفء والروائح الطبيعية.",
+    "hero_stats": [
+      [
+        "+8",
+        "سنوات من العناية"
+      ],
+      [
+        "+30",
+        "برنامجًا"
+      ],
+      [
+        "12",
+        "معالجًا"
+      ]
+    ],
+    "open_today": "نحن مفتوحون",
+    "marquee": [
+      "التدليك",
+      "طقوس السبا",
+      "الحمّام المغربي",
+      "العناية بالوجه",
+      "اللفّ",
+      "العلاج بالروائح"
+    ],
+    "why_eyebrow": "لماذا نحن",
+    "why_title": "العناية في كل <em>تفصيل</em>",
+    "why_lead": "أنشأنا مكانًا للابتعاد عن صخب الحياة واستعادة الطاقة والشعور بالخفّة من جديد.",
+    "features": [
+      [
+        "leaf",
+        "مستحضرات طبيعية",
+        "زيوت معصورة على البارد وخلطات أعشاب ومنتجات احترافية خالية من المكوّنات القاسية."
+      ],
+      [
+        "user",
+        "معالجون ذوو خبرة",
+        "أخصائيون معتمدون بخبرة تزيد على 5 سنوات يصمّمون كل علاج خصيصًا لكم."
+      ],
+      [
+        "door",
+        "غرف خاصة",
+        "غرف مريحة بإضاءة هادئة وأسرّة مُدفّأة وجناح مخصّص للأزواج."
+      ],
+      [
+        "gift",
+        "بطاقات الهدايا",
+        "أجمل هدية لأحبّائكم هي وقت لأنفسهم. نصدرها خلال 5 دقائق عبر المراسلة."
+      ]
+    ],
+    "popular_eyebrow": "الأكثر طلبًا",
+    "popular_title": "المفضّلة لدى ضيوفنا",
+    "video_eyebrow": "الأجواء",
+    "video_title": "اشعروا <em>بالهدوء</em>",
+    "video_lead": "إضاءة ناعمة، وحجر دافئ، ورائحة الأعشاب — ألقوا نظرة قبل زيارتكم.",
+    "about_eyebrow": "عن السبا",
+    "about_title": "مكان سترغبون في <em>العودة إليه</em>",
+    "about_lead": "تبدأ كل زيارة بكوب من شاي الأعشاب وحديث قصير، ليعرف المعالج تمامًا ما تحتاجونه اليوم.",
+    "about_checks": [
+      "علاجات وزيوت مختارة لكم",
+      "دش وروب ونعال ومناشف مشمولة",
+      "ركن للشاي للاسترخاء بعد العلاج"
+    ],
+    "packages_eyebrow": "الباقات وبطاقات الهدايا",
+    "packages_title": "استرخاء أكثر، <em>بقيمة أفضل</em>",
+    "packages_lead": "باقات للعناية المنتظمة بأنفسكم وهدايا لا تُنسى.",
+    "package_order": "اطلب الآن",
+    "package_best": "الأكثر مبيعًا",
+    "steps_eyebrow": "زيارتكم",
+    "steps_title": "أربع خطوات نحو <em>الاسترخاء</em>",
+    "steps": [
+      [
+        "الحجز",
+        "راسلونا عبر واتساب أو تيليغرام وسنجد الوقت المناسب."
+      ],
+      [
+        "الاستقبال",
+        "شاي واستشارة قصيرة واختيار الرائحة المفضّلة."
+      ],
+      [
+        "العلاج",
+        "استرخاء تام في غرفة خاصة."
+      ],
+      [
+        "الراحة",
+        "وقت في ركن الشاي للعودة بهدوء إلى يومكم."
+      ]
+    ],
+    "reviews_eyebrow": "الآراء",
+    "reviews_title": "ماذا يقول <em>ضيوفنا</em>",
+    "reviews_empty": "اقرؤوا آراء ضيوفنا وشاركوا رأيكم على خرائط Google.",
+    "reviews_btn": "الآراء على Google",
+    "faq_eyebrow": "الأسئلة الشائعة",
+    "faq_title": "إجابات <em>مسبقة</em>",
+    "faq_all": "جميع الأسئلة ←",
+    "faq_lead": "لم تجدوا الإجابة؟ راسلونا عبر أي تطبيق مراسلة — نرد خلال 15 دقيقة.",
+    "cta_eyebrow": "الحجز عبر الإنترنت",
+    "cta_title": "امنحوا أنفسكم <em>ساعة من الهدوء</em>",
+    "cta_lead": "اختاروا تطبيق المراسلة — سنرد خلال 15 دقيقة ونجد الوقت المناسب.",
+    "services_title": "الخدمات <em>والأسعار</em>",
+    "services_lead": "اختاروا الفئة واضغطوا «احجز الآن» — ستُفتح رسالة واتساب باسم العلاج.",
+    "services_cta_title": "لستم متأكدين مما <em>تختارون</em>؟",
+    "services_cta_lead": "راسلونا — سيساعدكم المعالج في اختيار العلاج المناسب.",
+    "about_page_title": "<em>فلسفتنا</em>",
+    "about_page_lead": "نؤمن أن الراحة الحقيقية ليست رفاهية بل ضرورة. لذلك أنشأنا مكانًا يمضي فيه الوقت ببطء.",
+    "story_eyebrow": "قصتنا",
+    "story_title": "من غرفة صغيرة إلى <em>فضاء سبا</em>",
+    "story_lead": "بدأ كل شيء بغرفة تدليك واحدة ورغبة في إسعاد الناس. واليوم لدينا خمس غرف خاصة وحمّام مغربي وجناح للأزواج وركن للشاي.",
+    "story_checks": [
+      "مستحضرات احترافية معتمدة فقط",
+      "أدوات أحادية الاستخدام ونظافة صارمة",
+      "برامج تتكيّف مع حالتكم"
+    ],
+    "about_stats": [
+      [
+        "+8",
+        "سنوات"
+      ],
+      [
+        "+30",
+        "برنامج سبا"
+      ],
+      [
+        "12",
+        "معالجًا"
+      ],
+      [
+        "5",
+        "غرف خاصة"
+      ]
+    ],
+    "team_eyebrow": "الفريق",
+    "team_title": "<em>معالجونا</em>",
+    "team_lead": "كل معالج متخصص في مجاله. اسألونا عند الحجز عن الأنسب لكم.",
+    "about_cta_title": "تعالوا <em>للتعرّف علينا</em>",
+    "about_cta_lead": "احجزوا علاجكم الأول — سنعرّفكم على المكان ونختار البرنامج المناسب.",
+    "gallery_title": "أجواء <em>بلاك هورس</em>",
+    "gallery_lead": "ألقوا نظرة إلى الداخل: الغرف والحمّام وركن الشاي والتفاصيل التي تصنع الراحة.",
+    "gallery_all": "الكل",
+    "gallery_cta_title": "المزيد من الصور على <em>إنستغرام</em>",
+    "gallery_cta_lead": "تابعونا لتكونوا أول من يعرف بالعروض والعلاجات الجديدة.",
+    "gallery_cta_btn": "افتح إنستغرام",
+    "faq_page_title": "الأسئلة <em>الشائعة</em>",
+    "contacts_title": "التواصل <em>والحجز</em>",
+    "contacts_lead": "راسلونا عبر أي تطبيق مراسلة — نرد خلال 15 دقيقة في ساعات العمل.",
+    "c_phone": "الهاتف",
+    "c_address": "العنوان",
+    "map_fallback": "تظهر الخريطة على الموقع المنشور.",
+    "form_eyebrow": "الحجز عبر الإنترنت",
+    "form_title": "احجزوا علاجًا",
+    "f_name": "الاسم",
+    "f_name_ph": "اسمكم",
+    "f_phone": "الهاتف",
+    "f_service": "العلاج",
+    "f_date": "التاريخ المفضّل",
+    "f_comment": "ملاحظات",
+    "f_comment_ph": "الوقت المناسب، الرغبات",
+    "f_consult": "أحتاج إلى استشارة",
+    "f_gift": "بطاقة هدية",
+    "f_submit": "إنشاء الطلب",
+    "f_note": "سيُفتح الطلب في واتساب أو تيليغرام — فقط اضغطوا «إرسال». بإرسال الطلب توافقون على",
+    "f_privacy": "سياسة الخصوصية",
+    "f_done": "طلبكم جاهز!",
+    "f_done_lead": "اختاروا تطبيق المراسلة لإرساله إلى فريقنا:",
+    "f_copy": "نسخ النص",
+    "f_copied": "تم النسخ",
+    "f_msg": "مرحبًا! أرغب في الحجز في {name}.\nالاسم: {n}\nالهاتف: {p}\nالعلاج: {s}\nالتاريخ: {d}\nملاحظات: {c}",
+    "privacy_title": "سياسة <em>الخصوصية</em>",
+    "nf_title": "الصفحة <em>غير موجودة</em>",
+    "nf_lead": "ربما نُقلت. عودوا إلى الصفحة الرئيسية أو راسلونا — سنساعدكم.",
+    "nf_btn": "العودة إلى الرئيسية",
+    "footer_about": "فضاء للهدوء والدفء والعناية بالذات. تدليك وطقوس سبا وبرامج عناية.",
+    "footer_nav": "التنقّل",
+    "footer_services": "الخدمات",
+    "footer_contacts": "اتصل بنا",
+    "footer_rights": "جميع الحقوق محفوظة.",
+    "footer_book": "احجز عبر الإنترنت ←",
+    "home_title": "تدليك وطقوس سبا",
+    "hero_hint": "مرّروا للأسفل للانغماس",
+    "hero_open": "ادخلوا إلى الموقع",
+    "hero_pause": "إيقاف مؤقت",
+    "hero_play": "تشغيل",
+    "hero_prev": "المشهد السابق",
+    "hero_next": "المشهد التالي",
+    "hero_scene": "المشهد",
+    "hero_tour": "جولة بالفيديو",
+    "your_video": "الفيديو الخاص بكم",
+    "language": "اللغة",
+    "privacy_note": "نموذج سياسة. يُرجى مراجعته وتكييفه مع قوانين بلدكم.",
+    "privacy_sections": [
+      [
+        "1. من نحن",
+        "هذا الموقع مملوك لـ {name} ({address}). للاستفسارات حول البيانات راسلونا على {email}."
+      ],
+      [
+        "2. البيانات التي نتلقاها",
+        "لا يخزّن الموقع أي بيانات شخصية على خادم. عند تعبئة نموذج الحجز يُنشأ الطلب (الاسم، الهاتف، العلاج، التاريخ، الملاحظات) في متصفحكم، ولا يصلنا إلا بعد أن تضغطوا بأنفسكم «إرسال» في واتساب أو تيليغرام."
+      ],
+      [
+        "3. لماذا نستخدمها",
+        "فقط للتواصل معكم وتأكيد الحجز والإجابة عن الأسئلة. لا نشارك بياناتكم مع أي طرف ثالث لأغراض إعلانية."
+      ],
+      [
+        "4. خدمات الأطراف الثالثة",
+        "يستخدم الموقع خطوط Google وخرائط Google، ويحتوي على روابط إلى واتساب وتيليغرام وفايبر وإنستغرام. تعالج هذه الخدمات البيانات وفق سياساتها الخاصة."
+      ],
+      [
+        "5. التخزين في المتصفح",
+        "نحفظ في متصفحكم فقط المظهر المختار وإغلاقكم لشريط العروض. لا نستخدم ملفات تعريف الارتباط للإعلانات أو التحليلات."
+      ],
+      [
+        "6. حقوقكم",
+        "يمكنكم في أي وقت طلب حذف المراسلات وبيانات الحجز عبر تطبيق المراسلة أو على {email}."
+      ]
+    ]
   }
 }

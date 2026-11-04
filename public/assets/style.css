@@ -595,3 +595,58 @@ a.c-card:hover{border-color:var(--accent);transform:translateY(-4px)}
 .tour video{display:block;width:100%;max-height:90vh;background:#000}
 .tour-close{position:absolute;top:12px;right:12px;z-index:2;width:44px;height:44px;border-radius:50%;background:rgba(0,0,0,.55);color:#fff;font-size:26px;line-height:1}
 @media (max-width:640px){.depth-tour span{display:none}.depth-tour{padding:6px;margin-right:8px}}
+
+/* =========================================================
+   Выбор языка (выпадающий список)
+   ========================================================= */
+.lang-menu{position:relative}
+.lang-menu summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:6px;height:42px;padding:0 14px;border:1px solid var(--line);border-radius:999px;font-size:12px;font-weight:700;letter-spacing:.06em;transition:border-color .3s}
+.lang-menu summary::-webkit-details-marker{display:none}
+.lang-menu summary:hover{border-color:var(--accent)}
+.lang-menu summary i{font-style:normal;font-size:10px;opacity:.6;transition:transform .3s}
+.lang-menu[open] summary i{transform:rotate(180deg)}
+.lang-menu ul{position:absolute;top:calc(100% + 8px);inset-inline-end:0;min-width:190px;list-style:none;background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:16px;padding:6px;box-shadow:var(--shadow);z-index:70;animation:fade .25s}
+.lang-menu li a{display:flex;gap:12px;align-items:center;padding:10px 12px;border-radius:10px;font-size:15px;transition:background .2s}
+.lang-menu li a b{font-size:11px;min-width:22px;color:var(--muted);letter-spacing:.06em}
+.lang-menu li a:hover{background:var(--bg-2)}
+.lang-menu li a.active{background:var(--accent);color:#14110c}
+.lang-menu li a.active b{color:inherit}
+.menu-open .header .lang-menu summary{border-color:rgba(246,241,234,.3);color:var(--on-dark)}
+
+/* =========================================================
+   Арабский: письмо справа налево
+   ========================================================= */
+html[lang="ar"]{--serif:"Amiri","Noto Naskh Arabic",Georgia,serif;--sans:"Tajawal","Noto Sans Arabic",system-ui,sans-serif}
+[dir="rtl"] body{line-height:1.8}
+[dir="rtl"] em{font-style:normal}
+[dir="rtl"] h1,[dir="rtl"] h2,[dir="rtl"] h3{line-height:1.3;letter-spacing:0}
+[dir="rtl"] .eyebrow,[dir="rtl"] .depth-eyebrow,[dir="rtl"] .mm-title,[dir="rtl"] .footer .f-title,[dir="rtl"] .depth-brand,[dir="rtl"] .badge,[dir="rtl"] .ph-label{letter-spacing:0}
+[dir="rtl"] .depth-text h1,[dir="rtl"] .depth-text h2{font-size:clamp(38px,5.6vw,76px);line-height:1.25}
+[dir="rtl"] .marquee-track{direction:ltr}
+[dir="rtl"] .logo,[dir="rtl"] .intro-name{direction:ltr}
+/* номера телефонов и адреса почты всегда слева направо */
+[dir="rtl"] a[href^="tel:"],[dir="rtl"] a[href^="mailto:"],[dir="rtl"] .c-card b,[dir="rtl"] .mm-phone{direction:ltr;unicode-bidi:isolate}
+/* зеркальные позиции */
+[dir="rtl"] .skip-link{left:auto;right:16px}
+[dir="rtl"] .promo-inner{padding:8px 0 8px 36px}
+[dir="rtl"] .promo-close{right:auto;left:10px}
+[dir="rtl"] .fab{right:auto;left:24px}
+[dir="rtl"] .fab-list a span{right:auto;left:62px}
+[dir="rtl"] .hero-badge{left:auto;right:-30px}
+[dir="rtl"] .split-stack .photo.small{right:auto;left:-30px}
+[dir="rtl"] .page-hero::after{right:auto;left:-120px}
+[dir="rtl"] .ph-label{left:auto;right:16px}
+[dir="rtl"] .depth .ph-label{left:auto;right:24px}
+[dir="rtl"] .badge{right:auto;left:22px}
+[dir="rtl"] .step::before{left:auto;right:0}
+[dir="rtl"] .nav a::after{left:auto;right:0}
+[dir="rtl"] .price-item .dur{text-align:left}
+[dir="rtl"] .depth-arrow,[dir="rtl"] .lb-nav{transform:scaleX(-1)}
+[dir="rtl"] .lb-prev{left:auto;right:24px;transform:translateY(-50%) scaleX(-1)}
+[dir="rtl"] .lb-next{right:auto;left:24px;transform:translateY(-50%) scaleX(-1)}
+[dir="rtl"] .depth-tour{margin-left:18px;margin-right:auto}
+[dir="rtl"] .g-item{text-align:right}
+@media (max-width:640px){
+  [dir="rtl"] .fab{left:16px}
+  [dir="rtl"] .hero-badge{right:10px}
+}

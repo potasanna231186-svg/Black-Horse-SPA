@@ -1,19 +1,163 @@
 {
   "categories": [
-    { "id": "interior", "label": { "ru": "Интерьер", "en": "Interior" } },
-    { "id": "massage", "label": { "ru": "Массаж", "en": "Massage" } },
-    { "id": "hammam", "label": { "ru": "Хаммам", "en": "Hammam" } },
-    { "id": "care", "label": { "ru": "Уход", "en": "Care" } }
+    {
+      "id": "interior",
+      "label": {
+        "ru": "Интерьер",
+        "en": "Interior",
+        "it": "Interni",
+        "fr": "Intérieur",
+        "ar": "الديكور"
+      }
+    },
+    {
+      "id": "massage",
+      "label": {
+        "ru": "Массаж",
+        "en": "Massage",
+        "it": "Massaggio",
+        "fr": "Massage",
+        "ar": "التدليك"
+      }
+    },
+    {
+      "id": "hammam",
+      "label": {
+        "ru": "Хаммам",
+        "en": "Hammam",
+        "it": "Hammam",
+        "fr": "Hammam",
+        "ar": "الحمّام المغربي"
+      }
+    },
+    {
+      "id": "care",
+      "label": {
+        "ru": "Уход",
+        "en": "Care",
+        "it": "Cura",
+        "fr": "Soins",
+        "ar": "العناية"
+      }
+    }
   ],
   "items": [
-    { "title": { "ru": "Массажный кабинет", "en": "Massage room" }, "category": "massage", "image": "", "art": "v1", "stones": true },
-    { "title": { "ru": "Хаммам", "en": "Hammam" }, "category": "hammam", "image": "", "art": "v3", "stones": false },
-    { "title": { "ru": "Уход за лицом", "en": "Facial care" }, "category": "care", "image": "", "art": "v4", "stones": false },
-    { "title": { "ru": "Горячие камни", "en": "Hot stones" }, "category": "massage", "image": "", "art": "v5", "stones": true },
-    { "title": { "ru": "SPA для двоих", "en": "Couples suite" }, "category": "interior", "image": "", "art": "v2", "stones": false },
-    { "title": { "ru": "Чайная зона", "en": "Tea lounge" }, "category": "interior", "image": "", "art": "v6", "stones": false },
-    { "title": { "ru": "Натуральная косметика", "en": "Natural cosmetics" }, "category": "care", "image": "", "art": "v4", "stones": false },
-    { "title": { "ru": "Ресепшн", "en": "Reception" }, "category": "interior", "image": "", "art": "v3", "stones": false },
-    { "title": { "ru": "Пенный массаж", "en": "Foam massage" }, "category": "hammam", "image": "", "art": "v2", "stones": false }
+    {
+      "title": {
+        "ru": "Массажный кабинет",
+        "en": "Massage room",
+        "it": "Sala massaggi",
+        "fr": "Salle de massage",
+        "ar": "غرفة التدليك"
+      },
+      "category": "massage",
+      "image": "",
+      "art": "v1",
+      "stones": true
+    },
+    {
+      "title": {
+        "ru": "Хаммам",
+        "en": "Hammam",
+        "it": "Hammam",
+        "fr": "Hammam",
+        "ar": "الحمّام المغربي"
+      },
+      "category": "hammam",
+      "image": "",
+      "art": "v3",
+      "stones": false
+    },
+    {
+      "title": {
+        "ru": "Уход за лицом",
+        "en": "Facial care",
+        "it": "Cura del viso",
+        "fr": "Soins du visage",
+        "ar": "العناية بالوجه"
+      },
+      "category": "care",
+      "image": "",
+      "art": "v4",
+      "stones": false
+    },
+    {
+      "title": {
+        "ru": "Горячие камни",
+        "en": "Hot stones",
+        "it": "Pietre calde",
+        "fr": "Pierres chaudes",
+        "ar": "الأحجار الساخنة"
+      },
+      "category": "massage",
+      "image": "",
+      "art": "v5",
+      "stones": true
+    },
+    {
+      "title": {
+        "ru": "SPA для двоих",
+        "en": "Couples suite",
+        "it": "Suite di coppia",
+        "fr": "Suite duo",
+        "ar": "جناح الأزواج"
+      },
+      "category": "interior",
+      "image": "",
+      "art": "v2",
+      "stones": false
+    },
+    {
+      "title": {
+        "ru": "Чайная зона",
+        "en": "Tea lounge",
+        "it": "Sala tè",
+        "fr": "Salon de thé",
+        "ar": "ركن الشاي"
+      },
+      "category": "interior",
+      "image": "",
+      "art": "v6",
+      "stones": false
+    },
+    {
+      "title": {
+        "ru": "Натуральная косметика",
+        "en": "Natural cosmetics",
+        "it": "Cosmetici naturali",
+        "fr": "Cosmétiques naturels",
+        "ar": "مستحضرات طبيعية"
+      },
+      "category": "care",
+      "image": "",
+      "art": "v4",
+      "stones": false
+    },
+    {
+      "title": {
+        "ru": "Ресепшн",
+        "en": "Reception",
+        "it": "Reception",
+        "fr": "Accueil",
+        "ar": "الاستقبال"
+      },
+      "category": "interior",
+      "image": "",
+      "art": "v3",
+      "stones": false
+    },
+    {
+      "title": {
+        "ru": "Пенный массаж",
+        "en": "Foam massage",
+        "it": "Massaggio con schiuma",
+        "fr": "Massage à la mousse",
+        "ar": "تدليك بالرغوة"
+      },
+      "category": "hammam",
+      "image": "",
+      "art": "v2",
+      "stones": false
+    }
   ]
 }

@@ -10,9 +10,8 @@ const T = t(lang);
 const slides = hero.slides;
 const href = (link: string) => (link === 'wa' ? msgrLink('wa', lang) : url(link, lang));
 const ext = (link: string) => (link === 'wa' ? { target: '_blank', rel: 'noopener' } : {});
-const L = lang === 'ru'
-  ? { tour: 'Видеотур по салону', close: 'Закрыть', hint: 'Листайте, чтобы погрузиться', open: 'Открыть сайт', pause: 'Пауза', play: 'Продолжить', prev: 'Предыдущая сцена', next: 'Следующая сцена', scene: 'Сцена', tagline: 'SPA & Beauty' }
-  : { tour: 'Video tour', close: 'Close', hint: 'Scroll to immerse', open: 'Enter the site', pause: 'Pause', play: 'Play', prev: 'Previous scene', next: 'Next scene', scene: 'Scene', tagline: 'SPA & Beauty' };
+const L = { tour: T.hero_tour, close: T.close, hint: T.hero_hint, open: T.hero_open, pause: T.hero_pause, play: T.hero_play,
+  prev: T.hero_prev, next: T.hero_next, scene: T.hero_scene, tagline: 'SPA & Beauty' };
 ---
 <div class="intro" id="intro" aria-hidden="true">
   <div class="intro-halo"></div>

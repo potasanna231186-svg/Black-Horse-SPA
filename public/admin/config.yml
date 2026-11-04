@@ -17,19 +17,25 @@ logo_url: ../assets/icon-512.png
 media_folder: public/images
 public_folder: /images
 
-# Повторяющиеся поля «текст на двух языках»
+# Повторяющиеся поля «текст на пяти языках»: русский, английский, итальянский, французский, арабский
 _ru_en: &ru_en
   widget: object
   collapsed: false
   fields:
     - { name: ru, label: Русский, widget: string }
     - { name: en, label: English, widget: string }
+    - { name: it, label: Italiano, widget: string, required: false }
+    - { name: fr, label: Français, widget: string, required: false }
+    - { name: ar, label: العربية, widget: string, required: false }
 _ru_en_text: &ru_en_text
   widget: object
   collapsed: false
   fields:
     - { name: ru, label: Русский, widget: text }
     - { name: en, label: English, widget: text }
+    - { name: it, label: Italiano, widget: text, required: false }
+    - { name: fr, label: Français, widget: text, required: false }
+    - { name: ar, label: العربية, widget: text, required: false }
 _art: &art
   name: art
   label: Цвет заглушки (если нет фото)
@@ -162,6 +168,9 @@ collections:
                 fields:
                   - { name: ru, label: Русский, widget: string }
                   - { name: en, label: English, widget: string }
+                  - { name: it, label: Italiano, widget: string, required: false }
+                  - { name: fr, label: Français, widget: string, required: false }
+                  - { name: ar, label: العربية, widget: string, required: false }
 
       - name: faq
         label: Вопросы и ответы

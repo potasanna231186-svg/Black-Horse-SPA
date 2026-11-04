@@ -1,12 +1,132 @@
 {
   "items": [
-    { "q": { "ru": "Что взять с собой на процедуру?", "en": "What should I bring?" }, "a": { "ru": "Ничего не нужно: халат, тапочки, полотенца и одноразовое бельё мы выдаём. Возьмите только хорошее настроение.", "en": "Nothing at all — robes, slippers, towels and disposable underwear are provided. Just bring yourself." } },
-    { "q": { "ru": "За сколько приходить до начала?", "en": "How early should I arrive?" }, "a": { "ru": "Лучше за 10–15 минут: успеете выпить чай, переодеться и рассказать мастеру о пожеланиях.", "en": "Ideally 10–15 minutes early to enjoy tea, change and tell your therapist about your preferences." } },
-    { "q": { "ru": "Как отменить или перенести запись?", "en": "How do I cancel or reschedule?" }, "a": { "ru": "Напишите нам в WhatsApp или Telegram не позднее чем за 3 часа до визита — перенесём без штрафов.", "en": "Message us on WhatsApp or Telegram at least 3 hours before your visit and we'll reschedule free of charge." } },
-    { "q": { "ru": "Есть ли противопоказания?", "en": "Are there any contraindications?" }, "a": { "ru": "Массаж не рекомендуется при высокой температуре, острых воспалениях, кожных заболеваниях и некоторых хронических состояниях. Если сомневаетесь — проконсультируйтесь с врачом и предупредите мастера.", "en": "Massage is not recommended with fever, acute inflammation, skin conditions and some chronic illnesses. If in doubt, consult your doctor and let your therapist know." } },
-    { "q": { "ru": "Можно ли во время беременности?", "en": "Can I book during pregnancy?" }, "a": { "ru": "Да, у нас есть мягкие программы для будущих мам начиная со второго триместра. Обязательно сообщите о беременности при записи.", "en": "Yes, we offer gentle programmes for mums-to-be from the second trimester. Please mention your pregnancy when booking." } },
-    { "q": { "ru": "Как купить подарочный сертификат?", "en": "How do I buy a gift card?" }, "a": { "ru": "Напишите нам в мессенджер — подберём сумму или процедуру, оформим красивую открытку или PDF за 5 минут.", "en": "Message us — we'll help choose an amount or treatment and send a printed card or PDF within 5 minutes." } },
-    { "q": { "ru": "Какие способы оплаты вы принимаете?", "en": "Which payment methods do you accept?" }, "a": { "ru": "Наличные и банковские карты. Уточните у администратора, если нужен другой способ.", "en": "Cash and bank cards. Ask our team if you need another option." } },
-    { "q": { "ru": "Есть ли программы для пар?", "en": "Do you have couples treatments?" }, "a": { "ru": "Да, в SPA-кабинете для двоих можно пройти массаж, хаммам или целый SPA-день вместе.", "en": "Yes — enjoy a massage, hammam or a whole spa day together in our couples suite." } }
+    {
+      "q": {
+        "ru": "Что взять с собой на процедуру?",
+        "en": "What should I bring?",
+        "it": "Cosa devo portare?",
+        "fr": "Que dois-je apporter ?",
+        "ar": "ماذا أحضر معي؟"
+      },
+      "a": {
+        "ru": "Ничего не нужно: халат, тапочки, полотенца и одноразовое бельё мы выдаём. Возьмите только хорошее настроение.",
+        "en": "Nothing at all — robes, slippers, towels and disposable underwear are provided. Just bring yourself.",
+        "it": "Niente: accappatoio, ciabatte, asciugamani e biancheria monouso sono inclusi. Porta solo te stessa.",
+        "fr": "Rien du tout : peignoir, chaussons, serviettes et sous-vêtements jetables sont fournis. Venez simplement comme vous êtes.",
+        "ar": "لا شيء على الإطلاق — نوفّر لكم الروب والنعال والمناشف والملابس الداخلية أحادية الاستخدام. فقط تعالوا."
+      }
+    },
+    {
+      "q": {
+        "ru": "За сколько приходить до начала?",
+        "en": "How early should I arrive?",
+        "it": "Con quanto anticipo devo arrivare?",
+        "fr": "Combien de temps avant dois-je arriver ?",
+        "ar": "متى يجب أن أصل؟"
+      },
+      "a": {
+        "ru": "Лучше за 10–15 минут: успеете выпить чай, переодеться и рассказать мастеру о пожеланиях.",
+        "en": "Ideally 10–15 minutes early to enjoy tea, change and tell your therapist about your preferences.",
+        "it": "Idealmente 10–15 minuti prima, per gustare un tè, cambiarti e raccontare al terapista le tue preferenze.",
+        "fr": "Idéalement 10 à 15 minutes avant, pour savourer un thé, vous changer et parler de vos envies au praticien.",
+        "ar": "يُفضّل الوصول قبل الموعد بـ 10–15 دقيقة لتستمتعوا بالشاي وتبدّلوا ملابسكم وتخبروا المعالج بتفضيلاتكم."
+      }
+    },
+    {
+      "q": {
+        "ru": "Как отменить или перенести запись?",
+        "en": "How do I cancel or reschedule?",
+        "it": "Come posso annullare o spostare l'appuntamento?",
+        "fr": "Comment annuler ou reporter un rendez-vous ?",
+        "ar": "كيف ألغي الحجز أو أغيّر موعده؟"
+      },
+      "a": {
+        "ru": "Напишите нам в WhatsApp или Telegram не позднее чем за 3 часа до визита — перенесём без штрафов.",
+        "en": "Message us on WhatsApp or Telegram at least 3 hours before your visit and we'll reschedule free of charge.",
+        "it": "Scrivici su WhatsApp o Telegram almeno 3 ore prima: spostiamo l'appuntamento senza costi.",
+        "fr": "Écrivez-nous sur WhatsApp ou Telegram au moins 3 heures avant votre visite : nous reportons sans frais.",
+        "ar": "راسلونا عبر واتساب أو تيليغرام قبل الموعد بثلاث ساعات على الأقل وسنغيّر الموعد مجانًا."
+      }
+    },
+    {
+      "q": {
+        "ru": "Есть ли противопоказания?",
+        "en": "Are there any contraindications?",
+        "it": "Ci sono controindicazioni?",
+        "fr": "Y a-t-il des contre-indications ?",
+        "ar": "هل توجد موانع؟"
+      },
+      "a": {
+        "ru": "Массаж не рекомендуется при высокой температуре, острых воспалениях, кожных заболеваниях и некоторых хронических состояниях. Если сомневаетесь — проконсультируйтесь с врачом и предупредите мастера.",
+        "en": "Massage is not recommended with fever, acute inflammation, skin conditions and some chronic illnesses. If in doubt, consult your doctor and let your therapist know.",
+        "it": "Il massaggio è sconsigliato in caso di febbre, infiammazioni acute, problemi della pelle e alcune malattie croniche. Nel dubbio, consulta il medico e informa il terapista.",
+        "fr": "Le massage est déconseillé en cas de fièvre, d'inflammation aiguë, de problèmes de peau et de certaines maladies chroniques. En cas de doute, consultez votre médecin et prévenez le praticien.",
+        "ar": "لا يُنصح بالتدليك عند الحمّى أو الالتهابات الحادة أو الأمراض الجلدية وبعض الأمراض المزمنة. إن كان لديكم شك، استشيروا الطبيب وأخبروا المعالج."
+      }
+    },
+    {
+      "q": {
+        "ru": "Можно ли во время беременности?",
+        "en": "Can I book during pregnancy?",
+        "it": "Posso prenotare in gravidanza?",
+        "fr": "Puis-je réserver pendant la grossesse ?",
+        "ar": "هل يمكنني الحجز أثناء الحمل؟"
+      },
+      "a": {
+        "ru": "Да, у нас есть мягкие программы для будущих мам начиная со второго триместра. Обязательно сообщите о беременности при записи.",
+        "en": "Yes, we offer gentle programmes for mums-to-be from the second trimester. Please mention your pregnancy when booking.",
+        "it": "Sì, offriamo programmi delicati per future mamme dal secondo trimestre. Segnalaci la gravidanza al momento della prenotazione.",
+        "fr": "Oui, nous proposons des soins doux pour les futures mamans dès le deuxième trimestre. Merci de signaler votre grossesse lors de la réservation.",
+        "ar": "نعم، نقدّم برامج لطيفة للأمهات الحوامل ابتداءً من الثلث الثاني من الحمل. يُرجى ذكر الحمل عند الحجز."
+      }
+    },
+    {
+      "q": {
+        "ru": "Как купить подарочный сертификат?",
+        "en": "How do I buy a gift card?",
+        "it": "Come acquisto una gift card?",
+        "fr": "Comment acheter une carte cadeau ?",
+        "ar": "كيف أشتري بطاقة هدية؟"
+      },
+      "a": {
+        "ru": "Напишите нам в мессенджер — подберём сумму или процедуру, оформим красивую открытку или PDF за 5 минут.",
+        "en": "Message us — we'll help choose an amount or treatment and send a printed card or PDF within 5 minutes.",
+        "it": "Scrivici: ti aiutiamo a scegliere l'importo o il trattamento e inviamo una card stampata o un PDF in 5 minuti.",
+        "fr": "Écrivez-nous : nous vous aidons à choisir un montant ou un soin et envoyons une carte imprimée ou un PDF en 5 minutes.",
+        "ar": "راسلونا وسنساعدكم في اختيار المبلغ أو العلاج ونرسل بطاقة مطبوعة أو ملف PDF خلال 5 دقائق."
+      }
+    },
+    {
+      "q": {
+        "ru": "Какие способы оплаты вы принимаете?",
+        "en": "Which payment methods do you accept?",
+        "it": "Quali metodi di pagamento accettate?",
+        "fr": "Quels moyens de paiement acceptez-vous ?",
+        "ar": "ما طرق الدفع المتاحة؟"
+      },
+      "a": {
+        "ru": "Наличные и банковские карты. Уточните у администратора, если нужен другой способ.",
+        "en": "Cash and bank cards. Ask our team if you need another option.",
+        "it": "Contanti e carte. Chiedi al nostro team se ti serve un'altra modalità.",
+        "fr": "Espèces et cartes bancaires. Demandez à notre équipe si vous avez besoin d'une autre option.",
+        "ar": "نقدًا وبالبطاقات المصرفية. اسألوا فريقنا إن احتجتم طريقة أخرى."
+      }
+    },
+    {
+      "q": {
+        "ru": "Есть ли программы для пар?",
+        "en": "Do you have couples treatments?",
+        "it": "Avete trattamenti per coppie?",
+        "fr": "Proposez-vous des soins en duo ?",
+        "ar": "هل لديكم علاجات للأزواج؟"
+      },
+      "a": {
+        "ru": "Да, в SPA-кабинете для двоих можно пройти массаж, хаммам или целый SPA-день вместе.",
+        "en": "Yes — enjoy a massage, hammam or a whole spa day together in our couples suite.",
+        "it": "Sì: massaggio, hammam o un'intera giornata spa insieme nella nostra suite di coppia.",
+        "fr": "Oui : massage, hammam ou toute une journée spa à deux dans notre suite duo.",
+        "ar": "نعم — استمتعوا معًا بالتدليك أو الحمّام أو يوم سبا كامل في جناح الأزواج."
+      }
+    }
   ]
 }

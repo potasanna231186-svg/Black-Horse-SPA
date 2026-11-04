@@ -9,20 +9,25 @@ import reviews from '../data/reviews.json';
 import promo from '../data/promo.json';
 import ui from '../data/ui.json';
 
-export type Lang = 'ru' | 'en';
-export const LANGS: Lang[] = ['ru', 'en'];
+export type Lang = 'ru' | 'en' | 'it' | 'fr' | 'ar';
+/** Порядок языков в переключателе. ru — основной (без префикса в адресе) */
+export const LANGS: Lang[] = ['ru', 'en', 'it', 'fr', 'ar'];
+export const RTL: Lang[] = ['ar'];
+export const dirOf = (l: Lang) => (RTL.includes(l) ? 'rtl' : 'ltr');
+export const LOCALES: Record<Lang, string> = { ru: 'ru_RU', en: 'en_US', it: 'it_IT', fr: 'fr_FR', ar: 'ar_EG' };
+export const LANG_LABEL: Record<Lang, string> = { ru: 'Русский', en: 'English', it: 'Italiano', fr: 'Français', ar: 'العربية' };
 export const data = { site, services, packages, faq, team, gallery, reviews, promo, ui };
 export { site };
 
 /** Страницы сайта: ключ → путь */
 export type Page = 'index' | 'services' | 'about' | 'gallery' | 'faq' | 'contacts' | 'privacy' | '404';
 
-/** Пути для всех языков: ru без префикса, en — /en/ */
+/** Пути для всех языков: ru без префикса, остальные — /en/, /it/, /fr/, /ar/ */
 export function langPaths() {
-  return [{ params: { lang: undefined } }, { params: { lang: 'en' } }];
+  return LANGS.map((l) => ({ params: { lang: l === 'ru' ? undefined : l } }));
 }
 export function langOf(param?: string): Lang {
-  return param === 'en' ? 'en' : 'ru';
+  return (LANGS as string[]).includes(param ?? '') ? (param as Lang) : 'ru';
 }
 
 const BASE = (import.meta.env.BASE_URL || '/').replace(/\/?$/, '/');
@@ -32,7 +37,7 @@ const ORIGIN = 'https://potasanna231186-svg.github.io';
 export function url(page: string, lang: Lang): string {
   let anchor = '';
   if (page.includes('#')) { const i = page.indexOf('#'); anchor = page.slice(i); page = page.slice(0, i); }
-  const prefix = lang === 'en' ? 'en/' : '';
+  const prefix = lang === 'ru' ? '' : `${lang}/`;
   const path = !page || page === 'index' ? '' : `${page}/`;
   return `${BASE}${prefix}${path}${anchor}`;
 }
@@ -40,14 +45,14 @@ export const absUrl = (page: string, lang: Lang) => ORIGIN + url(page, lang);
 /** Путь к файлу из public/ (картинки, стили) */
 export const asset = (p: string) => BASE + p.replace(/^\//, '');
 
-type Tr = { ru: string; en: string } | string;
+type Tr = Partial<Record<Lang, string>> | string;
 export const tr = (o: Tr | undefined, lang: Lang): string =>
-  !o ? '' : typeof o === 'string' ? o : (o[lang] ?? o.ru);
+  !o ? '' : typeof o === 'string' ? o : (o[lang] ?? o.en ?? o.ru ?? '');
 
 export const t = (lang: Lang) => (ui as any)[lang];
 
 export const money = (n: number, lang: Lang) =>
-  lang === 'ru' ? `${n} ${site.currencySymbol}` : `${site.currencySymbol}${n}`;
+  lang === 'en' ? `${site.currencySymbol}${n}` : `${n} ${site.currencySymbol}`;
 
 export const wa = (text: string) => `https://wa.me/${site.whatsapp}?text=${encodeURIComponent(text)}`;
 

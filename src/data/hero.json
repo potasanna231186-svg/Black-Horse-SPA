@@ -4,27 +4,42 @@
     {
       "eyebrow": {
         "ru": "SPA-ритуалы",
-        "en": "Spa rituals"
+        "en": "Spa rituals",
+        "it": "Rituali spa",
+        "fr": "Rituels spa",
+        "ar": "طقوس السبا"
       },
       "title": {
         "ru": "Время <em>замедлиться</em>.",
-        "en": "Time to <em>slow down</em>."
+        "en": "Time to <em>slow down</em>.",
+        "it": "Tempo di <em>rallentare</em>.",
+        "fr": "Le temps de <em>ralentir</em>.",
+        "ar": "حان وقت <em>التمهّل</em>."
       },
       "text": {
         "ru": "Авторские ритуалы, хаммам и уход в атмосфере тишины, тепла и натуральных ароматов.",
-        "en": "Signature rituals, hammam and care in an atmosphere of silence, warmth and natural scents."
+        "en": "Signature rituals, hammam and care in an atmosphere of silence, warmth and natural scents.",
+        "it": "Rituali d'autore, hammam e trattamenti in un'atmosfera di silenzio, calore e profumi naturali.",
+        "fr": "Rituels signature, hammam et soins dans une atmosphère de silence, de chaleur et de parfums naturels.",
+        "ar": "طقوس مميّزة وحمّام مغربي وعناية في أجواء من الهدوء والدفء والروائح الطبيعية."
       },
       "cta": {
         "label": {
           "ru": "Записаться",
-          "en": "Book now"
+          "en": "Book now",
+          "it": "Prenota",
+          "fr": "Réserver",
+          "ar": "احجز الآن"
         },
         "link": "wa"
       },
       "cta2": {
         "label": {
           "ru": "Все программы",
-          "en": "All treatments"
+          "en": "All treatments",
+          "it": "Tutti i trattamenti",
+          "fr": "Tous les soins",
+          "ar": "جميع العلاجات"
         },
         "link": "services"
       },
@@ -38,27 +53,42 @@
     {
       "eyebrow": {
         "ru": "Массаж",
-        "en": "Massage"
+        "en": "Massage",
+        "it": "Massaggio",
+        "fr": "Massage",
+        "ar": "التدليك"
       },
       "title": {
         "ru": "Тепло, которое <em>снимает усталость</em>.",
-        "en": "Warmth that <em>melts fatigue</em>."
+        "en": "Warmth that <em>melts fatigue</em>.",
+        "it": "Un calore che <em>scioglie la stanchezza</em>.",
+        "fr": "Une chaleur qui <em>dissout la fatigue</em>.",
+        "ar": "دفءٌ <em>يُذيب التعب</em>."
       },
       "text": {
         "ru": "Релакс, горячие камни и глубокая проработка — мастер подберёт технику под ваше состояние.",
-        "en": "Relax, hot stones or deep tissue — your therapist will choose the right technique for you."
+        "en": "Relax, hot stones or deep tissue — your therapist will choose the right technique for you.",
+        "it": "Rilassante, pietre calde o decontratturante: il terapista sceglierà la tecnica giusta per te.",
+        "fr": "Relaxant, pierres chaudes ou massage profond : votre praticien choisira la bonne technique.",
+        "ar": "استرخاء أو أحجار ساخنة أو تدليك عميق — سيختار المعالج التقنية المناسبة لكم."
       },
       "cta": {
         "label": {
           "ru": "Смотреть массажи",
-          "en": "See massages"
+          "en": "See massages",
+          "it": "Vedi i massaggi",
+          "fr": "Voir les massages",
+          "ar": "تصفّح أنواع التدليك"
         },
         "link": "services#massage"
       },
       "cta2": {
         "label": {
           "ru": "Записаться",
-          "en": "Book now"
+          "en": "Book now",
+          "it": "Prenota",
+          "fr": "Réserver",
+          "ar": "احجز الآن"
         },
         "link": "wa"
       },
@@ -72,27 +102,42 @@
     {
       "eyebrow": {
         "ru": "Хаммам",
-        "en": "Hammam"
+        "en": "Hammam",
+        "it": "Hammam",
+        "fr": "Hammam",
+        "ar": "الحمّام المغربي"
       },
       "title": {
         "ru": "Восточный ритуал <em>очищения</em>.",
-        "en": "An oriental ritual of <em>renewal</em>."
+        "en": "An oriental ritual of <em>renewal</em>.",
+        "it": "Un rituale orientale di <em>rinascita</em>.",
+        "fr": "Un rituel oriental de <em>renouveau</em>.",
+        "ar": "طقس شرقي <em>للتجدّد</em>."
       },
       "text": {
         "ru": "Прогрев, пилинг кесе, облако пены и травяной чай — полтора часа, после которых легко дышится.",
-        "en": "Warmth, kese scrub, a cloud of foam and herbal tea — ninety minutes that leave you light."
+        "en": "Warmth, kese scrub, a cloud of foam and herbal tea — ninety minutes that leave you light.",
+        "it": "Calore, scrub con kese, una nuvola di schiuma e tè alle erbe: novanta minuti di leggerezza.",
+        "fr": "Chaleur, gommage au kessa, nuage de mousse et tisane : quatre-vingt-dix minutes de légèreté.",
+        "ar": "دفء، وتقشير بالكيس، وسحابة من الرغوة، وشاي أعشاب — تسعون دقيقة تمنحكم الخفّة."
       },
       "cta": {
         "label": {
           "ru": "SPA-ритуалы",
-          "en": "Spa rituals"
+          "en": "Spa rituals",
+          "it": "Rituali spa",
+          "fr": "Rituels spa",
+          "ar": "طقوس السبا"
         },
         "link": "services#rituals"
       },
       "cta2": {
         "label": {
           "ru": "Записаться",
-          "en": "Book now"
+          "en": "Book now",
+          "it": "Prenota",
+          "fr": "Réserver",
+          "ar": "احجز الآن"
         },
         "link": "wa"
       },
@@ -106,27 +151,42 @@
     {
       "eyebrow": {
         "ru": "Для двоих",
-        "en": "For two"
+        "en": "For two",
+        "it": "Per due",
+        "fr": "À deux",
+        "ar": "لشخصين"
       },
       "title": {
         "ru": "Час тишины <em>на двоих</em>.",
-        "en": "An hour of calm <em>for two</em>."
+        "en": "An hour of calm <em>for two</em>.",
+        "it": "Un'ora di calma <em>per due</em>.",
+        "fr": "Une heure de calme <em>à deux</em>.",
+        "ar": "ساعة من الهدوء <em>لشخصين</em>."
       },
       "text": {
         "ru": "Приватный SPA-кабинет: массаж рядом, хаммам и чай вдвоём — без спешки.",
-        "en": "A private couples suite: side-by-side massage, hammam and tea together — no rush."
+        "en": "A private couples suite: side-by-side massage, hammam and tea together — no rush.",
+        "it": "Una suite privata per coppie: massaggio fianco a fianco, hammam e tè insieme, senza fretta.",
+        "fr": "Une suite duo privée : massage côte à côte, hammam et thé ensemble, sans se presser.",
+        "ar": "جناح خاص للأزواج: تدليك جنبًا إلى جنب وحمّام وشاي معًا — بلا عجلة."
       },
       "cta": {
         "label": {
           "ru": "SPA-день для двоих",
-          "en": "Spa day for two"
+          "en": "Spa day for two",
+          "it": "Giornata spa per due",
+          "fr": "Journée spa à deux",
+          "ar": "يوم سبا لشخصين"
         },
         "link": "services#packages"
       },
       "cta2": {
         "label": {
           "ru": "Записаться",
-          "en": "Book now"
+          "en": "Book now",
+          "it": "Prenota",
+          "fr": "Réserver",
+          "ar": "احجز الآن"
         },
         "link": "wa"
       },
@@ -140,27 +200,42 @@
     {
       "eyebrow": {
         "ru": "Подарок",
-        "en": "Gift"
+        "en": "Gift",
+        "it": "Regalo",
+        "fr": "Cadeau",
+        "ar": "هدية"
       },
       "title": {
         "ru": "Подарок, <em>который запомнится</em>.",
-        "en": "A gift <em>they'll remember</em>."
+        "en": "A gift <em>they'll remember</em>.",
+        "it": "Un regalo <em>che non dimenticheranno</em>.",
+        "fr": "Un cadeau <em>inoubliable</em>.",
+        "ar": "هدية <em>لا تُنسى</em>."
       },
       "text": {
         "ru": "Сертификат на любую сумму или процедуру — оформим в мессенджере за 5 минут.",
-        "en": "A gift card for any amount or treatment — issued via messenger in 5 minutes."
+        "en": "A gift card for any amount or treatment — issued via messenger in 5 minutes.",
+        "it": "Una gift card per qualsiasi importo o trattamento, emessa via messenger in 5 minuti.",
+        "fr": "Une carte cadeau pour tout montant ou soin, émise par messagerie en 5 minutes.",
+        "ar": "بطاقة هدية بأي مبلغ أو لأي علاج — نصدرها عبر المراسلة خلال 5 دقائق."
       },
       "cta": {
         "label": {
           "ru": "Выбрать сертификат",
-          "en": "Choose a gift card"
+          "en": "Choose a gift card",
+          "it": "Scegli una gift card",
+          "fr": "Choisir une carte cadeau",
+          "ar": "اختر بطاقة هدية"
         },
         "link": "services#packages"
       },
       "cta2": {
         "label": {
           "ru": "Вопросы",
-          "en": "FAQ"
+          "en": "FAQ",
+          "it": "FAQ",
+          "fr": "FAQ",
+          "ar": "الأسئلة الشائعة"
         },
         "link": "faq"
       },

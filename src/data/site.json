@@ -3,7 +3,10 @@
   "url": "https://potasanna231186-svg.github.io/Black-Horse-SPA",
   "description": {
     "ru": "Black Horse SPA — массаж, SPA-ритуалы, хаммам, уход за лицом и телом. Онлайн-запись через WhatsApp и Telegram.",
-    "en": "Black Horse SPA — massage, spa rituals, hammam, facial and body care. Book online via WhatsApp or Telegram."
+    "en": "Black Horse SPA — massage, spa rituals, hammam, facial and body care. Book online via WhatsApp or Telegram.",
+    "it": "Black Horse SPA — massaggi, rituali spa, hammam, cura del viso e del corpo. Prenota online via WhatsApp o Telegram.",
+    "fr": "Black Horse SPA — massages, rituels spa, hammam, soins du visage et du corps. Réservez en ligne via WhatsApp ou Telegram.",
+    "ar": "بلاك هورس سبا — تدليك وطقوس سبا وحمّام مغربي وعناية بالوجه والجسم. احجزوا عبر واتساب أو تيليغرام."
   },
   "phone": "+20 100 000 00 00",
   "phoneRaw": "+201000000000",
@@ -14,14 +17,20 @@
   "email": "hello@blackhorse-spa.com",
   "address": {
     "ru": "ул. Примерная, 1, Ваш город",
-    "en": "1 Example St, Your City"
+    "en": "1 Example St, Your City",
+    "it": "Via Esempio 1, La tua città",
+    "fr": "1 rue Exemple, Votre ville",
+    "ar": "1 شارع المثال، مدينتكم"
   },
   "streetAddress": "1 Example St",
   "city": "Your City",
   "country": "EG",
   "hours": {
     "ru": "Ежедневно 10:00 – 22:00",
-    "en": "Daily 10:00 – 22:00"
+    "en": "Daily 10:00 – 22:00",
+    "it": "Tutti i giorni 10:00 – 22:00",
+    "fr": "Tous les jours 10h00 – 22h00",
+    "ar": "يوميًا 10:00 – 22:00"
   },
   "opens": "10:00",
   "closes": "22:00",

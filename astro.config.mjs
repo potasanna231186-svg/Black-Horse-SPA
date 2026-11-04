@@ -9,7 +9,7 @@ export default defineConfig({
   trailingSlash: 'always',
   integrations: [
     sitemap({
-      i18n: { defaultLocale: 'ru', locales: { ru: 'ru-RU', en: 'en-US' } },
+      i18n: { defaultLocale: 'ru', locales: { ru: 'ru-RU', en: 'en-US', it: 'it-IT', fr: 'fr-FR', ar: 'ar' } },
       filter: (page) => !page.includes('/admin/'),
     }),
   ],

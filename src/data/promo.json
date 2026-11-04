@@ -2,7 +2,10 @@
   "enabled": true,
   "text": {
     "ru": "−20% на хаммам по будням до конца года",
-    "en": "−20% off hammam on weekdays until the end of the year"
+    "en": "−20% off hammam on weekdays until the end of the year",
+    "it": "−20% sull'hammam nei giorni feriali fino a fine anno",
+    "fr": "−20 % sur le hammam en semaine jusqu'à la fin de l'année",
+    "ar": "خصم 20% على الحمّام في أيام الأسبوع حتى نهاية العام"
   },
   "link": "services#rituals",
   "until": "2026-12-31T23:59:00"
